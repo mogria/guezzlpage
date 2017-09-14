@@ -17,3 +17,9 @@ github_username:  mogria
 
 # Build settings
 markdown: kramdown
+
+# Data Collections:
+collections:
+    songs:
+        output: true
+        permalink: /:collection/:path
