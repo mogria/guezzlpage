@@ -1,0 +1,55 @@
+---
+layout: page
+title: d'bänd
+permalink: /band/
+---
+
+<h2>Gründigsgschicht</h2> 
+
+{% assign maikusan = site.data.bandmembers.maikusan.name %}
+<p>Güzzl hed sich im 2015 ungefähr gründet. Agfange heds demit das
+de {{maikusan}} es Agebot füre Bandruum becho hed abr nu kei Band
+gha hed. Das Problem hed sich schnell glöst won er sich denn denkt
+hed er macht en Punk-Band us lüt wo nüd mit musig z'tue hed, will
+schlussendlich au de grössti Vollhonk Power-Chords schiebe cha.</p>
+
+{% assign maikusan = site.data.bandmembers.maikusan.name %}
+{% assign titan = site.data.bandmembers.titan.name %}
+{% assign dandy = site.data.bandmembers.dandy.name %}
+<p>Die initiale 3 Mitglieder {{maikusan}}, {{titan}} und de {{dandy}}
+hend sich denn im Bandruum im Kanton Zug igrichtet und afe
+umeprobiere. Vili lüt hend de {{dandy}} nie gse und mr munkled inzwüsche
+das es ihn gar nid gid, doch de {{dandy}} isch em {{maikusan}} sii
+fründ.</p>
+
+{% assign cmon = site.data.bandmembers.cmon.name %}
+{% assign mogli = site.data.bandmembers.mogli.name %}
+<p>Später irgendwenn sind de {{cmon}} als Gitarrist und de {{mogli}} als Bassist au nu dezue
+gstosse und en gnueg grossi d'band zämecho. Es sind die erste Lieder gschribe
+worde we &quot;Kaptalisteschrott&quot;, &quot;Eigetum ish Diebstahl&quot;
+&amp; natürlich &quot;Immer Wenn Ich Ufstah&quot;</p>
+
+{% assign lenny = site.data.bandmembers.lenny.name %}
+<p>Denn hemmer irgendwo nu de {{lenny}} ufgabled, wo bi üs denn
+die 2. Gitarre gspilt hed.</p>
+
+<p>Im August 2016, hemmer es Set zäme gha &amp; denn üse erscht uftritt am Punker Picknick in Chur gha.</p> 
+
+<p>Sit denn hemmer immer meh Uftritt becho und a geile Ort chenne umegüssle.</p>
+
+{% assign umpa = site.data.bandmembers.umpa.name %}
+{% assign boti = site.data.bandmembers.boti.name %}
+<p>De {{titan}} hed ufgrund vo andere Projekt den d'band verlah und de {{umpa}} isch als nüe Drummer dezue cho. Au hed nü de {{boti}} die 2. Gitarre übernu anstatt de {{lenny}}</p>
+
+<h2>Aktuelle Mitglieder</h2>
+
+<div class="band-members">
+{% for member in site.data.bandmembers %}
+    {% if member[1].active %}
+        <div class="band-member">
+            <span class="band-member-name">{{member[1].name}}</span>
+            <span class="band-member-role">{{member[1].role}}</span>
+        </div>
+    {% endif %}
+{% endfor %}
+</div>
