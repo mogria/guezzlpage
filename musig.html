@@ -1,0 +1,20 @@
+---
+layout: page
+title: musig
+permalink: /musig/
+---
+
+<p>jaaaa mr mached voll de grümpel punk & so.</p>
+
+<p>Hie isch mal en liste vo allne üse songs:</p>
+
+<div class="songlist">
+{% for song in site.songs %}
+    <div class="song">
+        <a href="{{song.url}}" class="song-title">{{ song.title }}</a>
+        <span class="song-author">{{ song.author }}</span>
+        <span class="song-year">{{ song.year }}</span>
+        <span class="song-album">{{ site.data.albums[song.album].name }}</span>
+    </div>
+{% endfor %}
+</div>
