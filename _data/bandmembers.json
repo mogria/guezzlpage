@@ -1,0 +1,42 @@
+{
+    "maikusan": {
+        "name": "Maikusan",
+        "role": "Sänger, Bassist",
+        "active": true
+    },
+    "titan": {
+        "name": "Titan",
+        "role": "Drummer",
+        "active": false
+    },
+    "dandy": {
+        "name": "Dandy",
+        "role": "Musiker, Fründ",
+        "active": false
+    },
+    "cmon": {
+        "name": "Cmon",
+        "role": "1. Gitarrist",
+        "active": true
+    },
+    "mogli": {
+        "name": "Mogli",
+        "role": "Bassist, Sänger",
+        "active": true
+    },
+    "lenny": {
+        "name": "Lenny N.",
+        "role": "Gitarre, ehem. Bass",
+        "active": false
+    },
+    "umpa": {
+        "name": "Umpalumpa",
+        "role": "Drummer",
+        "active": true
+    },
+    "boti": {
+        "name": "Boti",
+        "role": "2. Gitarrist",
+        "active": true
+    }
+}
