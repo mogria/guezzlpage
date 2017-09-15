@@ -14,9 +14,10 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #eee;
-$background-color: #111;
-$brand-color:      #fff;
+$text-color:       #111;
+$background-color: #eee;
+$alpha-bg-color:   rgba(red($background-color), green($background-color), blue($background-color), 0.8);
+$brand-color:      #000;
 
 $grey-color:       #929292;
 $grey-color-light: lighten($grey-color, 40%);

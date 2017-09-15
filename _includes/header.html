@@ -14,11 +14,14 @@
       </a>
 
       <div class="trigger">
+        <img src="{{ site.baseurl }}/img/nav2.png" width="550" height="360" usemap="#map" />
+        <map name="map">
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            <area shape="poly" coords="{{ my_page.coords }}" alt="{{ my_page.title }}" href="{{ my_page.url | prepend: site.baseurl }}" />
           {% endif %}
         {% endfor %}
+        </map>
       </div>
     </nav>
 

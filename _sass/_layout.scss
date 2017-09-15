@@ -4,11 +4,13 @@
 .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    min-height: 340px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
-    background-color: rgba(red($background-color), green($background-color), blue($background-color), 0.9)
+    background-image: url('../img/header.png');
+    background-repeat: no-repeat no-repeat; 
+    background-position: top center;
 }
 
 .site-title {
@@ -27,7 +29,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    margin-right: -130px;
 
     .menu-icon {
         display: none;
@@ -99,9 +101,16 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
-    background-color: rgba(red($background-color), green($background-color), blue($background-color), 0.8)
+    background-image: url('../img/footer.png');
+    background-repeat: no-repeat no-repeat; 
+    background-position: top center;
+
+    & > .wrapper {
+        margin-top: $spacing-unit * 3;
+       background-color: $alpha-bg-color;
+       box-shadow: 0px 0px 30px 30px $alpha-bg-color;
+    }
 }
 
 .footer-heading {
@@ -171,7 +180,49 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-    background-color: rgba(red($background-color), green($background-color), blue($background-color), 0.6)
+    background-image: url('../img/line-vertical-05.png')
+                    , url('../img/line-vertical-11.png')
+                    , url('../img/line-vertical-07.png')
+                    , url('../img/line-vertical-10.png')
+                    , url('../img/line-vertical-03.png')
+                    , url('../img/line-vertical-01.png')
+                    , url('../img/line-vertical-12.png')
+                    , url('../img/line-vertical-09.png')
+                    , url('../img/line-vertical-02.png')
+                    , url('../img/line-vertical-04.png')
+                    , url('../img/line-vertical-08.png')
+                    , url('../img/line-vertical-06.png')
+                    ;
+    background-repeat: no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     ;
+    background-position: calc(50% - 420px) top
+                       , calc(50% - 420px) 260px
+                       , calc(50% - 420px) 520px
+                       , calc(50% - 420px) 760px
+                       , calc(50% - 420px) 1040px
+                       , calc(50% - 420px) 1300px
+                       , calc(50% + 420px) top
+                       , calc(50% + 420px) 260px
+                       , calc(50% + 420px) 520px
+                       , calc(50% + 420px) 760px
+                       , calc(50% + 420px) 1040px
+                       , calc(50% + 420px) 1300px
+                       ;                   
+   & > .wrapper > *:first-child {
+       background-color: $alpha-bg-color;
+       box-shadow: 0px 0px 30px 30px $alpha-bg-color;
+   }
 }
 
 .page-heading {

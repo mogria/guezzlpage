@@ -23,7 +23,7 @@ convert_xcf_image_to_target_size() {
     echo "converting $xcffile"
 
     # printf "%s " \
-    convert -size "${width}x${height}" canvas:none -gravity "$gravity" "$xcffile"[1] $resize -composite "$outfile" &
+    convert -size "${width}x${height}" canvas:none -gravity "$gravity" "$xcffile"[1] $resize -composite "$outfile"
     processes[$!]="$xcffile"
     # echo
 }
@@ -42,12 +42,7 @@ for horizontal_line_xcf in "$orig_img_dir"/line-horizontal-??.xcf; do
         # "$horizontal_line_width" "$horizontal_line_height"
 done
 
-convert_xcf_image_to_target_size "$orig_img_dir/header-and-nav.xcf" h 1000 360 North
+convert_xcf_image_to_target_size "$orig_img_dir/header.xcf" h 1000 360 North
+convert_xcf_image_to_target_size "$orig_img_dir/nav.xcf" h 1000 360 North
+convert "$img_dir/nav.png" -crop 550x360+450+0 "$img_dir/nav2.png"
 convert_xcf_image_to_target_size "$orig_img_dir/footer.xcf" h 800 100
-
-
-# wait for all conversions to finish
-for job in `jobs -p`; do
-    wait "$job";
-    echo "finished ${processes[$job]}"
-done
