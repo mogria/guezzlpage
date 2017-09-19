@@ -7,3 +7,37 @@
         clear: right;
     }
 }
+
+.albums {
+    .album {
+        margin-top: $spacing-unit * 2;
+        .album-header {
+            margin-left: $spacing-unit;
+            .album-name {
+                font-weight: bold;
+                font-size: 32px;
+            }
+
+            .album-year {
+                font-size: 24px;
+            }
+        }
+        .songlist {
+            margin-top: $spacing-unit;
+            width: 500px;
+
+            li.song {
+                border-bottom: 1px solid $grey-color;
+                margin-top: $spacing-unit / 2;
+                font-size: 20px;
+                a {
+                    width: 800px;
+                }
+                .song-length {
+                    float: right;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

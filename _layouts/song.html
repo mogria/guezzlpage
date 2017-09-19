@@ -4,13 +4,21 @@ layout: default
 
 <article class="song">
     <header class="song-header">
-        <h1 class="song-title">{{ page.title }}</h1>
-        <p class="song-meta">
-            <span>{{ page.year }}</span>
-            <span>{{ page.author }}</span>
+        <h1 class="post-title song-title">{{ page.title }}</h1>
+        <p class="post-meta song-meta">
+            Gschribe im Jahr <span>{{ page.year }}</span> vom <span>{{ page.author }}</span>
         </p>
     </header>
     <div class="song-lyrics">
+        {% if page.images %}
+            <div class="song-images">
+                {% for image in page.images %}
+                    <img class="song-image" src="{{ image | relative_url }}" />
+                {% endfor %}
+
+            </div>
+        {% endif %}
         {{ content }}
+        <div class="clear" />
     </div>
 </article>

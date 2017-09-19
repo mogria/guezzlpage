@@ -12,19 +12,23 @@ coords: "322,11,290,42,297,93,319,135,403,142,412,171,473,167,523,148,499,62,494
 <div class="albums">
 {% for album in site.data.albums %}
     <div class="album">
-        <img class="album-cover" alt="{{ album[1].name }}" src="{{ site.baseurl }}{{ album[1].cover | default: "/img/cover-none-available.png" }}" />
-        <span class="album-name">{{ album[1].name }}</span>
-        <span class="album-name">{{ album[1].year}}</span>
+        <div class="album-header">
+            <h3 class="album-name">
+                <img class="album-cover" alt="{{ album[1].name }}" src="{{ site.baseurl }}{{ album[1].cover | default: "/img/cover-none-available.png" }}" />
+                {{ album[1].name }}
+                <span class="album-year">({{ album[1].year}})</span>
+            </h3>
+        </div/>
+        <ol class="songlist">
+        {% for song in site.songs %}
+        {% if song.album == album[0] %}
+            <li class="song">
+                <a href="{{song.url}}" class="song-title">{{ song.title }}</a>
+                <span class="song-length">{{ song.length | default: "XX:XX" }}</span>
+            </li>
+        {% endif %}
+        {% endfor %}
+        </ol>
     </div>
-    <ol class="songlist">
-    {% for song in site.songs %}
-    {% if song.album == album[0] %}
-        <li class="song">
-            <a href="{{song.url}}" class="song-title">{{ song.title }}</a>
-            <span class="song-length">{{ song.length | default: "XX:XX" }}</span>
-        </li>
-    {% endif %}
-    {% endfor %}
-    </ol>
 {% endfor %}
 </div>
