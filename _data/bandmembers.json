@@ -2,41 +2,49 @@
     "maikusan": {
         "name": "Maikusan",
         "role": "Sänger, Bassist",
+        "description": "De Puri Hass in Person.",
         "active": true
     },
     "titan": {
         "name": "Titan",
         "role": "Drummer",
+        "description": null,
         "active": false
     },
     "dandy": {
         "name": "Dandy",
         "role": "Musiker, Fründ",
+        "description": null,
         "active": false
     },
     "cmon": {
         "name": "Cmon",
         "role": "1. Gitarrist",
+        "description": null,
         "active": true
     },
     "mogli": {
         "name": "Mogli",
         "role": "Bassist, Sänger",
+        "description": null,
         "active": true
     },
     "lenny": {
         "name": "Lenny N.",
         "role": "Gitarre, ehem. Bass",
+        "description": null,
         "active": false
     },
     "umpa": {
         "name": "Umpalumpa",
         "role": "Drummer",
+        "description": null,
         "active": true
     },
     "boti": {
         "name": "Boti",
         "role": "2. Gitarrist",
+        "description": "Alles isch de Boti. Alles.",
         "active": true
     }
 }

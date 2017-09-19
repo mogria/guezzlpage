@@ -1,0 +1,34 @@
+.band-members {
+    margin: $spacing-unit;
+    margin-top: 0;
+    float: right;
+    width: 300px;
+
+    .band-member {
+        @extend %clearfix;
+
+        .image-box {
+            float : left;
+        }
+
+        .band-member-meta {
+            padding-top: $spacing-unit / 2;
+            .band-member-name {
+                display: block;
+                font-size: 24px;
+            }
+            .band-member-role {
+                display: block;
+            }
+            .band-member-description {
+                margin-top: $spacing-unit / 2;
+                display: block;
+                font-size: $small-font-size;
+            }
+        }
+    }
+
+    .band-member:last-child {
+        border-bottom: 0;
+    }
+}
