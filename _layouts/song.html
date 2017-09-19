@@ -6,7 +6,7 @@ layout: default
     <header class="song-header">
         <h1 class="post-title song-title">{{ page.title }}</h1>
         <p class="post-meta song-meta">
-            Gschribe im Jahr <span>{{ page.year }}</span> vom <span>{{ page.author }}</span>
+            Gschribe im Jahr <span>{{ page.year }}</span> vom <span>{{ site.data.bandmembers[page.author].name }}</span>
         </p>
     </header>
     <div class="song-lyrics">

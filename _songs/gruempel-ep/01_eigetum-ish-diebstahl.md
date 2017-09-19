@@ -4,6 +4,7 @@ layout: song
 title: Eigetum ish Diebstahl
 album: gruempel-ep
 year: 2015
+length: false
 ---
 
 **Stophe 1**  

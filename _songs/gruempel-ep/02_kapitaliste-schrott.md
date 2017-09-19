@@ -5,6 +5,7 @@ title: Kapitalisteschrott
 album: gruempel-ep
 year: 2015
 images: ["img/song-kapitalisteschrott-klo.png", "img/song-kapitalisteschrott-ubz.png"]
+length: false
 ---
 
 **Strope 1**  
