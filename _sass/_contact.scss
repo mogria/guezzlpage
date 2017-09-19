@@ -1,0 +1,13 @@
+.contact-email, .contact-facebook {
+    .image-box {
+        float: left;
+    }
+    .contact-name {
+        font-weight: bold;
+        padding-top: $spacing-unit;
+    }
+
+    .contact-description, .contact-name {
+        margin-left: $spacing-unit * 6;
+    }
+}

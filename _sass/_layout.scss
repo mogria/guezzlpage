@@ -14,9 +14,10 @@
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 100px;
     font-weight: 300;
-    line-height: 56px;
+    line-height: 256px;
+    margin-left: -50px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
@@ -102,9 +103,15 @@
  */
 .site-footer {
     padding: $spacing-unit 0;
-    background-image: url('../img/footer.png');
-    background-repeat: no-repeat no-repeat; 
-    background-position: top center;
+    background-image: url('../img/footer.png')
+                    , url('../img/style-flame.png')
+                    ;
+    background-repeat: no-repeat no-repeat 
+                     , no-repeat no-repeat 
+                     ;
+    background-position: top center
+                       , bottom right
+                       ;
 
     & > .wrapper {
         margin-top: $spacing-unit * 3;
@@ -258,6 +265,7 @@
 }
 
 .post-title {
+    font-weight: bold;
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
@@ -293,4 +301,11 @@
             font-size: 18px;
         }
     }
+}
+
+.image-box {
+    background-image: url(../img/box-drawn.png);
+    width: 100px;
+    height: 100px;
+    padding: $spacing-unit;
 }
