@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'jekyll-email-protect'
-gem 'jekyll-livereload'
+
+group :jekyll_plugins do
+    gem 'jekyll-email-protect'
+    gem 'jekyll-livereload'
+end
