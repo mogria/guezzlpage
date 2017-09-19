@@ -7,7 +7,7 @@
 
 # Site settings
 title: Güsel
-email: m0gr14@gmail.com
+email: güssl@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
     Güssel/Güsel/Güssl/Gösu-Band-Homepage. Grümpel Punk Band us Zug.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -23,3 +23,8 @@ collections:
     songs:
         output: true
         permalink: /:collection/:path
+
+# Jekyll Plugins
+plugins:
+- jekyll-livereload
+- jekyll-email-protect
