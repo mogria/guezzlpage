@@ -41,10 +41,10 @@
         "description": null,
         "active": true
     },
-    "boti": {
-        "name": "Boti",
+    "botti": {
+        "name": "Botti",
         "role": "2. Gitarrist",
-        "description": "Alles isch de Boti. Alles.",
+        "description": "Alles isch de Botti. Au de Hitler.",
         "active": true
     }
 }
