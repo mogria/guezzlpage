@@ -1,0 +1,9 @@
+.song {
+    .song-images > img {
+        margin-top: $spacing-unit;
+        margin-bottom: $spacing-unit;
+        display: block;
+        float: right;
+        clear: right;
+    }
+}

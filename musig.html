@@ -1,21 +1,30 @@
 ---
 layout: page
-title: musig
+title: Musig
 permalink: /musig/
 coords: "322,11,290,42,297,93,319,135,403,142,412,171,473,167,523,148,499,62,494,13,428,5,409,19,386,38,349,23" 
 ---
 
-<p>jaaaa mr mached voll de grümpel punk & so.</p>
+<p>Jaaaa mr mached voll de Grümpel-Punk mit schlechte Text &amp; so.</p>
 
-<p>Hie isch mal en liste vo allne üse songs:</p>
+<p>Hie isch mal en Liste vo allne üse songs, woner d'Text jewiils dezue findid. Gueti ufnahme hemmer im Moment nid. Falls aber intressi bestahd fragid üs doch eifach ah</p>
 
-<div class="songlist">
-{% for song in site.songs %}
-    <div class="song">
-        <a href="{{song.url}}" class="song-title">{{ song.title }}</a>
-        <span class="song-author">{{ song.author }}</span>
-        <span class="song-year">{{ song.year }}</span>
-        <span class="song-album">{{ site.data.albums[song.album].name }}</span>
+<div class="albums">
+{% for album in site.data.albums %}
+    <div class="album">
+        <img class="album-cover" alt="{{ album[1].name }}" src="{{ site.baseurl }}{{ album[1].cover | default: "/img/cover-none-available.png" }}" />
+        <span class="album-name">{{ album[1].name }}</span>
+        <span class="album-name">{{ album[1].year}}</span>
     </div>
+    <ol class="songlist">
+    {% for song in site.songs %}
+    {% if song.album == album[0] %}
+        <li class="song">
+            <a href="{{song.url}}" class="song-title">{{ song.title }}</a>
+            <span class="song-length">{{ song.length | default: "XX:XX" }}</span>
+        </li>
+    {% endif %}
+    {% endfor %}
+    </ol>
 {% endfor %}
 </div>
