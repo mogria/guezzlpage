@@ -9,6 +9,6 @@ let
 in rec {
     guezzelPageEnv = stdenv.mkDerivation rec {
         name = "guezzl-page-env";
-        buildInputs = [ guezzelPageBundlerEnv ];
+        buildInputs = [ guezzelPageBundlerEnv pkgs.pngcrush pkgs.imagemagick];
     };
 }
