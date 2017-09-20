@@ -1,8 +1,8 @@
 {
     "maikusan": {
-        "name": "Maikusan",
+        "name": "xMaikusanx",
         "role": "Sänger, Bassist",
-        "description": "De Puri Hass in Person.",
+        "description": "De puri Hass in Person.",
         "active": true
     },
     "titan": {
@@ -20,13 +20,13 @@
     "cmon": {
         "name": "Cmon",
         "role": "1. Gitarrist",
-        "description": null,
+        "description": "Gids eis?!",
         "active": true
     },
     "mogli": {
         "name": "Mogli",
         "role": "Bassist, Sänger",
-        "description": null,
+        "description": "Stahd immer nachem mittag uf.",
         "active": true
     },
     "lenny": {
@@ -38,13 +38,13 @@
     "umpa": {
         "name": "Umpalumpa",
         "role": "Drummer",
-        "description": null,
+        "description": "Schaffed, falls er nid arbeitslos isch.",
         "active": true
     },
     "botti": {
         "name": "Botti",
         "role": "2. Gitarrist",
-        "description": "Alles isch de Botti. Au de Hitler.",
+        "description": "Alles isch de Botti.",
         "active": true
     }
 }
