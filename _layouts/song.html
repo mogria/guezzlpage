@@ -2,14 +2,18 @@
 layout: default
 ---
 
-<article class="song">
+<article class="song" itemscope itemtype="http://schema.org/MusicRecording">
+    <meta itemprop="byArtist" itemscope itemtype="http://schema.org/MusicGroup">Güssl</meta>
     <header class="song-header">
-        <h1 class="post-title song-title">{{ page.title }}</h1>
+        <h1 class="post-title song-title" itemprop="name">{{ page.title }}</h1>
         <p class="post-meta song-meta">
-            Gschribe im Jahr <span>{{ page.year }}</span> vom <span>{{ site.data.bandmembers[page.author].name }}</span>
+            Gschribe im Jahr <span>{{ page.year }}</span> vom
+            <span itemprop="lyricist author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">{{ site.data.bandmembers[page.author].name }}</span>
+            </span>
         </p>
     </header>
-    <div class="song-lyrics">
+    <div class="song-lyrics" itemprop="lyrics">
         {% if page.images %}
             <div class="song-images">
                 {% for image in page.images %}

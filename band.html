@@ -14,32 +14,32 @@ coords: "34,47,34,85,81,111,138,99,172,96,215,96,251,102,284,92,286,64,278,18,27
 {% assign umpa = site.data.bandmembers.umpa.name %}
 {% assign botti = site.data.bandmembers.botti.name %}
 
-<div class="band-members">
-<h3>Aktuelli Mitgliedr</h3>
+<div itemscope= itemtype="http://schema.org/MusicGroup">
+<div class="band-members" itemscope itemtype="http://schema.org/ItemList">
+<h3 itemprop="name">Aktuelli Mitgliedr</h3>
 {% for member in site.data.bandmembers %}
     {% if member[1].active %}
-        <div class="band-member">
+        <div class="band-member" itemprop="itemListElement" itemscope itemtype="http://schema.org/Person">
             <div class="image-box">
-                <img class="band-member-portrait" src="{{site.baseurl}}/img/bandmember-{{member[0]}}.png" />
+                <img class="band-member-portrait" itemprop="image" src="{{site.baseurl}}/img/bandmember-{{member[0]}}.png" />
             </div>
             <div class="band-member-meta">
-                <strong class="band-member-name">{{member[1].name}}</strong>
-                <em class="band-member-role">{{member[1].role}}</em>
-                <span class="band-member-description">{{member[1].description}}</span>
+                <strong class="band-member-name" itemprop="name">{{member[1].name}}</strong>
+                <em class="band-member-role" itemprop="position">{{member[1].role}}</em>
+                <span class="band-member-description" itemprop="description">{{member[1].description}}</span>
             </div>
         </div>
     {% endif %}
 {% endfor %}
 </div>
 
-<h2>De Name</h2>
-
-<p>De Name isch Programm. Mr wüssid immr nu nid we mr en richtig
-schriibt, mr hend keis schwiizerdütsch Wörterbuech gfunde.</p>
+<p itemprop="about">Mir machid schlechte <span itemprop"genre">Grümpel-Punk</span> us Zug.  De Name
+isch Programm. Mr wüssid immr nu nid we mr en richtig schriibt, mr hend
+keis schwiizerdütsch Wörterbuech gfunde.</p>
 
 <h2>Gründigsgschicht</h2> 
 
-<p>Güzzl hed sich im 2015 ungefähr gründet. Agfange heds demit das
+<p><span itemprop="name">Güssl</span> hed sich im 2015 ungefähr gründet. Agfange heds demit das
 de {{maikusan}} es Agebot füre Bandruum becho hed abr nu kei Band
 gha hed. Das Problem hed sich schnell glöst won er sich denn denkt
 hed er macht en Punk-Band us lüt wo nüd mit musig z'tue hed, will
@@ -69,3 +69,4 @@ umegüssle.</p>
 de {{umpa}} isch als nüe Drummer dezue cho. Au hed nü de {{botti}}
 die 2. Gitarre übernu anstatt de {{lenny}}</p>
 
+</div>
