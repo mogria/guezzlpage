@@ -7,7 +7,7 @@ year: 2015
 length: false
 ---
 
-**Stophe 1**  
+**1. Strophe**  
 Ich weiss wo alli kameras im lade sind  
 mach mini jagge uf und handle gschwind  
 Laufe bim kassierer dure, blinzle kurz  
@@ -19,7 +19,7 @@ Mir ghörts nid abr ish doch egal
 Ja Eigetum ish diebstahl  
 Und das ish gar nid asozial
 
-**Strophe 2**  
+**2. Strophe**  
 Mit de kollege innere bar am sufe  
 D'bier stend ufem gliche hufe  
 Welles vo dene ghört ächt mir?  
@@ -31,7 +31,7 @@ Wemm das bier ghört ish doch egal
 Ja Eigetum ish Diebstahl  
 Das heisst nur meh bier für all
 
-**Strophe 3**  
+**3. Strophe**  
 Ich hock ufem stuehl vor de bar  
 In zug passt er au wunderbar  
 De stuehl wär e scho lang mine  

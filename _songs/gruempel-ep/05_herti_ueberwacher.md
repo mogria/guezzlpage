@@ -4,10 +4,10 @@ layout: song
 title: De Herti Überwacher
 album: gruempel-ep
 year: 2015
-images: []
+images: ["img/song-herti-ueberwacher.png"]
 length: false
 ---
-**Strophe 1**  
+**1. Strophe**  
 Hesch du ächt öppis z'verstecke  
 und bisch under de gliche decke  
 we'd terrorischte wo mer jagid  
@@ -19,11 +19,11 @@ das gaht doch immer in ornig
 Mer schaffid de gläserni bürger  
 D'agenda vom grosse brüeder  
 
-**Strophe 2**  
+**2. Strophe**  
 Mer beobachtid jede schritt  
 und vorallem jede usschnitt  
 Mer hend kameras Im WC  
 Und mer hend üch scho alli gse  
 
-**Strophe 3**  
+**3. Strophe**  
 (Gids nid)

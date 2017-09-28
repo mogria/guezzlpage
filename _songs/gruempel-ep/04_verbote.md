@@ -20,13 +20,13 @@ Alles ish Verbote! (x3)
 Verbote, Verbote,  
 S'Gsetz cha mich nid stoppe.
 
-**Strophe 2**  
+**2. Strophe**  
 Güsl ghört uf de bode,  
 hör uf übr littering z'jodle.  
 Lah mich doch in rueh,  
 du bisch doch en scheiss Fascho chueh.
 
-**Strophe 3**  
+**3. Strophe**  
 Ich schmeisse fläsche ad wand  
 und schlisse fenschter mit de hand.  
 Er sind doch alli au debi,  

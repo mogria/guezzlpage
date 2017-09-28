@@ -8,7 +8,7 @@ images: ["img/song-kapitalisteschrott-klo.png", "img/song-kapitalisteschrott-ubz
 length: false
 ---
 
-**Strope 1**  
+**1. Strophe**  
 Ich stahne am Bahnhof, mues gröber gu pisse  
 En leeri blase, ish was ich vermisse  
 Abr denn hanich gse,  
@@ -20,13 +20,13 @@ Kapitalisteschrott
 Will ich bi scho lang bankrott  
 Kapitaliste
 
-**Strophe 2**  
+**2. Strophe**  
 Bi im Mac und bstell mer es Happy Meal  
 Ich meine, das ish scho de real deal  
 Nu chle sauce ad pommes dra  
 Abr Ketchup chosted extra
 
-**Strophe 3**  
+**3. Strophe**  
 Voll hacke z'züri i de nacht unterwegs  
 Will ich ha de bar nu schnell en stange g'EX'd  
 Chas zugbillet nid bläche  

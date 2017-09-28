@@ -4,11 +4,11 @@ layout: song
 title: Immer wenn ich ufstah
 album: gruempel-ep
 year: 2015
-images: []
+images: ["img/song-wenn-ich-ufstah.png"]
 length: false
 ---
 
-**Strophe 1**  
+**1. Strophe**  
 Ich mache was ich will  
 stah uf wenn ich wet  
 Bi d'nacht lang uf und chills  
@@ -28,7 +28,7 @@ isch scho mittag
 Und ich mues leider gstah  
 dass ich das mag  
 
-**Strophe 2**   
+**2. Strophe**   
 Ihr fraged üch etz sicher  
 we das gah cha  
 Nimmeds mal gmüetlicher  
@@ -38,7 +38,7 @@ d'möglichkeit
 D'antwort heisst durhafti  
 arbetslosigkeit  
 
-**Strophe 3**   
+**3. Strophe**   
 Lueg doch nid so niidisch  
 frag nid so dumm  
 du hocksch a dim schriibtisch  

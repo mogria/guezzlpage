@@ -4,11 +4,11 @@ layout: song
 title: Geld isch au Grüen
 album: gruempel-ep
 year: 2016
-images: []
+images: ["img/song-geld-ish-au-gruen.png"]
 length: false
 ---
 
-**Strophe 1**  
+**1. Strophe**  
 Neuschtens isch grüen si de hit  
 Mr wend ca$h und drum machemer mit  
 Es nüs grüens Logo abr schnell  
@@ -20,7 +20,7 @@ Mr sind grüen und alli sellids schnalle
 Denn mir achtid uf d'Umwelt  
 vorusgsetzt es gid gnueg Geld  
 
-**Strope2**  
+**2. Strophe**  
 Dochs wichtigte isch alles z'bewerbe  
 En frag vom Marketing und ire Scherge  
 Es gahd nid drum d'welt z'rette  
