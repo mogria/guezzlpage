@@ -9,6 +9,10 @@
 
         .image-box {
             float : left;
+            img {
+                display: block;
+                margin: auto;
+            }
         }
 
         .band-member-meta {
