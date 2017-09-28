@@ -28,7 +28,7 @@ convert_xcf_image_to_target_size() {
     echo "converting $xcffile"
 
     tmpfile="$(mktemp).png"
-    convert -define png:exclude-chunks=date -size "${width}x${height}" canvas:none -gravity "$gravity" "$xcffile"[1] $resize -composite "$tmpfile"
+    convert -define png:exclude-chunks=date -gravity "$gravity" "$xcffile"[1] $resize  -size "100%x100%" canvas:none -composite "$tmpfile"
     pngcrush "$tmpfile" "$outfile" 2> /dev/null > /dev/null
 }
 
@@ -55,12 +55,18 @@ for xcf in "$orig_img_dir"/bandmember-*.xcf ; do
 done
 
 
-convert_xcf_image_to_target_size "$orig_img_dir"/box-drawn.xcf v 160 160
+convert_xcf_image_to_target_size "$orig_img_dir"/box-drawn.xcf h 160 160
 
-for xcf in "$orig_img_dir"/{song,style}-*.xcf; do
-    convert_xcf_image_to_target_size "$xcf" v \
+for xcf in "$orig_img_dir"/song-*.xcf; do
+    convert_xcf_image_to_target_size "$xcf" h \
+        430 300
+done
+
+for xcf in "$orig_img_dir"/style-*.xcf; do
+    convert_xcf_image_to_target_size "$xcf" h \
         300 300
 done
+
 
 for xcf in "$orig_img_dir"/logo-*.xcf; do
     convert_xcf_image_to_target_size "$xcf" h \
