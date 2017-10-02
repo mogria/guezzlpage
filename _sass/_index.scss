@@ -1,0 +1,9 @@
+.post-list {
+    li {
+        .post-meta {
+            margin-top: 8px;
+            float: left;
+            width: 4 * $spacing-unit;
+        }
+    }
+}

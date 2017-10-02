@@ -6,12 +6,12 @@ coords: "20,142,73,207,108,209,149,248,220,219,268,163,270,127,207,112,188,109,1
 
 <div class="home">
 
-  <h1 class="post-title">Niuws:</h1>
+  <h1 class="post-title">Niuws</h1>
 
   <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
     {% for post in site.posts %}
       <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem http://schema.org/BlogPosting">
-        <span class="post-meta" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <div class="post-meta" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</div>
 
         <h2>
           <a class="post-link" itemprop="url name" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
