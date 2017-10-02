@@ -102,7 +102,6 @@
 .site-footer {
     padding: $spacing-unit * 3 0;
     background-image: url('../img/footer.png')
-                    , url('../img/style-flame.png')
                     , url('../img/line-vertical-02.png')
                     , url('../img/line-vertical-03.png')
                     , url('../img/line-horizontal-02.png')
@@ -115,10 +114,8 @@
                      , no-repeat no-repeat 
                      , no-repeat no-repeat 
                      , no-repeat no-repeat 
-                     , no-repeat no-repeat 
                      ;
     background-position: top center
-                       , bottom right
                        , calc(50% - 420px) top
                        , calc(50% + 420px) top
                        , calc(50% - 280px) bottom
@@ -218,8 +215,10 @@
                     , url('../img/line-horizontal-04.png')
                     , url('../img/line-horizontal-05.png')
                     , url('../img/line-horizontal-04.png')
+                    , url('../img/style-flame.png')
                     ;
     background-repeat: no-repeat no-repeat
+                     , no-repeat no-repeat
                      , no-repeat no-repeat
                      , no-repeat no-repeat
                      , no-repeat no-repeat
@@ -256,6 +255,7 @@
                        , calc(50% - 280px) bottom
                        , center bottom
                        , calc(50% + 280px) bottom
+                       , right top
                        ;                   
    & > .wrapper > *:first-child {
        background-color: $alpha-bg-color;
@@ -281,6 +281,7 @@
     margin-bottom: $spacing-unit / 2;
     font-size: $small-font-size;
     color: $grey-color;
+    text-align: center;
 }
 
 .post-link {
@@ -300,12 +301,19 @@
 .post-title {
     font-weight: bold;
     font-size: 42px;
-    letter-spacing: -1px;
+    /* text-transform: uppercase; */
+    text-align: center;
+    letter-spacing: 3px;
     line-height: 1;
+    padding-bottom: 40px;
 
     @include media-query($on-laptop) {
         font-size: 36px;
     }
+    background-image: url(../img/line-horizontal-04.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    
 }
 
 .post-content {
