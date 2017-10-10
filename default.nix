@@ -1,5 +1,6 @@
+{ pkgs ? import <nixpkgs> {} }:
 let
-    pkgs = import <nixpkgs> {};
+    inherit pkgs;
     stdenv = pkgs.stdenv;
     guezzelPageBundlerEnv = pkgs.bundlerEnv rec {
         name = "guezzl-page";
