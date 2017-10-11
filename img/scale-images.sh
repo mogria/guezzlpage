@@ -3,13 +3,34 @@
 img_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 orig_img_dir="$img_dir/orig"
 
+FILES_ALLOWED_TO_CONVERT=("$@")
+
 vertical_line_width=80
 vertical_line_height=300
 
 horizontal_line_width=400
 horizontal_line_height=100
 
+is_allowed_to_convert() {
+    local xcffile="$1";
+    if [ 0 -eq "${#FILES_ALLOWED_TO_CONVERT[@]}" ]; then
+        return 0
+    fi
+
+    for f in "${FILES_ALLOWED_TO_CONVERT[@]}"; do
+        if [[ "$f" -ef "$xcffile" ]]; then
+            return 0
+        fi
+    done
+    
+    return 1
+
+}
+
 convert_xcf_image_to_target_size() {
+    if ! is_allowed_to_convert "$1"; then
+        return 1
+    fi
     local xcffile="$1"
     local vertical_horizontal="$2"
     local width="$3"
@@ -75,5 +96,7 @@ done
 
 convert_xcf_image_to_target_size "$orig_img_dir/header.xcf" h 1000 360 North
 convert_xcf_image_to_target_size "$orig_img_dir/nav.xcf" h 1000 360 North
-convert "$img_dir/nav.png" -define png:exclude-chunks=date -crop 550x360+450+0 "$img_dir/nav2.png"
+convert "$img_dir/nav.png" -define png:exclude-chunks=date -crop 480x270+485+0 "$img_dir/nav2.png"
 convert_xcf_image_to_target_size "$orig_img_dir/footer.xcf" h 800 100
+
+exit 0
