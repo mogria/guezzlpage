@@ -50,7 +50,7 @@ convert_xcf_image_to_target_size() {
 
     tmpfile="$(mktemp).png"
     convert -define png:exclude-chunks=date -gravity "$gravity" "$xcffile"[1] $resize  -size "100%x100%" canvas:none -composite "$tmpfile"
-    pngcrush "$tmpfile" "$outfile" 2> /dev/null > /dev/null
+    pngcrush -brute -reduce -rem tIME -rem bKGD -rem hIST "$tmpfile" "$outfile" 2> /dev/null > /dev/null
 }
 
 # convert vertical line images
@@ -94,7 +94,7 @@ for xcf in "$orig_img_dir"/logo-*.xcf; do
         350 200
 done
 
-convert_xcf_image_to_target_size "$orig_img_dir/header.xcf" h 1000 360 North
+convert_xcf_image_to_target_size "$orig_img_dir/header.xcf" h 920 350 North
 convert_xcf_image_to_target_size "$orig_img_dir/nav.xcf" h 1000 360 North
 convert "$img_dir/nav.png" -define png:exclude-chunks=date -crop 480x270+485+0 "$img_dir/nav2.png"
 convert_xcf_image_to_target_size "$orig_img_dir/footer.xcf" h 800 100

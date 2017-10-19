@@ -1,4 +1,5 @@
 .contact-email, .contact-facebook {
+
     .image-box {
         float: left;
     }
@@ -9,5 +10,18 @@
 
     .contact-description, .contact-name {
         margin-left: $spacing-unit * 6;
+    }
+
+    @include media-query($on-palm) {
+        .image-box {
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-description, .contact-name {
+            margin-left: 0px;
+            text-align: center;
+        }
     }
 }

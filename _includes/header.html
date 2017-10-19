@@ -7,15 +7,23 @@
     </a>
 
     <nav class="site-nav">
-        <img src="{{ site.baseurl }}/img/nav2.png" width="550" height="336" usemap="#map" />
-        <map name="map">
+        <ul class="menu">
         {% for my_page in site.pages %}
-          {% if my_page.title %}
-            <area shape="poly" coords="{{ my_page.coords }}" alt="{{ my_page.title }}" href="{{ my_page.url | prepend: site.baseurl }}" />
+          {% if my_page.has_menu_link %}
+          <li style="
+              top: {{ my_page.menu_link_top }};
+              left: {{ my_page.menu_link_left }};
+              width: {{ my_page.menu_link_width }};
+              height: {{ my_page.menu_link_height }};
+              "
+              >
+              <a href="{{ my_page.url | prepend: site.baseurl }}"
+                  name="{{ my_page.title }}"
+                 ></a>
+          </li> 
           {% endif %}
         {% endfor %}
-        </map>
-      </div>
+        </ul>
     </nav>
 
   </div>

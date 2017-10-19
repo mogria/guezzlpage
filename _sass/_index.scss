@@ -1,9 +1,18 @@
 .post-list {
     li {
+        display: block;
         .post-meta {
-            margin-top: 8px;
             float: left;
             width: 4 * $spacing-unit;
+
+        }
+
+        @include media-query($on-palm) {
+            text-align: center;
+            .post-meta { 
+                float: none;
+                width: 100%;
+            }
         }
     }
 }

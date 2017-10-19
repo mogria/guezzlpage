@@ -4,8 +4,18 @@
     float: right;
     width: 300px;
 
+    @include media-query($on-laptop) {
+        width: 100%;
+        float: none;
+        .band-member {
+            float: left;
+            width: 300px;
+        }
+    }
+    @extend %clearfix;
+
     .band-member {
-        @extend %clearfix;
+         @extend %clearfix;
 
         .image-box {
             float : left;

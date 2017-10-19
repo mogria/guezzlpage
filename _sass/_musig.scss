@@ -24,15 +24,13 @@
         }
         .songlist {
             margin-top: $spacing-unit;
-            width: 500px;
+            width: 100%;
+            max-width: 500px;
 
             li.song {
                 border-bottom: 1px solid $grey-color;
                 margin-top: $spacing-unit / 2;
                 font-size: 20px;
-                a {
-                    width: 800px;
-                }
                 .song-length {
                     float: right;
                     display: inline-block;
