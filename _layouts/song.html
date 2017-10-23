@@ -3,9 +3,10 @@ layout: default
 ---
 
 <article class="song" itemscope itemtype="http://schema.org/MusicRecording">
-    <meta itemprop="byArtist" itemscope itemtype="http://schema.org/MusicGroup">Güssl</meta>
     <header class="song-header">
-        <h1 class="post-title song-title" itemprop="name">{{ page.title }}</h1>
+        <h1 class="post-title song-title" itemprop="name">
+            <span itemprop="byArtist" itemscope itemtype="http://schema.org/MusicGroup">{{ site.title | sample }}</span> -
+            {{ page.title }}</h1>
         <p class="post-meta song-meta">
             Gschribe im Jahr <span>{{ page.year }}</span> vom
             <span itemprop="lyricist author" itemscope itemtype="http://schema.org/Person">
