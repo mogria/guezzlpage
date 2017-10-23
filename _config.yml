@@ -22,7 +22,7 @@ markdown: kramdown
 collections:
     songs:
         output: true
-        permalink: /:collection/:path
+        permalink: /:collection/:path.:output_ext
 
 # Jekyll Plugins
 plugins:
