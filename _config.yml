@@ -23,6 +23,18 @@ collections:
         output: true
         permalink: /:collection/:path:output_ext
 
+# sitemap plugin configuration
+sitemap:
+    filename: "/sitemap.xml"
+    exclude:
+        - "/feed.xml"
+        - "/css/main.scss"
+    include_posts:
+        - "/index.html"
+    collections:
+        - "posts"
+        - "songs"
+
 # Jekyll Plugins
 plugins:
 - jekyll-livereload
