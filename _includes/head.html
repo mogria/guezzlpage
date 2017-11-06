@@ -20,7 +20,7 @@
   <meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema}}"/>
   <meta property="og:article:author" content="{{ page.author }}"/>
   <meta property="og:title"         content="{{ page.title }}" />
-  <meta property="og:description"   content="Schlechti Umpa-Umpa Grümpel-Punk band us Zug" />
+  <meta property="og:description"   content="{{ page.excerpt | strip_html }}" />
   <meta property="og:image"         content="{% if page.images %}{{ page.images[0] }}{% else %}{{ site.url }}{{ site.baseurl}}/{{ site.logo | sample }}{% endif %}" />
   {% endif %}
 
