@@ -1,3 +1,5 @@
+---
+---
 function swap_titles(interval, num_images) {
     var site_title = $(".site-title > img");
 
@@ -27,12 +29,10 @@ function embed_facebook_sdk() {
   $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
     FB.init({
       appId: '696265037233127',
+      xfbml: true,
       version: 'v2.10'
     });
-      console.log('embedding facebook');
-    FB.getLoginStatus(function() {
-        console.log(arguments);
-    });
+    FB.AppEvents.logPageView();
   });
 }
 
@@ -40,21 +40,12 @@ function htmlencode(v) {
     return $("<div />").html(v).text();
 }
 
-function get_share_button(url) {
-    return $('<div class="fb-share-button" data-href="' + htmlencode(url)
-        + '" data-layout="button_count" data-size="small" '
-        + ' data-mobile-iframe="true">'
-        + '<a class="fb-xfbml-parse-ignore" target="_blank"'
-        + ' href="https://www.facebook.com/sharer/sharer.php?u=' + htmlencode(encodeURIComponent(url))
-        + '&src=sdkpreparse">Teilen</a></div>');
-}
-
-
 function toggle_asoziali_medie() {
     var $c = $('.asoziali-medie');
-    embed_facebook_sdk();
-    var new_content = get_share_button(location.href);
-    $c.html(new_content.html())
+    $.get({{ site.baseurl | jsonify }} + "/asoziali-medie.html", function(new_content) {
+        $c.html(new_content.replace('@URL@', htmlencode(location.href)));
+        embed_facebook_sdk();
+    });
 }
 
 jQuery(function($) {
