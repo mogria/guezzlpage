@@ -8,11 +8,10 @@ function swap_titles(interval, num_images) {
     }
 
     setInterval(function() {
-        current_image = site_title.attr('src');
-        image_num = (rand_index(num_images) + 1)
-        image_num = image_num < 10 ? "0" + image_num : image_num;
-        current_image = current_image.replace(/\-\d{2}.png$/, "-" + image_num + ".png");
-        site_title.attr('src', current_image);
+        var baseurl = {{ site.baseurl | jsonify }}
+        var logos = {{ site.logo | jsonify }};
+        var index = rand_index(num_images);
+        site_title.attr('src', baseurl + "/" + logos[index]);
     }, interval);
 }
 
