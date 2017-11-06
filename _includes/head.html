@@ -6,11 +6,23 @@
   <title>{% if page.title %}{{ page.title }} - {{ site.title | sample }}{% else %}{{ site.title | sample }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  {% if page.layout == 'default' %}
   <meta property="og:url"           content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="{{ site.title | sample }}" />
   <meta property="og:description"   content="Schlechti Umpa-Umpa Grümpel-Punk band us Zug" />
   <meta property="og:image"         content="{{ site.url }}{{ site.baseurl}}/{{ site.logo | sample }}" />
+  {% endif %}
+
+  {% if page.layout == 'post' %}
+  <meta property="og:url"           content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:type"          content="article" />
+  <meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema}}"/>
+  <meta property="og:article:author" content="{{ page.author }}"/>
+  <meta property="og:title"         content="{{ page.title }}" />
+  <meta property="og:description"   content="Schlechti Umpa-Umpa Grümpel-Punk band us Zug" />
+  <meta property="og:image"         content="{% if page.images %}{{ page.images[0] }}{% else %}{{ site.url }}{{ site.baseurl}}/{{ site.logo | sample }}{% endif %}" />
+  {% endif %}
 
   <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
 
