@@ -17,7 +17,7 @@ Am Schluss brätschged denn nu "The Butcher Sisters" us Dütschland mit bizzli, 
 
 Anschiinend gids au nu en DJ oder so, stahd uf de i45 websiite.
 
-![Butcher Sisters / Industrie 45 / Flyer](http://i45.ch/nsb-uploads/img-2487.jpg)
+![Butcher Sisters / Industrie 45 / Flyer]({{ site.baseurl }}/img/posts/butcher-sisters-industrie45-flyer.jpg)
 
 Hie nu de Event uf de Industrie 45 websiite:  
 [http://i45.ch/?d=745](http://i45.ch/?d=745&t=The+Butcher+Sisters+at+William%27s+and+Timmy%27s+Birthday)
