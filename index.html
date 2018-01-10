@@ -20,6 +20,8 @@ menu_link_left: 0%
         <h2>
           <a class="post-link" itemprop="url name" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        <p>{{ post.excerpt }} <a class="post-read-more-link" itemprop="url name" href="{{ post.url | prepend: site.baseurl }}">Wiiterlese....</a></p>
+
       </li>
     {% endfor %}
   </ul>
