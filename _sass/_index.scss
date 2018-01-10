@@ -1,10 +1,16 @@
 .post-list {
     li {
+        h2 {
+            @extend %clearfix;
+            .post-link {
+                text-decoration: none;
+            }
+        }
         display: block;
         .post-meta {
             float: left;
             width: 4 * $spacing-unit;
-
+            height: 100%;
         }
 
         @include media-query($on-palm) {
