@@ -28,4 +28,37 @@ layout: default
     </div>
   </div>
 
+  <div class="comment-form-wrapper">
+      <h3 class="comment-form-title">Schriib doch irgend en {{ site.title | sample }}-Driischiss-Kommentar drundr... es würmi dochnu freuä ;)</h3>
+      <form action="dynamic/comment.php" method="post">
+          <input type="text" name="commenter_name" placeholder="Diin Name" />
+
+          <input type="text" name="commenter_title" placeholder="Kommentar Titel" />
+          <textarea name="comment" placeholder="Diin driischiss Kommentar ..."></textarea>
+
+          <input type="submit" name="submit" text="Abschicke &amp; Drischiissä" />
+      </form>
+  </div>
+
+  <div class="comments">
+      {% for comment in site.comments %}
+      {% if comment.post_id == page.id %}
+      <article class="comment">
+          <p class="comment-meta">
+          De <strong class="comment-author">{{ comment.author }}</strong>
+          hed am <span class="comment-date">{{ comment.date | date: "%b %-d, %Y" }}</span> gschribe ... 
+          </p>
+          <h1>{{ comment.title }}</h1>
+          <p class="comment-content">
+            {{ comment.content }}
+          </p>
+      </article>
+      {% endif %}
+      {% else %}
+      <div class="no-comments">
+          Ja alter, da heds nu kei kommentär. Schriib doch selber eine, wenns besser chasch.
+      </div>
+      {% endfor %}
+  </div>
+
 </article>
