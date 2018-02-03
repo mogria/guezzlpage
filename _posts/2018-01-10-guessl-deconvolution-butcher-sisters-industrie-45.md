@@ -1,13 +1,13 @@
 ---
 author: mogli
 layout: post
-title:  "Uftritt i de i45 mit The Butcher Sisters & Deconvolution, 23. Februar"
+title:  "Uftritt i de i45 mit The Butcher Sisters & Deconvolution, 24. Februar"
 date:   2018-01-10 23:21:09+01:00
 categories: uftritt
 ---
 
 
-Hey sali zäme widrmal. Au im nüe Jahr güsslemer wider überall mal dure. Am 23. Februar spilemer sicher mal i de Industrie 45 in Zug mit [Deconvolution](https://deconvolution.bandcamp.com/) (HC, Solothurn) und [The Butcher Sisters](https://de-de.facebook.com/thebutchersisters/) (HC/Beatdown, DE).
+Hey sali zäme widrmal. Au im nüe Jahr güsslemer wider überall mal dure. Am 24. Februar spilemer sicher mal i de Industrie 45 in Zug mit [Deconvolution](https://deconvolution.bandcamp.com/) (HC, Solothurn) und [The Butcher Sisters](https://de-de.facebook.com/thebutchersisters/) (HC/Beatdown, DE).
 
 Mr räblid zersch uf de bühni ab, machid üch gfasst ufem gueti show, denn mr spilid lokal uf ere geile bühne womer vill schissdreck und richtig unnötigs zügs cha mache ;-).
 
