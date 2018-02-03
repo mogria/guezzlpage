@@ -11,7 +11,11 @@ layout: default
         {% if page.author %}
             vom  
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                {% if site.data.bandmembers[page.author] %}
                 <span itemprop="name">{{ site.data.bandmembers[page.author].name }}</span>
+                {% else %}
+                <span itemprop="name">{{ page.author }}</span>
+                {% endif %}
             </span>
         {% endif %}
     </p>
