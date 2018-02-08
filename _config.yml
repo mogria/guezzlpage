@@ -24,6 +24,9 @@ collections:
         output: true
         permalink: /:collection/:path:output_ext
 
+# exclude files from being handled by jekyll at all 
+exclude: [ "bin" ]
+
 # sitemap plugin configuration
 sitemap:
     filename: "/sitemap.xml"
