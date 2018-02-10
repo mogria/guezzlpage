@@ -354,6 +354,8 @@
             font-size: 18px;
         }
     }
+
+    @extend %clearfix;
 }
 
 .image-box {

@@ -1,0 +1,29 @@
+
+.post-content {
+    h2 {
+        &:before {
+            display: table;
+            padding-top: 30px;
+            clear: both;
+            content: "";
+        }
+    }
+
+    p > .gdt-img {
+        display: block;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 0;
+        float: left;
+        @extend %clearfix;
+    }
+
+    p:nth-child(even) > .gdt-img {
+        display: block;
+        margin-bottom: 20px;
+        margin-right: 0px;
+        margin-left: 20;
+        float: right;
+        @extend %clearfix;
+    }
+}
