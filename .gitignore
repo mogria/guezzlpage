@@ -4,3 +4,5 @@ _site/
 *.sw*
 *~
 .bundle/
+DSC_*.jpg
+img/posts/gdt-next
