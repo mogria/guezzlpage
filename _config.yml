@@ -33,6 +33,7 @@ sitemap:
     exclude:
         - "/feed.xml"
         - "/css/main.scss"
+        - "/js/main.js"
     include_posts:
         - "/index.html"
     collections:
