@@ -26,8 +26,6 @@ collections:
     comments:
         output: false
 
-# exclude files from being handled by jekyll at all 
-exclude: [ "bin" ]
 
 # sitemap plugin configuration
 sitemap:
@@ -43,7 +41,7 @@ sitemap:
         - "songs"
 
 # Files which should not be copied over to _site
-exclude: ["LICENSE", "README.md", "gemset.nix", "default.nix", "Gemfile", "Gemfile.lock", "composer.json", "composer.lock", "vendor"]
+exclude: ["bin", "LICENSE", "README.md", "gemset.nix", "default.nix", "Gemfile", "Gemfile.lock", "composer.json", "composer.lock", "vendor"]
 
 # Jekyll Plugins
 plugins:
