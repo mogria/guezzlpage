@@ -189,18 +189,31 @@
  */
 .page-content {
     padding: $spacing-unit * 3 0;
+
     background-image: url('../img/line-vertical-05.png')
                     , url('../img/line-vertical-11.png')
-                    , url('../img/line-vertical-07.png')
-                    , url('../img/line-vertical-10.png')
-                    , url('../img/line-vertical-03.png')
-                    , url('../img/line-vertical-01.png')
-                    , url('../img/line-vertical-12.png')
-                    , url('../img/line-vertical-09.png')
-                    , url('../img/line-vertical-02.png')
-                    , url('../img/line-vertical-04.png')
                     , url('../img/line-vertical-08.png')
+                    , url('../img/line-vertical-02.png')
+                    , url('../img/line-vertical-12.png')
+                    , url('../img/line-vertical-10.png')
+                    , url('../img/line-vertical-10.png')
+                    , url('../img/line-vertical-09.png')
+                    , url('../img/line-vertical-08.png')
+                    , url('../img/line-vertical-03.png')
+                    , url('../img/line-vertical-07.png')
+                    , url('../img/line-vertical-01.png')
+                    , url('../img/line-vertical-04.png')
+                    , url('../img/line-vertical-02.png')
                     , url('../img/line-vertical-06.png')
+                    , url('../img/line-vertical-01.png')
+                    , url('../img/line-vertical-07.png')
+                    , url('../img/line-vertical-04.png')
+                    , url('../img/line-vertical-03.png')
+                    , url('../img/line-vertical-05.png')
+                    , url('../img/line-vertical-09.png')
+                    , url('../img/line-vertical-06.png')
+                    , url('../img/line-vertical-12.png')
+                    , url('../img/line-vertical-11.png')
                     , url('../img/line-horizontal-03.png')
                     , url('../img/line-horizontal-02.png')
                     , url('../img/line-horizontal-01.png')
@@ -228,6 +241,18 @@
                      , no-repeat no-repeat
                      , no-repeat no-repeat
                      , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
                      ;
     background-position: -webkit-calc(50% - 420px) top
                        , -webkit-calc(50% - 420px) 260px
@@ -235,12 +260,24 @@
                        , -webkit-calc(50% - 420px) 760px
                        , -webkit-calc(50% - 420px) 1040px
                        , -webkit-calc(50% - 420px) 1300px
+                       , -webkit-calc(50% - 420px) 1560px
+                       , -webkit-calc(50% - 420px) 1820px
+                       , -webkit-calc(50% - 420px) 2080px
+                       , -webkit-calc(50% - 420px) 2340px
+                       , -webkit-calc(50% - 420px) 2600px
+                       , -webkit-calc(50% - 420px) 2860px
                        , -webkit-calc(50% + 420px) top
                        , -webkit-calc(50% + 420px) 260px
                        , -webkit-calc(50% + 420px) 520px
                        , -webkit-calc(50% + 420px) 760px
                        , -webkit-calc(50% + 420px) 1040px
                        , -webkit-calc(50% + 420px) 1300px
+                       , -webkit-calc(50% + 420px) 1560px
+                       , -webkit-calc(50% + 420px) 1820px
+                       , -webkit-calc(50% + 420px) 2080px
+                       , -webkit-calc(50% + 420px) 2340px
+                       , -webkit-calc(50% + 420px) 2600px
+                       , -webkit-calc(50% + 420px) 2860px
                        , -webkit-calc(50% - 280px) top
                        , center top
                        , -webkit-calc(50% + 280px) top
@@ -255,12 +292,24 @@
                        , calc(50% - 420px) 760px
                        , calc(50% - 420px) 1040px
                        , calc(50% - 420px) 1300px
+                       , calc(50% - 420px) 1560px
+                       , calc(50% - 420px) 1820px
+                       , calc(50% - 420px) 2080px
+                       , calc(50% - 420px) 2340px
+                       , calc(50% - 420px) 2600px
+                       , calc(50% - 420px) 2860px
                        , calc(50% + 420px) top
                        , calc(50% + 420px) 260px
                        , calc(50% + 420px) 520px
                        , calc(50% + 420px) 760px
                        , calc(50% + 420px) 1040px
                        , calc(50% + 420px) 1300px
+                       , calc(50% + 420px) 1560px
+                       , calc(50% + 420px) 1820px
+                       , calc(50% + 420px) 2080px
+                       , calc(50% + 420px) 2340px
+                       , calc(50% + 420px) 2600px
+                       , calc(50% + 420px) 2860px
                        , calc(50% - 280px) top
                        , center top
                        , calc(50% + 280px) top
@@ -354,6 +403,8 @@
             font-size: 18px;
         }
     }
+
+    @extend %clearfix;
 }
 
 .image-box {

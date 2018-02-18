@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: [ "Güsel", "Güssl", "Güssel", "Gösu", "güzl", "güzzl" ]
+title: [ "Güsel", "Güssl", "Güssel", "Gösu", "güzl", "güzzl", "güsäl" ]
 logo: [ "img/logo-01.png", "img/logo-02.png", "img/logo-03.png", "img/logo-04.png", "img/logo-05.png", "img/logo-06.png", "img/logo-07.png" ]
 email: guesl@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -26,12 +26,16 @@ collections:
     comments:
         output: false
 
+# exclude files from being handled by jekyll at all 
+exclude: [ "bin" ]
+
 # sitemap plugin configuration
 sitemap:
     filename: "/sitemap.xml"
     exclude:
         - "/feed.xml"
         - "/css/main.scss"
+        - "/js/main.js"
     include_posts:
         - "/index.html"
     collections:

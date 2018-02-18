@@ -6,3 +6,5 @@ _site/
 .bundle/
 vendor/
 .env
+DSC_*.jpg
+img/posts/gdt-next

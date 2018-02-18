@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-img_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+img_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/../img" && pwd)"
 orig_img_dir="$img_dir/orig"
 
 FILES_ALLOWED_TO_CONVERT=("$@")
