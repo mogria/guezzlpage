@@ -6,7 +6,7 @@ date:   2018-02-28 22:07:52+01:00
 categories: uftritt
 ---
 
-Hey Leuts, nach de letschte beide geile shows, spilemer gad nu es dritts mal de früehlig en show. Mr sind vo krachkarussel widr bueched worde zum im chelller vom Ebri cheller umezgüssle.
+Hey Leuts, nach de letschte beide geile shows, spilemer gad nu es dritts mal de früehlig en show. Mr sind vo krachkarussel widr bueched worde zum im cheller vom Ebri umezgüssle.
 
 Es isch au schön das mr mal mit Rectal Depravity zämespile chend. Si machid au schöns Umpa Umpa. Üsi Kollege vo Discomfort of Existence spilid au nu en show. Enzephalitis spilt au nu.
 
