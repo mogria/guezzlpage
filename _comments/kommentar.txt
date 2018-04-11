@@ -1,9 +1,0 @@
----
-post_id:     /homepage/2017/09/21/mr-hend-en-hompage
-author: 'test'
-title:  'test kommentar titel'
-date:   2017-09-21 01:16:12 +0200
----
-
-kom<i>m</i>entar inhalt
-

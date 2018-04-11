@@ -23,8 +23,6 @@ collections:
     songs:
         output: true
         permalink: /:collection/:path:output_ext
-    comments:
-        output: false
 
 
 # sitemap plugin configuration
