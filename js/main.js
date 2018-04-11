@@ -47,10 +47,6 @@ function toggle_asoziali_medie() {
     });
 }
 
-function embed_recaptcha() {
-    $.getScript('https://www.google.com/recaptcha/api.js')
-}
-
 jQuery(function($) {
     swap_titles(5000, 6);
     show_emails();

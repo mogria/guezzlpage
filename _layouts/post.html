@@ -34,16 +34,12 @@ layout: default
 
   <div class="comment-form-wrapper">
       <h3 class="comment-form-title">Schriib doch irgend en {{ site.title | sample }}-Driischiss-Kommentar drundr... es würmi dochnu freuä ;)</h3>
+      <form action="dynamic/comment.php" method="post">
+          <input type="text" name="commenter_name" placeholder="Diin Name" />
 
-      <form action="{{ site.baseurl }}/dynamic/comment.php" method="post">
-          <input type="text" name="commenter_name" placeholder="Diin Name" required />
+          <input type="text" name="commenter_title" placeholder="Kommentar Titel" />
+          <textarea name="comment" placeholder="Diin driischiss Kommentar ..."></textarea>
 
-          <input type="text" name="comment_title" placeholder="Kommentar Titel" required />
-          <textarea name="comment" placeholder="Diin driischiss Kommentar ..." required onfocus="embed_recaptcha()"></textarea>
-
-          <div class="g-recaptcha" data-sitekey="6Lc4XUAUAAAAACntGQNbKGqnwHh-VrTySBpDP4BL"></div>
-
-          <input type="hidden" name="post_id" value="{{ page.id }}" />
           <input type="submit" name="submit" text="Abschicke &amp; Drischiissä" />
       </form>
   </div>

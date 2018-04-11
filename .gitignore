@@ -5,6 +5,7 @@ _site/
 *~
 .bundle/
 vendor/
+<<<<<<< HEAD
 .env
 DSC_*.jpg
 img/posts/gdt-next
