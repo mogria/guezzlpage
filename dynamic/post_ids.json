@@ -1,0 +1,5 @@
+---
+layout: null
+---
+
+{{ site.posts | map: "id" | jsonify }}
