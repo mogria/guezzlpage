@@ -45,3 +45,4 @@ exclude: ["bin", "LICENSE", "README.md", "gemset.nix", "default.nix", "Gemfile",
 plugins:
 - jekyll-livereload
 - jekyll-email-protect
+- jekyll-language-plugin

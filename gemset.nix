@@ -74,6 +74,14 @@
     };
     version = "1.0.3";
   };
+  jekyll-language-plugin = {
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "17alpbqzg5g3p533wxlp60zi8wxqhiy0z9glsrpcg0nirg23kc6l";
+      type = "gem";
+    };
+    version = "1.3.5";
+  };
   jekyll-livereload = {
     dependencies = ["em-websocket" "jekyll"];
     source = {
