@@ -42,6 +42,6 @@ sitemap:
 exclude: ["bin", "LICENSE", "README.md", "gemset.nix", "default.nix", "Gemfile", "Gemfile.lock", "composer.json", "composer.lock", "vendor"]
 
 # Jekyll Plugins
-plugins:
+plugins_dir:
 - jekyll-livereload
 - jekyll-email-protect
