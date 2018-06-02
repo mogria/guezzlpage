@@ -1,16 +1,42 @@
 .post-list {
     li {
+        @extend %clearfix;
         h2 {
-            @extend %clearfix;
             .post-link {
                 text-decoration: none;
             }
         }
+
         display: block;
         .post-meta {
+            display: block;
+            background-image: url(../img/box-drawn.png);
             float: left;
-            width: 4 * $spacing-unit;
-            height: 100%;
+            width: 160px;
+            height: 158px;
+            margin-right: $spacing-unit;
+
+            color: $brand-color;
+
+            .post-date-month, .post-date-day, .post-date-year {
+               display: block; 
+            }
+
+            .post-date-month {
+                vertical-align: center;
+                padding-top: 20px;
+                border-bottom: 2px solid $brand-color;
+            }
+
+            .post-date-day {
+                font-size: $base-font-size * 2.5;
+                font-weight: 900;
+                border-bottom: 2px solid $brand-color;
+            }
+
+            .post-date-year {
+                height: 25%;
+            }
         }
 
         @include media-query($on-palm) {
@@ -19,6 +45,11 @@
                 float: none;
                 width: 100%;
             }
+        }
+
+        .post-read-more-link {
+            display: block;
+            float: right;
         }
     }
 }

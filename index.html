@@ -15,8 +15,11 @@ menu_link_left: 0%
   <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
     {% for post in site.posts %}
       <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem http://schema.org/BlogPosting">
-        <div class="post-meta" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</div>
-
+        <div class="post-meta" itemprop="datePublished">
+            <span class="post-date-month">{{ post.date | date: "%b" }}</span>
+            <span class="post-date-day">{{ post.date | date: "%-d" }}</span>
+            <span class="post-date-year">{{ post.date | date: "%Y" }}</span>
+        </div>
         <h2>
           <a class="post-link" itemprop="url name" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
