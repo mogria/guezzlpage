@@ -11,6 +11,8 @@
         .post-meta {
             display: block;
             background-image: url(../img/box-drawn.png);
+            background-position: center center;
+            backgorund-repeat: no-repeat;
             float: left;
             width: 160px;
             height: 158px;
@@ -36,14 +38,6 @@
 
             .post-date-year {
                 height: 25%;
-            }
-        }
-
-        @include media-query($on-palm) {
-            text-align: center;
-            .post-meta { 
-                float: none;
-                width: 100%;
             }
         }
 
