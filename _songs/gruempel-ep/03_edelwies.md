@@ -11,8 +11,8 @@ length: false
 **1. Strophe**  
 20 Minute hed es gseid  
 I üsem land sind d'diskussione heiss  
-Uberfremdig und es paar anderi lüüt  
-Si sind uftaucht usem nüd
+Überfremdig und es paar anderi lüüt  
+Si sind uftaucht usem nüt
 
 **Refrain**  
 Au Edelwies hed sin pries  
