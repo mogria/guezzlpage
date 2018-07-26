@@ -54,6 +54,11 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
 
+    &:hover {
+        background-image: url(../img/nav2.png), url(../img/nav2_hover.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100% auto, 100% auto;
+    }
 
     @include media-query($on-laptop) {
         width: 50%;

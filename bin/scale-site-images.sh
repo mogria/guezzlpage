@@ -116,7 +116,8 @@ convert_xcf_image_to_target_size "$orig_img_dir/footer.xcf" h 800 100 &
 
 echo "building navigation"
 convert "$img_dir/nav.png" -define png:exclude-chunks=date -crop 480x270+485+0 "$img_dir/nav2.png" &
-convert  -define png:exclude-chunks=date "$img_dir/nav2.png" "$img_dir/nav2.png" -fill red -colorize 195,30,30 -gaussian-blur 12x4 -composite "$img_dir/nav2_hover.png" &
+convert  -define png:exclude-chunks=date "$img_dir/nav2.png" "$img_dir/nav2.png" "$img_dir/nav2.png" -fill grey -colorize 200,200,200 -gaussian-blur 20x20 -composite "$img_dir/nav2_hover.png" &
+
 
 wait_for_all_jobs
 
