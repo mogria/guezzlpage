@@ -7,7 +7,7 @@ categories: uftritt
 ---
 
 
-Em friting das wucheend am 13. Oktober spilemr im Mundwerk z'Örlike. Es spilid au nu All Over The Face, Kabuki Joe und Rhabarber. 
+Em samschtig das wucheend am 13. Oktober spilemr im Mundwerk z'Örlike. Es spilid au nu All Over The Face, Kabuki Joe und Rhabarber. 
 
 Mr chennti fasch behaupte dases sich hie um en wunderbari mischig zwüsche räble und umpa-umpa handlet.
 
