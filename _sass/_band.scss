@@ -1,4 +1,4 @@
-.band-members {
+.post-content .band-members {
     display: inline-block;
     margin: $spacing-unit;
     margin-top: 0;
@@ -50,7 +50,7 @@
 
 /* make sure the space before the  title for "Gruendigsgschicht" isn't
    cleared, and the band members are on the left on the desktop */
-.post-content h2:before {
-    display: block !important;
-    clear: none !important;
+.page-content .post-content h2:before {
+    display: block;
+    clear: none;
 }
