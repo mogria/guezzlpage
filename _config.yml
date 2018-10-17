@@ -14,6 +14,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://xn--gssl-0ra.ch" # the base hostname & protocol for your site
 github_username:  mogria
+encoding: utf-8
 
 # Build settings
 markdown: kramdown
