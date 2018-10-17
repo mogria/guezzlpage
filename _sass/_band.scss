@@ -1,4 +1,5 @@
 .band-members {
+    display: inline-block;
     margin: $spacing-unit;
     margin-top: 0;
     float: right;
@@ -12,7 +13,7 @@
             width: 300px;
         }
     }
-    @extend %clearfix;
+
 
     .band-member {
          @extend %clearfix;
@@ -45,4 +46,11 @@
     .band-member:last-child {
         border-bottom: 0;
     }
+}
+
+/* make sure the space before the  title for "Gründigsgschicht" isn't
+   cleared, and the band members are on the left on the desktop */
+.post-content h2:before {
+    display: block;
+    clear: none;
 }
