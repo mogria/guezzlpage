@@ -19,7 +19,7 @@
               >
               <a href="{{ my_page.url | prepend: site.baseurl }}"
                   name="{{ my_page.title }}"
-                 ></a>
+		  ><span class="hide">{{ my_page.title }}</span></a>
           </li> 
           {% endif %}
         {% endfor %}
