@@ -47,7 +47,7 @@ function toggle_asoziali_medie() {
     });
 }
 
-jQuery(function($) {
+$(function() {
     swap_titles(5000, 6);
     show_emails();
 
