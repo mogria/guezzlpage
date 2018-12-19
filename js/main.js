@@ -24,7 +24,7 @@ function show_emails() {
 }
 
 function embed_facebook_sdk() {
-  // $.ajaxSetup({ cache: true }); doesn't work with zepto: https://github.com/madrobby/zepto/issues/986 
+  $.ajaxSetup({ cache: true });
   $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
     FB.init({
       appId: '696265037233127',
@@ -47,7 +47,7 @@ function toggle_asoziali_medie() {
     });
 }
 
-$(function() {
+jQuery(function($) {
     swap_titles(5000, 6);
     show_emails();
 
