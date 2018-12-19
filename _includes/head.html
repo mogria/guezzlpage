@@ -2,6 +2,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <!-- z'letscht nügeneriert am: {{ "now" | date: "%Y-%m-%d %H:%M" }} -->
+
+  <!-- hä was luegsch? log das isch eifach en statischi websiite wo generiert wird mit jekyll (https://jekyllrb.com),
+      isch nu chillig zum bruche wenn git / markdown / html chasch + nu biz liquid template engine. Vill
+      besser als so wordpress...
+   -->
 
   <title>{% if page.title %}{{ page.title }} - {{ site.title | sample }}{% else %}{{ site.title | sample }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html |  truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
