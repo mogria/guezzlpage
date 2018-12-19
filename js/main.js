@@ -24,7 +24,7 @@ function show_emails() {
 }
 
 function embed_facebook_sdk() {
-  $.ajaxSetup({ cache: true });
+  // $.ajaxSetup({ cache: true }); doesn't work with zepto: https://github.com/madrobby/zepto/issues/986 
   $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
     FB.init({
       appId: '696265037233127',
