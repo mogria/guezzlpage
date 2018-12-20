@@ -3,6 +3,7 @@ author: mogli
 layout: post
 title:  22. Dezember, Güssl a de Metal-Apocalypse im Planet5
 date:   2018-11-23 17:18:46+01:00
+show_date:   2018-12-22
 categories: uftritt
 ---
 

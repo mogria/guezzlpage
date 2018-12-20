@@ -3,6 +3,7 @@ author: mogli
 layout: post
 title:  13. Oktober, Mehr Anker für die Punker im Mundwerk
 date:   2018-10-07 21:53:37+02:00
+show_date:   2018-10-13
 categories: uftritt
 ---
 

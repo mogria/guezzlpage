@@ -6,7 +6,7 @@ d="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$d"
 
 if [ "$#" -lt 1 ]; then
-    echo "Usage: make-post.sh post-title"
+    echo "Usage: make-show.sh show-title show-date"
 fi
 
 date="$(date --rfc-3339=seconds)"
@@ -24,6 +24,7 @@ layout: post
 title:  $title
 date:   $date
 categories: uftritt
+show_date: $show_date
 ---
 
 NEW_POST

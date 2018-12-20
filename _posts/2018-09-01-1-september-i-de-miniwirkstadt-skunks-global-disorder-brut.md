@@ -3,6 +3,7 @@ author: mogli
 layout: post
 title:  "1. September i de  Miniwirkstadt: Skunks, Global Disorder, Brut"
 date:   2018-09-01 15:14:50+02:00
+show_date:   2018-09-01
 categories: uftritt
 ---
 
