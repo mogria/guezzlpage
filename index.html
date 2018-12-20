@@ -8,27 +8,49 @@ menu_link_top: 37%
 menu_link_left: 0%
 ---
 
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+
 <div class="home">
 
-  <h1 class="post-title">Niuws</h1>
+  <div class="upcoming-shows">
+    <h1 class="post-title">Nechsti Uftritt</h1>
+    <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
+      {% for post in site.categories.uftritt %}
+        {% capture showdate %}{{post.show_date | date: '%s'}}{% endcapture %}
+        {% if post.show_date %}
+          {% if showdate > nowunix %}
+           {% include show.html %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 
-  <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
-    {% for post in site.posts %}
-      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem http://schema.org/BlogPosting">
-        <div class="post-meta" itemprop="datePublished">
-            <span class="post-date-month">{{ post.date | date: "%b" }}</span>
-            <span class="post-date-day">{{ post.date | date: "%-d" }}</span>
-            <span class="post-date-year">{{ post.date | date: "%Y" }}</span>
-        </div>
-        <h2>
-          <a class="post-link" itemprop="url name" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p>{{ post.excerpt }} <a class="post-read-more-link" itemprop="url name" href="{{ post.url | prepend: site.baseurl }}">Wiiterlese....</a></p>
+  <div class="past-shows">
+    <h1 class="post-title">Vergangeni Uftritt</h1>
+    <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
+      {% for post in site.categories.uftritt %}
+        {% capture showdate %}{{post.show_date | date: '%s'}}{% endcapture %}
+        {% if post.show_date %}
+          {% if showdate <= nowunix %}
+            {% include show.html %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="news">
+    <h1 class="post-title">Niuws</h1>
+    <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
+      {% for post in site.posts %}
+        {% if post.categories contains "uftritt" %}
+        {% else %}
+          {% include news-post.html %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 
   <p class="rss-subscribe">Bstell mal <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
-
 </div>
