@@ -24,3 +24,5 @@ Hie nu de event uf de websiite vom planet5:
 
 
 Es gid wahrschinli au nu en facebook event, aber scheiss drauf mich schissts ah de link z'sueche.
+
+_Edit: log hie hendr de link, etz heds mi gad nid agschisse: [www.facebook.com/events/2139958562915398](https://www.facebook.com/events/2139958562915398)_
