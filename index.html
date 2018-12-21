@@ -15,14 +15,24 @@ menu_link_left: 0%
   <div class="upcoming-shows">
     <h1 class="post-title">Nechsti Uftritt</h1>
     <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
+      {% assign noshows = true %}
       {% for post in site.categories.uftritt %}
         {% capture showdate %}{{post.show_date | date: '%s'}}{% endcapture %}
         {% if post.show_date %}
+          {% capture showdate %}{{ showdate | plus: 86399 }}{% endcapture %}
           {% if showdate > nowunix %}
+           {% assign noshows = false %}
            {% include show.html %}
           {% endif %}
         {% endif %}
       {% endfor %}
+      {% if noshows %}
+        <p>
+           Zur ziit sind ke shows hie akündigt, heisst abr nid das mr käni in zuekunft spilid.
+           Villich hanis vergesse hie ufe ztue.
+           Chasch ja mal bi <a href="https://www.facebook.com/guessl.band">facebook verbii luege...</a>
+        </p>
+      {% endif %}
     </ul>
   </div>
 
@@ -32,6 +42,7 @@ menu_link_left: 0%
       {% for post in site.categories.uftritt %}
         {% capture showdate %}{{post.show_date | date: '%s'}}{% endcapture %}
         {% if post.show_date %}
+          {% capture showdate %}{{ showdate | plus: 86399 }}{% endcapture %}
           {% if showdate <= nowunix %}
             {% include show.html %}
           {% endif %}
