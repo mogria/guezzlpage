@@ -7,6 +7,7 @@ cd "$d"
 
 if [ "$#" -lt 2 ]; then
     echo "Usage: make-show.sh show-title show-date"
+    exit 1
 fi
 
 date="$(date --rfc-3339=seconds)"
