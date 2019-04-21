@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: post
 title:  "1. September i de  Miniwirkstadt: Skunks, Global Disorder, Brut"
 date:   2018-09-01 15:14:50+02:00

@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: song
 title: AKW
 album: gruempel-ep

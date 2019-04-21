@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: song
 title: Eigetum ish Diebstahl
 album: gruempel-ep

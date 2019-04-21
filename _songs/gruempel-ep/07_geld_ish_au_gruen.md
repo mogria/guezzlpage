@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: song
 title: Geld isch au Grüen
 album: gruempel-ep

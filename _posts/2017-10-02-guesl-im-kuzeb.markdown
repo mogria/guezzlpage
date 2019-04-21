@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: post
 title:  "21. Oktober, Güsel im KuZeB"
 date:   2017-10-02 23:50:56+02:00

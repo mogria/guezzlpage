@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: post
 title:  13. Oktober, Mehr Anker für die Punker im Mundwerk
 date:   2018-10-07 21:53:37+02:00
