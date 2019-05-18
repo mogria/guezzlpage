@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: post
 title:  "16. März, Anti-Heros #3, im Ebrietas in Züri"
 date:   2018-02-28 22:07:52+01:00

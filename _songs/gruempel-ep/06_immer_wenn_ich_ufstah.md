@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: song
 title: Immer wenn ich ufstah
 album: gruempel-ep

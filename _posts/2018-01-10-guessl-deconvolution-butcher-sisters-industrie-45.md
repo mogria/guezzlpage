@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: post
 title:  "Uftritt i de i45 mit The Butcher Sisters & Deconvolution, 24. Februar"
 date:   2018-01-10 23:21:09+01:00

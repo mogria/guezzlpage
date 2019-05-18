@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: post
 title:  30. September, Chraftgwalt im Ebri, Güsel vs. Discomfort of Existence & Para esteblecer un Rio
 date:   2018-07-26 19:33:44+02:00

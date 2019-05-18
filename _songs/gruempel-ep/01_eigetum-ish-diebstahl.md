@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: song
 title: Eigetum ish Diebstahl
 album: gruempel-ep
@@ -8,7 +8,7 @@ length: false
 ---
 
 **1. Strophe**  
-Ich weiss wo alli kameras im lade sind  
+Ich weiss wo d'kameras im lade sind  
 mach mini jagge uf und handle gschwind  
 Laufe bim kassierer dure, blinzle kurz  
 Kei kommerz, systemumsturz  
@@ -34,7 +34,7 @@ Das heisst nur meh bier für all
 **3. Strophe**  
 Ich hock ufem stuehl vor de bar  
 In zug passt er au wunderbar  
-De stuehl wär e scho lang mine  
+De stuehl isch eh scho mine  
 Bi de dene höche prise
 
 **Refrain**  

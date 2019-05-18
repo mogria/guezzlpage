@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: post
 title:  2. März, Kochareal
 date:   2019-02-22 13:35:32+01:00

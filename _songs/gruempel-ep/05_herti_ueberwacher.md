@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: song
 title: De Herti Überwacher
 album: gruempel-ep

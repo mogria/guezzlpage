@@ -19,7 +19,7 @@ filename="$d/_posts/$date_prefix-$title_slug.md"
 if [ ! -f "$filename" ]; then
     cat > "$filename" <<NEW_POST
 ---
-author: mogli
+author: mogria
 layout: post
 title:  $title
 date:   $date

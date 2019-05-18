@@ -1,5 +1,5 @@
 ---
-author: mogli
+author: mogria
 layout: post
 title:  "Sali zäme, mr hend etz en homepeitsch"
 date:   2017-09-21 01:16:12 +0200
