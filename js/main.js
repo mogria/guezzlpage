@@ -1,6 +1,6 @@
 ---
 ---
-function swap_titles(interval, num_images) {
+function swap_titles(interval) {
     var site_title = $(".site-title > img");
 
     var rand_index = function(length) {
@@ -10,7 +10,7 @@ function swap_titles(interval, num_images) {
     setInterval(function() {
         var baseurl = {{ site.baseurl | jsonify }}
         var logos = {{ site.logo | jsonify }};
-        var index = rand_index(num_images);
+        var index = rand_index(logos.length);
         site_title.attr('src', baseurl + "/" + logos[index]);
     }, interval);
 }
@@ -48,7 +48,7 @@ function toggle_asoziali_medie() {
 }
 
 jQuery(function($) {
-    swap_titles(5000, 6);
+    swap_titles(5000);
     show_emails();
 
     $('#asoziali-medie-aktiviere').click(toggle_asoziali_medie);
