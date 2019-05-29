@@ -104,6 +104,8 @@
     background-image: url('../img/footer.png')
                     , url('../img/line-vertical-02.png')
                     , url('../img/line-vertical-03.png')
+                    , url('../img/line-vertical-09.png')
+                    , url('../img/line-vertical-10.png')
                     , url('../img/line-horizontal-02.png')
                     , url('../img/line-horizontal-04.png')
                     , url('../img/line-horizontal-03.png')
@@ -117,8 +119,10 @@
                      ;
 
     background-position: top center
-                       , -webkit-calc(50% - 420px) top
-                       , -webkit-calc(50% + 420px) top
+                       , -webkit-calc(50% - 420px) (-3 * $spacing-unit)
+                       , -webkit-calc(50% - 420px) (-3 * $spacing-unit + 260)
+                       , -webkit-calc(50% + 420px) (-3 * $spacing-unit)
+                       , -webkit-calc(50% + 420px) (-3 * $spacing-unit + 260)
                        , -webkit-calc(50% - 280px) bottom
                        , center bottom
                        , -webkit-calc(50% + 280px) bottom
@@ -126,8 +130,10 @@
 
 
     background-position: top center
-                       , calc(50% - 420px) top
-                       , calc(50% + 420px) top
+                       , calc(50% - 420px) (-3 * $spacing-unit)
+                       , calc(50% - 420px) (-3 * $spacing-unit + 260)
+                       , calc(50% + 420px) (-3 * $spacing-unit)
+                       , calc(50% + 420px) (-3 * $spacing-unit + 260)
                        , calc(50% - 280px) bottom
                        , center bottom
                        , calc(50% + 280px) bottom
@@ -197,24 +203,24 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit * 3 0;
+    padding: $spacing-unit * 3 0 0 0;
 
     background-image: url('../img/line-vertical-05.png')
                     , url('../img/line-vertical-11.png')
                     , url('../img/line-vertical-08.png')
                     , url('../img/line-vertical-02.png')
                     , url('../img/line-vertical-12.png')
-                    , url('../img/line-vertical-10.png')
-                    , url('../img/line-vertical-10.png')
-                    , url('../img/line-vertical-09.png')
+                    , url('../img/line-vertical-11.png')
+                    , url('../img/line-vertical-04.png')
+                    , url('../img/line-vertical-07.png')
                     , url('../img/line-vertical-08.png')
                     , url('../img/line-vertical-03.png')
                     , url('../img/line-vertical-07.png')
-                    , url('../img/line-vertical-01.png')
                     , url('../img/line-vertical-04.png')
-                    , url('../img/line-vertical-02.png')
                     , url('../img/line-vertical-06.png')
+                    , url('../img/line-vertical-02.png')
                     , url('../img/line-vertical-01.png')
+                    , url('../img/line-vertical-09.png')
                     , url('../img/line-vertical-07.png')
                     , url('../img/line-vertical-04.png')
                     , url('../img/line-vertical-03.png')
@@ -223,15 +229,16 @@
                     , url('../img/line-vertical-06.png')
                     , url('../img/line-vertical-12.png')
                     , url('../img/line-vertical-11.png')
+                    , url('../img/line-vertical-06.png')
+                    , url('../img/line-vertical-03.png')
                     , url('../img/line-horizontal-03.png')
                     , url('../img/line-horizontal-02.png')
                     , url('../img/line-horizontal-01.png')
-                    , url('../img/line-horizontal-04.png')
-                    , url('../img/line-horizontal-05.png')
-                    , url('../img/line-horizontal-04.png')
                     , url('../img/style-flame.png')
                     ;
     background-repeat: no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
                      , no-repeat no-repeat
                      , no-repeat no-repeat
                      , no-repeat no-repeat
@@ -275,6 +282,7 @@
                        , -webkit-calc(50% - 420px) 2340px
                        , -webkit-calc(50% - 420px) 2600px
                        , -webkit-calc(50% - 420px) 2860px
+                       , -webkit-calc(50% - 420px) 3120px
                        , -webkit-calc(50% + 420px) top
                        , -webkit-calc(50% + 420px) 260px
                        , -webkit-calc(50% + 420px) 520px
@@ -287,6 +295,7 @@
                        , -webkit-calc(50% + 420px) 2340px
                        , -webkit-calc(50% + 420px) 2600px
                        , -webkit-calc(50% + 420px) 2860px
+                       , -webkit-calc(50% + 420px) 3120px
                        , -webkit-calc(50% - 280px) top
                        , center top
                        , -webkit-calc(50% + 280px) top
@@ -307,6 +316,7 @@
                        , calc(50% - 420px) 2340px
                        , calc(50% - 420px) 2600px
                        , calc(50% - 420px) 2860px
+                       , calc(50% - 420px) 3120px
                        , calc(50% + 420px) top
                        , calc(50% + 420px) 260px
                        , calc(50% + 420px) 520px
@@ -319,6 +329,7 @@
                        , calc(50% + 420px) 2340px
                        , calc(50% + 420px) 2600px
                        , calc(50% + 420px) 2860px
+                       , calc(50% + 420px) 3120px
                        , calc(50% - 280px) top
                        , center top
                        , calc(50% + 280px) top
@@ -326,7 +337,7 @@
                        , center bottom
                        , calc(50% + 280px) bottom
                        , right top
-                       ;                   
+                       ;
    & > .wrapper > *:first-child {
        background-color: $alpha-bg-color;
        box-shadow: 0px 0px 30px 30px $alpha-bg-color;
