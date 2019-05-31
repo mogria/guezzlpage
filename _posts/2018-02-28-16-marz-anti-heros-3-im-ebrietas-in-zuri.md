@@ -4,7 +4,7 @@ layout: post
 title:  "16. März, Anti-Heros #3, im Ebrietas in Züri"
 date:   2018-02-28 22:07:52+01:00
 categories: uftritt
-shpw_date: 2018-16-03
+show_date: 2018-16-03
 ---
 
 Hey Leuts, nach de letschte beide geile shows, spilemer gad nu es dritts mal de früehlig en show. Mr sind vo krachkarussel widr bueched worde zum im cheller vom Ebri umezgüssle.
