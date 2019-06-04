@@ -7,11 +7,18 @@ categories: uftritt
 show_date: 05-06-2019
 ---
 
-Mr spilid widr mal im Ebri in Züri. Dasmal am Mittwuch mit Paradise vo Kanada. Wird sicher en luschtige Abig, chemid doch verbii gu luege ;-)
+Mr spilid widr mal im Ebri in Züri. Dasmal am Mittwuch mit Paradise vo Kanada.
+
+**Update**: Es isch mr au nu mitteilt worde das morn Joykill nu spile wird. Dezue wird Göldi au nu ihre erste uftritt spile.
+
+
+Wird sicher en luschtige Abig, chemid doch verbii gu luege ;-)
+
+Und nu es dankeschön a Joel wo das ganze möglich macht :D
 
 Ich döf üch natürlich hie au nu de wunderschöni Flyer präsentiere:
 
-![Ebrietas Zürich / Paraside / Güssl / 5. Juni 2019 / Flyer]({{ site.baseurl }}/img/posts/flyer-ebrietas-guessl-paraside.jpg)
+![Ebrietas Zürich / Paraside / Güs / Joykill Göldi / 5. Juni 2019 / Flyer]({{ site.baseurl }}/img/posts/flyer-ebrietas-guessl-paraside.jpg)
 
 Iitritt:  
 ungefähr 15 stutz 
