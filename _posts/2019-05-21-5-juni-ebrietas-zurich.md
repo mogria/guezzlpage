@@ -21,7 +21,7 @@ Ich döf üch natürlich hie au nu de wunderschöni Flyer präsentiere:
 ![Ebrietas Zürich / Paraside / Güs / Joykill Göldi / 5. Juni 2019 / Flyer]({{ site.baseurl }}/img/posts/flyer-ebrietas-guessl-paraside.jpg)
 
 Iitritt:  
-ungefähr 15 stutz 
+ungefähr 20 stutz
 
 Da isch schüsch nu'd konzertsiite vom Ebri:  
 [www.ebrietas.ch/konzerte](http://ebrietas.ch/konzerte)
