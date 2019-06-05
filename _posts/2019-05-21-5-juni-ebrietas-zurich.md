@@ -1,7 +1,7 @@
 ---
 author: mogria
 layout: post
-title:  5. Juni, Ebrietas, Zürich
+title:  5. Juni, Chraftgwalt im Ebrietas, Zürich
 date:   2019-05-21 20:19:08+02:00
 categories: uftritt
 show_date: 05-06-2019
