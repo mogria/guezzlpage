@@ -9,7 +9,7 @@ show_date: 05-06-2019
 
 Mr spilid widr mal im Ebri in Züri. Dasmal am Mittwuch mit Paradise vo Kanada.
 
-**Update**: Es isch mr au nu mitteilt worde das morn Joykill nu spile wird. Dezue wird Gøldi au nu ihre erste uftritt spile.
+**Update**: Es isch mr au nu mitteilt worde das morn Killjoy nu spile wird. Dezue wird Gøldi au nu ihre erste uftritt spile.
 
 
 Wird sicher en luschtige Abig, chemid doch verbii gu luege ;-)
