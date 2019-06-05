@@ -18,7 +18,7 @@ Und nu es dankeschön a Joel wo das ganze möglich macht :D
 
 Ich döf üch natürlich hie au nu de wunderschöni Flyer präsentiere:
 
-![Ebrietas Zürich / Paraside / Güs / Joykill Göldi / 5. Juni 2019 / Flyer]({{ site.baseurl }}/img/posts/flyer-ebrietas-guessl-paraside.jpg)
+![Ebrietas Zürich / Paraside / Güs / Joykill Göldi / 5. Juni 2019 / Flyer]({{ site.baseurl }}/img/posts/flyer-ebrietas-guessl-paraside.jpg?1)
 
 Iitritt:  
 ungefähr 20 stutz
