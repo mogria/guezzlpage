@@ -24,11 +24,11 @@
                display: block; 
             }
 
-	    .post-date-month, .post-date-day {
+            .post-date-month, .post-date-day {
                 margin-left: 11px;
                 margin-right: 11px;
                 border-bottom: 6px solid $brand-color;
-	    }
+            }
 
             .post-date-month {
                 vertical-align: center;
@@ -50,4 +50,24 @@
             float: right;
         }
     }
+}
+
+ul.pager {
+    list-style-type: none;
+
+    li.previous,
+    li.next {
+        display: block;
+
+    }
+
+    li.previous {
+        float: left;
+    }
+
+    li.next {
+        float: right;
+    }
+
+    margin-bottom: 4em;
 }

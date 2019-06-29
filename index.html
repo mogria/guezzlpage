@@ -6,17 +6,22 @@ menu_link_height: 50%
 menu_link_width: 50%
 menu_link_top: 37%
 menu_link_left: 0%
+pagination:
+  enabled: true
+  category: uftritt
+  per_page: 5
+  sort_reverse: true
 ---
 
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 
 <div class="home">
 
-  <div class="upcoming-shows">
+  <section class="upcoming-shows">
     <h1 class="post-title">Nechsti Uftritt</h1>
     <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
       {% assign noshows = true %}
-      {% for post in site.categories.uftritt %}
+      {% for post in paginator.posts %}
         {% capture showdate %}{{post.show_date | date: '%s'}}{% endcapture %}
         {% if post.show_date %}
           {% capture showdate %}{{ showdate | plus: 86399 }}{% endcapture %}
@@ -34,12 +39,12 @@ menu_link_left: 0%
         </p>
       {% endif %}
     </ul>
-  </div>
+  </section>
 
-  <div class="past-shows">
+  <section class="past-shows">
     <h1 class="post-title">Vergangeni Uftritt</h1>
     <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
-      {% for post in site.categories.uftritt %}
+      {% for post in paginator.posts %}
         {% capture showdate %}{{post.show_date | date: '%s'}}{% endcapture %}
         {% if post.show_date %}
           {% capture showdate %}{{ showdate | plus: 86399 }}{% endcapture %}
@@ -49,9 +54,25 @@ menu_link_left: 0%
         {% endif %}
       {% endfor %}
     </ul>
-  </div>
 
-  <div class="news">
+    {% if paginator.total_pages > 1 %}
+    <ul class="pager">
+        {% if paginator.previous_page %}
+        <li class="previous">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">... Nüeri Uftritt</a>
+        </li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="next">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Älteri Uftritt ...</a>
+        </li>
+        {% endif %}
+        <div class="clear"></div>
+    </ul>
+    {% endif %}
+  </section>
+
+  <section class="news">
     <h1 class="post-title">Niuws</h1>
     <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
       {% for post in site.posts %}
@@ -61,7 +82,10 @@ menu_link_left: 0%
         {% endif %}
       {% endfor %}
     </ul>
-  </div>
+  </section>
 
-  <p class="rss-subscribe">Bstell mal <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
+
+  <section class="rss">
+      <p class="rss-subscribe">Bstell mal <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
+  </section>
 </div>

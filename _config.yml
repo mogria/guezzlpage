@@ -15,6 +15,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://xn--gssl-0ra.ch" # the base hostname & protocol for your site
 github_username:  mogria
 encoding: utf-8
+pagination:
+  enabled: true
+  debug: true
+  collection: 'posts'
+  title: ' - siite :num'
+  category: 'uftritt'
+  per_page: 2
 
 # Build settings
 markdown: kramdown
@@ -51,3 +58,4 @@ plugins_dir:
 
 plugins:
 - jekyll-sitemap
+- jekyll-paginate-v2
