@@ -216,6 +216,40 @@ pre {
     }
 }
 
+%halfsize {
+    max-width: 48%;
+}
+
+.halfsize {
+    @extend %halfsize;
+}
+
+
+
 .clear {
     clear: both;
+}
+
+%column-right {
+    display: inline-block;
+    @extend %halfsize;
+    margin-top: 0;
+    margin-bottom: $spacing-unit;
+    float: right;
+    margin-left: 4%;
+
+
+    .halfsize {
+        @extend %halfsize;
+        margin-left: 4%;
+    }
+
+    @include media-query($on-laptop) {
+        width: 100%;
+        float: none;
+        .band-member {
+            float: none;
+            width: 100%;
+        }
+    }
 }

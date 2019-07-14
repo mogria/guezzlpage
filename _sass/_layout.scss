@@ -44,7 +44,7 @@
 
         img {
             display: block;
-            width: 350px;
+            width: 300px;
             max-width: 100%;
             margin-left: auto;
             margin-right: auto;
@@ -108,7 +108,7 @@
     background-image: url('../img/footer.png')
                     , url('../img/line-vertical-04.png')
                     , url('../img/line-vertical-03.png')
-                    , url('../img/line-vertical-06.png')
+                    , url('../img/line-vertical-09.png')
                     , url('../img/line-vertical-10.png')
                     , url('../img/line-horizontal-02.png')
                     , url('../img/line-horizontal-04.png')
@@ -123,24 +123,24 @@
                      ;
 
     background-position: top center
-                       , -webkit-calc(50% - 420px) (-3 * $spacing-unit)
-                       , -webkit-calc(50% - 420px) (-3 * $spacing-unit + 260)
-                       , -webkit-calc(50% + 420px) (-3 * $spacing-unit)
-                       , -webkit-calc(50% + 420px) (-3 * $spacing-unit + 260)
-                       , -webkit-calc(50% - 280px) bottom
+                       , -webkit-calc(50% - 400px) (-3 * $spacing-unit)
+                       , -webkit-calc(50% - 400px) (-3 * $spacing-unit + 240)
+                       , -webkit-calc(50% + 400px) (-3 * $spacing-unit)
+                       , -webkit-calc(50% + 400px) (-3 * $spacing-unit + 240)
+                       , -webkit-calc(50% - 270px) bottom
                        , center bottom
-                       , -webkit-calc(50% + 280px) bottom
+                       , -webkit-calc(50% + 270px) bottom
                        ;
 
 
     background-position: top center
-                       , calc(50% - 420px) (-3 * $spacing-unit)
-                       , calc(50% - 420px) (-3 * $spacing-unit + 260)
-                       , calc(50% + 420px) (-3 * $spacing-unit)
-                       , calc(50% + 420px) (-3 * $spacing-unit + 260)
-                       , calc(50% - 280px) bottom
+                       , calc(50% - 400px) (-3 * $spacing-unit)
+                       , calc(50% - 400px) (-3 * $spacing-unit + 240)
+                       , calc(50% + 400px) (-3 * $spacing-unit)
+                       , calc(50% + 400px) (-3 * $spacing-unit + 240)
+                       , calc(50% - 270px) bottom
                        , center bottom
-                       , calc(50% + 280px) bottom
+                       , calc(50% + 270px) bottom
                        ;
 
     & > .wrapper > .footer-content {
@@ -286,81 +286,78 @@
                      , no-repeat no-repeat
                      , no-repeat no-repeat
                      ;
-    background-position: -webkit-calc(50% - 420px) top
-                       , -webkit-calc(50% - 420px) 260px
-                       , -webkit-calc(50% - 420px) 520px
-                       , -webkit-calc(50% - 420px) 760px
-                       , -webkit-calc(50% - 420px) 1040px
-                       , -webkit-calc(50% - 420px) 1300px
-                       , -webkit-calc(50% - 420px) 1560px
-                       , -webkit-calc(50% - 420px) 1820px
-                       , -webkit-calc(50% - 420px) 2080px
-                       , -webkit-calc(50% - 420px) 2340px
-                       , -webkit-calc(50% - 420px) 2600px
-                       , -webkit-calc(50% - 420px) 2860px
-                       , -webkit-calc(50% - 420px) 3120px
-                       , -webkit-calc(50% + 420px) top
-                       , -webkit-calc(50% + 420px) 260px
-                       , -webkit-calc(50% + 420px) 520px
-                       , -webkit-calc(50% + 420px) 760px
-                       , -webkit-calc(50% + 420px) 1040px
-                       , -webkit-calc(50% + 420px) 1300px
-                       , -webkit-calc(50% + 420px) 1560px
-                       , -webkit-calc(50% + 420px) 1820px
-                       , -webkit-calc(50% + 420px) 2080px
-                       , -webkit-calc(50% + 420px) 2340px
-                       , -webkit-calc(50% + 420px) 2600px
-                       , -webkit-calc(50% + 420px) 2860px
-                       , -webkit-calc(50% + 420px) 3120px
-                       , -webkit-calc(50% - 280px) top
+    background-position: -webkit-calc(50% - 400px) top
+                       , -webkit-calc(50% - 400px) 260px
+                       , -webkit-calc(50% - 400px) 520px
+                       , -webkit-calc(50% - 400px) 760px
+                       , -webkit-calc(50% - 400px) 1040px
+                       , -webkit-calc(50% - 400px) 1300px
+                       , -webkit-calc(50% - 400px) 1560px
+                       , -webkit-calc(50% - 400px) 1820px
+                       , -webkit-calc(50% - 400px) 2080px
+                       , -webkit-calc(50% - 400px) 2340px
+                       , -webkit-calc(50% - 400px) 2600px
+                       , -webkit-calc(50% - 400px) 2860px
+                       , -webkit-calc(50% - 400px) 3120px
+                       , -webkit-calc(50% + 400px) top
+                       , -webkit-calc(50% + 400px) 260px
+                       , -webkit-calc(50% + 400px) 520px
+                       , -webkit-calc(50% + 400px) 760px
+                       , -webkit-calc(50% + 400px) 1040px
+                       , -webkit-calc(50% + 400px) 1300px
+                       , -webkit-calc(50% + 400px) 1560px
+                       , -webkit-calc(50% + 400px) 1820px
+                       , -webkit-calc(50% + 400px) 2080px
+                       , -webkit-calc(50% + 400px) 2340px
+                       , -webkit-calc(50% + 400px) 2600px
+                       , -webkit-calc(50% + 400px) 2860px
+                       , -webkit-calc(50% + 400px) 3120px
+                       , -webkit-calc(50% - 240px) top
                        , center top
-                       , -webkit-calc(50% + 280px) top
-                       , -webkit-calc(50% - 280px) bottom
+                       , -webkit-calc(50% + 240px) top
+                       , -webkit-calc(50% - 240px) bottom
                        , center bottom
-                       , -webkit-calc(50% + 280px) bottom
+                       , -webkit-calc(50% + 240px) bottom
                        , right top
-                       ;  
-    background-position: calc(50% - 420px) top
-                       , calc(50% - 420px) 260px
-                       , calc(50% - 420px) 520px
-                       , calc(50% - 420px) 760px
-                       , calc(50% - 420px) 1040px
-                       , calc(50% - 420px) 1300px
-                       , calc(50% - 420px) 1560px
-                       , calc(50% - 420px) 1820px
-                       , calc(50% - 420px) 2080px
-                       , calc(50% - 420px) 2340px
-                       , calc(50% - 420px) 2600px
-                       , calc(50% - 420px) 2860px
-                       , calc(50% - 420px) 3120px
-                       , calc(50% + 420px) top
-                       , calc(50% + 420px) 260px
-                       , calc(50% + 420px) 520px
-                       , calc(50% + 420px) 760px
-                       , calc(50% + 420px) 1040px
-                       , calc(50% + 420px) 1300px
-                       , calc(50% + 420px) 1560px
-                       , calc(50% + 420px) 1820px
-                       , calc(50% + 420px) 2080px
-                       , calc(50% + 420px) 2340px
-                       , calc(50% + 420px) 2600px
-                       , calc(50% + 420px) 2860px
-                       , calc(50% + 420px) 3120px
-                       , calc(50% - 280px) top
+                       ;
+    background-position: calc(50% - 400px) top
+                       , calc(50% - 400px) 260px
+                       , calc(50% - 400px) 520px
+                       , calc(50% - 400px) 760px
+                       , calc(50% - 400px) 1040px
+                       , calc(50% - 400px) 1300px
+                       , calc(50% - 400px) 1560px
+                       , calc(50% - 400px) 1820px
+                       , calc(50% - 400px) 2080px
+                       , calc(50% - 400px) 2340px
+                       , calc(50% - 400px) 2600px
+                       , calc(50% - 400px) 2860px
+                       , calc(50% - 400px) 3120px
+                       , calc(50% + 400px) top
+                       , calc(50% + 400px) 260px
+                       , calc(50% + 400px) 520px
+                       , calc(50% + 400px) 760px
+                       , calc(50% + 400px) 1040px
+                       , calc(50% + 400px) 1300px
+                       , calc(50% + 400px) 1560px
+                       , calc(50% + 400px) 1820px
+                       , calc(50% + 400px) 2080px
+                       , calc(50% + 400px) 2340px
+                       , calc(50% + 400px) 2600px
+                       , calc(50% + 400px) 2860px
+                       , calc(50% + 400px) 3120px
+                       , calc(50% - 240px) top
                        , center top
-                       , calc(50% + 280px) top
-                       , calc(50% - 280px) bottom
+                       , calc(50% + 240px) top
+                       , calc(50% - 240px) bottom
                        , center bottom
-                       , calc(50% + 280px) bottom
+                       , calc(50% + 240px) bottom
                        , right top
                        ;
    & > .wrapper > *:first-child {
        background-color: $alpha-bg-color;
        box-shadow: 0px 0px 30px 30px $alpha-bg-color;
    }
-
-
-
 
     @include media-query($on-palm) {
         margin-top: 0;
@@ -457,18 +454,3 @@
     padding: $spacing-unit;
 }
 
-%column-right {
-    display: inline-block;
-    margin: $spacing-unit;
-    margin-top: 0;
-    float: right;
-    width: 50%;
-    @include media-query($on-laptop) {
-        width: 100%;
-        float: none;
-        .band-member {
-            float: none;
-            width: 100%;
-        }
-    }
-}
