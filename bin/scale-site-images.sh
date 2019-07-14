@@ -88,12 +88,14 @@ for xcf in "$orig_img_dir"/bandmember-*.xcf ; do
 done
 
 
-convert_xcf_image_to_target_size "$orig_img_dir"/box-drawn.xcf h 160 160
+convert_xcf_image_to_target_size "$xcf" h 160 160 &
+convert_xcf_image_to_target_size "$xcf" h 240 240 &
 
 for xcf in "$orig_img_dir"/song-*.xcf; do
     convert_xcf_image_to_target_size "$xcf" h \
-        430 300 &
+        300 300 &
 done
+
 
 for xcf in "$orig_img_dir"/style-*.xcf; do
     convert_xcf_image_to_target_size "$xcf" h \
@@ -103,7 +105,7 @@ done
 
 for xcf in "$orig_img_dir"/logo-*.xcf; do
     convert_xcf_image_to_target_size "$xcf" h \
-        350 200 &
+        300 200 &
 done
 
 convert_xcf_image_to_target_size "$orig_img_dir/header.xcf" h 920 350 North &
@@ -111,19 +113,28 @@ convert_xcf_image_to_target_size "$orig_img_dir/nav.xcf" h 1000 360 North &
 
 wait_for_all_jobs
 
-echo "building footer"
-convert_xcf_image_to_target_size "$orig_img_dir/footer.xcf" h 800 100 &
+echo "building album artwork"
+convert_xcf_image_to_target_size "$orig_img_dir"/cover-grumpel-ep.xcf h 200 200 &
+convert_xcf_image_to_target_size "$orig_img_dir"/gruempel-ep-schrift.xcf h 300 200 &
+
+echo "building custom song images"
+convert_xcf_image_to_target_size "$orig_img_dir"/song-tierlimoerder-hand.xcf h 150 300 &
 
 echo "building header"
 convert_xcf_image_to_target_size "$orig_img_dir/guezzleimer-header.xcf" h 920 350 North &
 
 echo "building navigation"
 
+convert_xcf_image_to_target_size "$orig_img_dir"/guezzleimer-header.png h \
+        600 920 &
 for xcf in "$orig_img_dir"/nav-*.xcf; do
     convert_xcf_image_to_target_size "$xcf" h \
-        120 400 &
+        120 120 &
 done
 
+
+echo "building footer"
+convert_xcf_image_to_target_size "$orig_img_dir/footer.xcf" h 800 100 &
 
 wait_for_all_jobs
 

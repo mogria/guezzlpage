@@ -2,8 +2,7 @@
  * Site header
  */
 .site-header {
-    padding-top: 20px;
-    min-height: 375px;
+    min-height: 425px;
     background-image: url('../img/guezzleimer-header.png');
     background-repeat: no-repeat no-repeat; 
     background-position: bottom center;
@@ -13,24 +12,32 @@
         padding-right: 0;
     }
 
-    padding-bottom: 60px;
     @include media-query($on-palm) {
-        padding-bottom: 100px;
+        background-size: 120% auto;
+        padding-bottom: 10%;
+        min-height: auto;
     }
 }
 
 .site-title {
-    display: block;
+    display: table-cell;
     padding-top: 100px;
-    padding-left: 100px;
+    padding-left: 15%;
+    max-width: 45%;
+    min-height: 200px;
     margin-bottom: 0;
     float: left;
+
+    vertical-align: center;
+    text-align: center;
+
     @include media-query($on-laptop) {
-        width: 50%;
     }
     @include media-query($on-palm) {
+        display: block;
+        max-width: 100%;
+        padding: 0;
         margin-top: 10px;
-        height: 191px;
 
         width: 100%;
         float: none;
@@ -38,6 +45,7 @@
         img {
             display: block;
             width: 350px;
+            max-width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -47,23 +55,14 @@
 .site-nav {
     display: block;
     float: right;
-    width: 260px;
-
-    height: 100%;
-    margin-top: 100px;
-
-
-    @include media-query($on-laptop) {
-        width: 50%;
-        float: right;
-        margin: auto;
-    }
+    width: 40%;
+    margin-top: 50px;
 
     @include media-query($on-palm) {
-        margin: auto;
+        padding-left: 20%;
+        padding-right: 5%;
         float: none;
         width: auto;
-        padding-bottom: 55%;
     }
 
     ul {
@@ -71,20 +70,30 @@
         padding: 0;
         list-style-type: none;
         li {
-            margin: 0 10px;
+            max-width: 40%;
+            margin: 0 2%;
             padding: 0;
             display: inline-block;
-        }
-        li a {
-            width: 100px;
-            min-height: 100px;
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle;
 
-            img {
-                width: 100px;
-                height: auto;
+            a {
+                display: block;
+                transform: rotateX(-10deg) rotateY(10deg) rotateZ(-3deg);
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+
+        @include media-query($on-palm) {
+            li {
+                max-width: 25%;
+                margin: 0 3%;
+
+                a {
+                   transform: rotateX(-5deg) rotateY(5deg) rotateZ(-1deg);
+                }
             }
         }
     }
@@ -141,9 +150,6 @@
     }
 }
 
-.contact-list, {
-}
-
 .footer-col-wrapper {
     font-size: 15px;
     margin-left: -$spacing-unit / 2;
@@ -170,6 +176,20 @@
     color: $grey-color;
     width: -webkit-calc(60% - (#{$spacing-unit} / 2));
     width:         calc(60% - (#{$spacing-unit} / 2));
+
+    a {
+        color: lighten($brand-color, 15%);
+        text-decoration: wavy underline;
+
+        &:visited {
+            color: $brand-color;
+        }
+
+        &:hover {
+            color: $text-color;
+            text-shadow: 0px 0px 10px $text-color;
+        }
+    }
 }
 
 @include media-query($on-laptop) {
@@ -198,6 +218,7 @@
  * Page content
  */
 .page-content {
+    margin-top: $spacing-unit * -1;
     padding: $spacing-unit * 3 0 0 0;
 
     background-image: url('../img/line-vertical-05.png')
@@ -337,6 +358,13 @@
        background-color: $alpha-bg-color;
        box-shadow: 0px 0px 30px 30px $alpha-bg-color;
    }
+
+
+
+
+    @include media-query($on-palm) {
+        margin-top: 0;
+    }
 }
 
 .page-heading {

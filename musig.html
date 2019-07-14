@@ -3,25 +3,23 @@ layout: page
 title: Musig
 permalink: /musig/
 has_menu_link: true
-menu_link_height: 54%
-menu_link_width: 47%
-menu_link_top: 2%
-menu_link_left: 52%
+menu_link_image: /img/nav-musig.png
 ---
 
 <p>Jaaaa mr mached voll de Grümpel-Punk mit schlechte Text &amp; so.</p>
 
-<p>Hie isch mal en Liste vo allne üse songs; d'Text jewiils dezue verlinkt. Gueti ufnahme hemmer im Moment nid. Falls aber intressi bestahd fragid üs doch eifach ah.</p>
+<p>Hie isch mal so en Liste vo de meischte vo üsne songs; d'Text sind jewiils dezue verlinkt. Mr sind im moment dra s'erste album ufzneh. Isch nu nüd fix so und chad sich ändere.</p>
 
-<p>Wener gsend ischs Album au nu nid ganz zäme, abr es chund.</p>
 
 <div class="albums">
 {% for album in site.data.albums %}
     <div class="album">
         <div class="album-header">
             <h3 class="album-name">
-                <img class="album-cover" alt="{{ album[1].name }}" src="{{ site.baseurl }}{{ album[1].cover | default: "/img/cover-none-available.png" }}" />
-                {{ album[1].name }}
+                <img class="album-cover" alt="{{ album[1].name }} Album Cover" src="{{ site.baseurl }}{{ album[1].cover | default: "{{ /img/cover-none-available.png" }}" />
+                {% if album[1].logo %}
+                    <img class="album-logo" alt="{{ album[1].name }}" src="{{ site.baseurl }}{{ album[1].logo}}?v=1" />
+                {% endif %}
                 <span class="album-year">({{ album[1].year}})</span>
             </h3>
         </div/>
