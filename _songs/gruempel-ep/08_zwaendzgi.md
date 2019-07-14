@@ -10,7 +10,7 @@ length: false
 
 **1. Strophe**  
 D'matura hani nid chenne mache  
-Ha au ke bock zum schaffe  
+Ha au gar ke bock zum schaffe  
 lemmer doch de scheiss la sii  
 und gemmer all id renti  
 
@@ -22,12 +22,12 @@ Mit Zwändzgi isches gsi
 
 **2. Strophe**  
 Mit 20gi isches eh scho gluffe  
-Nachder döfschs lebe lang schufte  
+Nacher döfsch s'lebe lang schufte  
 Und denn mitem 8i ufem Rugge  
-Hends dr dini Rente mgügged  
+Hends dr dini Rente mgugged  
 
 **3. Strophe**  
 d'AHV macht eh nur schulde  
 Also tüemer üs nid gedulde  
 holemer üses pensionsrecht  
-bevors d'AHV plötzlich vertäschtd  
+bevors d'AHV vertätschd

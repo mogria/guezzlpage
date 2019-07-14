@@ -11,20 +11,21 @@ length: false
 **Stophe 1**  
 Am bode mach ichs mir bequem  
 Zwei type findeds gar ned schön  
-Doch ich finds am bode recht toll  
-Verpiss dich du scheiss proll
+Abr ich finds am bode recht toll  
+Verpiss dich doch du scheiss proll
 
 **Refrain**  
 Verbote, Verbote,  
-Alles ish Verbote! (x3)  
+Alles ish Verbote!
 Verbote, Verbote,  
 S'Gsetz cha mich nid stoppe.
+(2x)
 
 **2. Strophe**  
 Güsl ghört uf de bode,  
 hör uf übr littering z'jodle.  
 Lah mich doch in rueh,  
-du bisch doch en scheiss Fascho chueh.
+du bisch en scheiss fascho chueh.
 
 **3. Strophe**  
 Ich schmeisse fläsche ad wand  
