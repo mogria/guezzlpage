@@ -23,7 +23,7 @@ author: mogria
 layout: post
 title:  $title
 date:   $date
-categories: uftritt
+categories: news
 ---
 
 NEW_POST
