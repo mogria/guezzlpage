@@ -12,12 +12,12 @@ length: false
 Ich weiss gar ned was alli hend  
 nur will da AKWs umestend  
 schöne Rauch chund obe use  
-und Billigstrom chamer au bruche  
+und Billigstrom chamer au bruche
 
 In Gösge stahd es Monument  
 S'Ältiste AKW uf de welt  
 Es wunder vo üsere ziit  
-so schön, dases es nu lang git  
+so schön, dases das nu lang git
 
 **Refrain**  
 Akw tuet niemertem weh  
