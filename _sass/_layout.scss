@@ -433,3 +433,19 @@
     height: 100px;
     padding: $spacing-unit;
 }
+
+%column-right {
+    display: inline-block;
+    margin: $spacing-unit;
+    margin-top: 0;
+    float: right;
+    width: 50%;
+    @include media-query($on-laptop) {
+        width: 100%;
+        float: none;
+        .band-member {
+            float: none;
+            width: 100%;
+        }
+    }
+}

@@ -18,9 +18,10 @@ layout: default
         {% if page.images %}
             <div class="song-images">
                 {% for image in page.images %}
-                    <img class="song-image" src="{{ image | relative_url }}" />
+                    <figure class="song-image">
+                        <img class="song-image" src="{{ image | relative_url }}" />
+                    </figure>
                 {% endfor %}
-
             </div>
         {% endif %}
         {{ content }}

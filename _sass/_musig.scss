@@ -1,13 +1,21 @@
-.song {
-    .song-images > img {
-        margin-top: $spacing-unit;
-        margin-bottom: $spacing-unit;
-        display: block;
-        float: right;
-        clear: right;
+/* single song article, with lyrics */
+article.song {
+    .song-images {
+        @extend %column-right;
+
+        figure {
+            display: block;
+            margin-top: 2 * $spacing-unit;
+
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
     }
 }
 
+/* album listing on musig page */
 .albums {
     .album {
         margin-top: $spacing-unit * 2;
@@ -36,9 +44,9 @@
                     display: inline-block;
                 }
 
-		a {
+                a {
                     text-decoration: none;
-	        }
+                }
             }
         }
     }

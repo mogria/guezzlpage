@@ -1,19 +1,5 @@
 .post-content .band-members {
-    display: inline-block;
-    margin: $spacing-unit;
-    margin-top: 0;
-    float: right;
-    width: 305px;
-
-    @include media-query($on-laptop) {
-        width: 100%;
-        float: none;
-        .band-member {
-            float: none;
-            width: 100%;
-        }
-    }
-
+    @extend %column-right;
 
     .band-member {
          @extend %clearfix;
