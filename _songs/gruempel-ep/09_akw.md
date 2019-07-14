@@ -4,7 +4,7 @@ layout: song
 title: AKW
 album: gruempel-ep
 year: 2017
-images: []
+images: ["img/song-akw.png"]
 length: false
 ---
 
