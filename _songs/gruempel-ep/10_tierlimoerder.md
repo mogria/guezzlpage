@@ -4,7 +4,7 @@ layout: song
 title: Tierlimörder
 album: gruempel-ep
 year: 2018
-images: []
+images: ["/img/song-tierlimoerder.png", "/img/song-tierlimoerder-hand.png"]
 length: false
 ---
 
