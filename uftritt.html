@@ -1,0 +1,59 @@
+---
+layout: default
+title: "Uftritt"
+permalink: /
+has_menu_link: true
+menu_link_image: /img/nav-uftritt.png
+pagination:
+  enabled: true
+  category: uftritt
+  per_page: 5
+  sort_reverse: true
+---
+
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+
+<div class="home">
+  <section class="upcoming-shows">
+    <h1 class="post-title">Nechsti Uftritt</h1>
+    <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
+      {% assign noshows = true %}
+      {% for post in paginator.posts %}
+        {% capture showdate %}{{post.show_date | date: '%s'}}{% endcapture %}
+        {% if post.show_date %}
+          {% capture showdate %}{{ showdate | plus: 86399 }}{% endcapture %}
+          {% if showdate > nowunix %}
+           {% assign noshows = false %}
+           {% include show.html %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      {% if noshows %}
+        <p>
+           Zur ziit sind ke shows hie akündigt, heisst abr nid das mr käni in zuekunft spilid.
+           Villich hanis vergesse hie ufe ztue.
+           Chasch ja mal bi <a href="https://www.facebook.com/guessl.band">facebook verbii luege...</a>
+        </p>
+      {% endif %}
+    </ul>
+  </section>
+
+  <section class="past-shows">
+    <h1 class="post-title">Vergangeni Uftritt</h1>
+    <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
+      {% for post in paginator.posts %}
+        {% capture showdate %}{{post.show_date | date: '%s'}}{% endcapture %}
+        {% if post.show_date %}
+          {% capture showdate %}{{ showdate | plus: 86399 }}{% endcapture %}
+          {% if showdate <= nowunix %}
+            {% include show.html %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    {% include pager.html %}
+  </section>
+
+  {% include rss.html %}
+</div>
