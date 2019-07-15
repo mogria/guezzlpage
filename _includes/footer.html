@@ -8,9 +8,14 @@
         <ul class="contact-list">
           <li><a href="mailto:{{ site.email | encode_email }}">guesl @t outlook döt köm</a></li>
           <li><a href="https://www.facebook.com/guessl.band">facebook.com/guessl.band</a></li>
-          <li>{% if site.github_username %}
+          <li>
+            {% if site.github_username %}
             {% include icon-github.html username=site.github_username repo="guezzlpage" %}
-            {% endif %}</li>
+            {% endif %}
+            <em>
+              <a href="https://github.com/mogria/guezzlpage/tree/production">(rev)</a>
+            </em>
+          </li>
         </ul>
       </div>
 
