@@ -29,6 +29,28 @@
         }
     }
 
+    @include media-query($on-laptop) {
+        width: 95%;
+        max-width: 95%;
+
+        .band-member {
+            display: block;
+            float: left;
+            width: 50%;
+            min-width: 300px;
+        }
+    }
+
+    @include media-query($on-palm) {
+        width: 100%;
+        max-width: 100%;
+
+        .band-member {
+            width: 100%;
+            float: none;
+        }
+    }
+
     .band-member:last-child {
         border-bottom: 0;
     }
