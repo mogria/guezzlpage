@@ -26,12 +26,23 @@ article.song {
                 font-size: 32px;
             }
 
+            .album-cover {
+                padding: 20px 20px;
+                background-image: url(../img/box-drawn-02.png);
+                background-position: 2px center;
+                background-repeat: no-repeat;
+            }
+
             .album-year {
+                display: block;
+                font-weight: bold;
                 font-size: 24px;
+                font-style: italic;
             }
         }
         .songlist {
             margin-top: $spacing-unit;
+            margin-left: 42px;
             width: 100%;
             max-width: 500px;
 

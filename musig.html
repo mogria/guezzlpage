@@ -20,9 +20,10 @@ menu_link_image: /img/nav-musig.png
                 {% if album[1].logo %}
                     <img class="album-logo" alt="{{ album[1].name }}" src="{{ site.baseurl }}{{ album[1].logo}}?v=1" />
                 {% endif %}
-                <span class="album-year">({{ album[1].year}})</span>
             </h3>
-        </div/>
+            <span class="album-year">({{ album[1].year }})</span>
+            <div class="clear"></div>
+        </div>
         <ol class="songlist">
         {% for song in site.songs %}
         {% if song.album == album[0] %}

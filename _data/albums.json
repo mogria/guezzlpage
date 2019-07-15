@@ -1,7 +1,8 @@
 {
     "gruempel-ep": {
         "name": "Grümpel EP",
-        "year": 2017,
-        "cover": null
+        "year": "2019, unreleased",
+        "cover": "/img/cover-grumpel-ep.png",
+        "logo": "/img/gruempel-ep-schrift.png"
     }
 }
