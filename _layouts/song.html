@@ -5,12 +5,21 @@ layout: default
 <article class="song" itemscope itemtype="http://schema.org/MusicRecording">
     <header class="song-header">
         <h1 class="post-title song-title" itemprop="name">
-            <span itemprop="byArtist" itemscope itemtype="http://schema.org/MusicGroup">{{ site.title | sample }}</span> -
+            <span itemprop="byArtist" itemscope itemtype="http://schema.org/MusicGroup">
+                {% if page.artist %}
+                    Cover: {{ page.artist }}
+                {% else %}
+                    {{ site.title | sample }}
+                {% endif %}
+            </span> -
             {{ page.title }}</h1>
         <p class="post-meta song-meta">
-            Gschribe im Jahr <span>{{ page.year }}</span> vom
+            Gschribe im Jahr <span>{{ page.year }}</span>,
+            Author: 
             <span itemprop="lyricist author" itemscope itemtype="http://schema.org/Person">
-                <span itemprop="name">{{ site.data.bandmembers[page.author].name }}</span>
+                <span itemprop="name">
+                    {{ site.data.bandmembers[page.author].name | default: page.author }}
+                </span>
             </span>
         </p>
     </header>

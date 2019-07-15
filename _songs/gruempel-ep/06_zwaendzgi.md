@@ -21,9 +21,9 @@ Wenn ischs lebe scho verbii
 Mit Zwändzgi isches gsi  
 
 **2. Strophe**  
-Mit 20gi isches eh scho gluffe  
-Nacher döfsch s'lebe lang schufte  
-Und denn mitem 8i ufem Rugge  
+Mit 20gi ischs eh scho gluffe  
+Denn chasch s'lebe lang schufte  
+Denn mitm 8i ufm Rugge  
 Hends dr dini Rente mgugged  
 
 **3. Strophe**  

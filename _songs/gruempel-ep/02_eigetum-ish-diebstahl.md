@@ -11,12 +11,12 @@ length: false
 Ich weiss wo d'kameras im lade sind  
 mach mini jagge uf und handle gschwind  
 Laufe bim kassierer dure, blinzle kurz  
-Kei kommerz, systemumsturz  
+Kei kommerz, systemumsturz
 
 **Refrain**  
 Will Eigetum ish Diebstahl  
 Mir ghörts nid abr ish doch egal  
-Ja Eigetum ish diebstahl  
+Eigetum ish diebstahl  
 Und das ish gar nid asozial
 
 **2. Strophe**  
@@ -28,7 +28,7 @@ Scheiss egal es ish bier
 **Refrain**  
 Will Eigetum ish Diebstahl  
 Wemm das bier ghört ish doch egal  
-Ja Eigetum ish Diebstahl  
+Eigetum ish Diebstahl  
 Das heisst nur meh bier für all
 
 **3. Strophe**  
@@ -40,5 +40,5 @@ Bi de dene höche prise
 **Refrain**  
 Will Eigetum ish Diebstahl  
 De nüi stuehl find ich genial  
-Will Eigetum ish Diebstahl   
+Eigetum ish Diebstahl  
 Das lohnt sich uf jede Fall

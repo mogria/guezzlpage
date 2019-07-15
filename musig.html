@@ -28,7 +28,12 @@ menu_link_image: /img/nav-musig.png
         {% for song in site.songs %}
         {% if song.album == album[0] %}
             <li class="song">
-                <a href="{{song.url}}" class="song-title">{{ song.title }}</a>
+                <a href="{{song.url}}" class="song-title">
+                    {{ song.title }}
+                    {% if song.artist %}
+                        ({{ song.artist}} Cover)
+                    {% endif %}
+                </a>
                 <span class="song-length">{{ song.length | default: "KU:RZ" }}</span>
             </li>
         {% endif %}

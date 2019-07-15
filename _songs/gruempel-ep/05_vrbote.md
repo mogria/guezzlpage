@@ -34,8 +34,11 @@ Er sind doch alli au debi,
 mr schlönd jetzt zäme alles chli.
 
 **Refrain**  
-Gu Schrotte, Gu Schrotte,  
-Alles ish Verbote! (x3)  
-Gu Schrotte, Gu Schrotte,  
-D'Welt isch am Verotte.
-
+Verbote, Verbote,
+Alles ish Verbote!
+Verbote, Verbote,
+Alles ish Verbote!
+Verrote, Verrote
+Alles isch verrotte,
+Verotte, Verotte,
+D'Welt isch am Verotte!

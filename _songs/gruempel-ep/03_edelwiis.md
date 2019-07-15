@@ -1,7 +1,7 @@
 ---
 author: maikusan
 layout: song
-title: Edelwies
+title: Edelwiis
 album: gruempel-ep
 year: 2016
 images: ["img/song-edelwiis.png"]
