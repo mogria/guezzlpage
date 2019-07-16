@@ -59,6 +59,11 @@ article.song {
                     text-decoration: none;
                 }
             }
+            @include media-query($on-palm) {
+                max-width: 100%;
+                font-size: 4vw;
+
+            }
         }
     }
 }
