@@ -29,6 +29,18 @@ categories: uftritt
 show_date: $show_date
 ---
 
+heeeey......
+
+![<-->/ Flyer]({{ site.baseurl }}/img/posts/<-->-flyer.jpg)
+
+Itriitt: <--> Hämmer
+
+Hie nu de Event uf de <--> websiite:  
+[<-->](https://<-->)
+
+Und hie nu de facebook event:  
+[<-->](https://<-->)
+
 NEW_POST
 else
     echo "WARN: already exists"
