@@ -11,7 +11,7 @@
         {% if p.title and p.autogen == nil and p.autopage == nil %}
           <li>
             <a href="{{ p.url | prepend: site.baseurl }}" name="{{ p.title }}">
-              <img src="{{ p.menu_link_image | prepend: site.baseurl }}" alt="{{ p.title }}" />
+              <img src="{{ p.menu_link_image | prepend: site.baseurl }}?v=1" alt="{{ p.title }}" />
             </a>
           </li>
         {% endif %}

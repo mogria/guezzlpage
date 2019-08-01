@@ -105,11 +105,17 @@ done
 
 for xcf in "$orig_img_dir"/logo-*.xcf; do
     convert_xcf_image_to_target_size "$xcf" h \
-        300 200 &
+        300 300 &
 done
 
 convert_xcf_image_to_target_size "$orig_img_dir/header.xcf" h 920 350 North &
 convert_xcf_image_to_target_size "$orig_img_dir/nav.xcf" h 1000 360 North &
+
+
+for xcf in "$orig_img_dir"/nav-*.xcf; do
+    convert_xcf_image_to_target_size "$xcf" h \
+        120 120 &
+done
 
 wait_for_all_jobs
 
@@ -127,11 +133,9 @@ echo "building navigation"
 
 convert_xcf_image_to_target_size "$orig_img_dir"/guezzleimer-header.png h \
         600 920 &
-for xcf in "$orig_img_dir"/nav-*.xcf; do
-    convert_xcf_image_to_target_size "$xcf" h \
-        120 120 &
-done
 
+convert_xcf_image_to_target_size "$orig_img_dir"/nav-uftritt.png h \
+        200 120 &
 
 echo "building footer"
 convert_xcf_image_to_target_size "$orig_img_dir/footer.xcf" h 800 100 &
