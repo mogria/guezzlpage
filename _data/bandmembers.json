@@ -19,7 +19,7 @@
     },
     "cmon": {
         "name": "Cmon",
-        "role": "1. Gitarrist",
+        "role": "Gitarrist",
         "description": "Gids eis?!",
         "active": true
     },
@@ -43,7 +43,7 @@
     },
     "bottlee": {
         "name": "Bottlee",
-        "role": "2. Gitarrist",
+        "role": "Gitarrist",
         "description": "Alles isch de Bottlee.",
         "active": true
     }
