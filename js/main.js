@@ -11,7 +11,7 @@ function swap_titles(interval) {
         var baseurl = {{ site.baseurl | jsonify }}
         var logos = {{ site.logo | jsonify }};
         var index = rand_index(logos.length);
-        site_title.attr('src', baseurl + "/" + logos[index] + '?v=1');
+        site_title.attr('src', baseurl + "/" + logos[index] + '?v=4');
     }, interval);
 }
 

@@ -104,8 +104,8 @@ done
 
 
 for xcf in "$orig_img_dir"/logo-*.xcf; do
-    convert_xcf_image_to_target_size "$xcf" h \
-        300 300 &
+    convert_xcf_image_to_target_size "$xcf" 300x200 \
+        300 200 &
 done
 
 convert_xcf_image_to_target_size "$orig_img_dir/header.xcf" h 920 350 North &
