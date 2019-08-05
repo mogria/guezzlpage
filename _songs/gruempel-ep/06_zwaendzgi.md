@@ -4,7 +4,7 @@ layout: song
 title: Zwändzgi
 album: gruempel-ep
 year: 2016
-images: []
+images: ["/img/song-zwaendzgi.png"]
 length: false
 ---
 
