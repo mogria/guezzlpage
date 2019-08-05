@@ -4,7 +4,8 @@ layout: song
 title: "Alles Kaputt"
 album: gruempel-ep
 artist: "Tesla Cessna"
-year: 2012
+year: 2015
+images: ["/img/song-alles-kabutt.png"]
 length: false
 ---
 
