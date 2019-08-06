@@ -24,7 +24,7 @@
         "active": true
     },
     "mogria": {
-        "name": "mogria",
+        "name": "Mogria",
         "role": "Bassist, Sänger",
         "description": "Stahd immer nachem mittag uf.",
         "active": true
@@ -44,13 +44,13 @@
     "bottlee": {
         "name": "Bottlee",
         "role": "Gitarrist",
-        "description": "Alles isch de Bottlee.",
+        "description": "Alles isch de bottlee.",
         "active": true
     },
     "bazil": {
-        "name": "bazil",
+        "name": "Bazil",
         "role": "Gitarrist",
-        "description": "lost gern rock musig.",
+        "description": "Lost gern rock musig.",
         "active": true
     }
 }
