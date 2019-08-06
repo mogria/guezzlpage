@@ -46,5 +46,11 @@
         "role": "Gitarrist",
         "description": "Alles isch de Bottlee.",
         "active": true
+    },
+    "bazil": {
+        "name": "bazil",
+        "role": "Gitarrist",
+        "description": "lost gern rock musig.",
+        "active": true
     }
 }
