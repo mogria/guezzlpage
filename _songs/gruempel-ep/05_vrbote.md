@@ -27,12 +27,6 @@ hör uf übr littering z'jodle.
 Lah mich doch in rueh,  
 du bisch en scheiss fascho chueh.
 
-**3. Strophe**  
-Ich schmeisse fläsche ad wand  
-und schlisse fenschter mit de hand.  
-Er sind doch alli au debi,  
-mr schlönd jetzt zäme alles chli.
-
 **Refrain**  
 Verbote, Verbote,
 Alles ish Verbote!
