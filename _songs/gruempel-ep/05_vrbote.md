@@ -28,11 +28,11 @@ Lah mich doch in rueh,
 du bisch en scheiss fascho chueh.
 
 **Refrain**  
-Verbote, Verbote,
-Alles ish Verbote!
-Verbote, Verbote,
-Alles ish Verbote!
-Verrote, Verrote
-Alles isch verrotte,
-Verotte, Verotte,
+Verbote, Verbote,  
+Alles ish Verbote!  
+Verbote, Verbote,  
+Alles ish Verbote!  
+Verrote, Verrote  
+Alles isch verrottet,  
+Verotte, Verotte,  
 D'Welt isch am Verotte!
