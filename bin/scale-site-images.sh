@@ -121,6 +121,7 @@ convert_xcf_image_to_target_size "$orig_img_dir"/gruempel-ep-schrift.xcf h 300 2
 
 echo "building custom song images"
 convert_xcf_image_to_target_size "$orig_img_dir"/song-tierlimoerder-hand.xcf h 150 300 &
+convert_xcf_image_to_target_size "$orig_img_dir"/song-eigetum-ish-diebstahl.xcf v 300 700 &
 
 echo "building header"
 convert_xcf_image_to_target_size "$orig_img_dir/guezzleimer-header.xcf" h 920 350 North &

@@ -4,6 +4,7 @@ layout: song
 title: Eigetum ish Diebstahl
 album: gruempel-ep
 year: 2015
+big_images: ["/img/song-eigetum-ish-diebstahl.png"]
 length: false
 ---
 

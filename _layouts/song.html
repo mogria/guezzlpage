@@ -24,6 +24,15 @@ layout: default
         </p>
     </header>
     <div class="song-lyrics" itemprop="lyrics">
+        {% if page.big_images %}
+            <div class="song-images-big">
+                {% for image in page.big_images %}
+                    <figure class="song-image">
+                        <img class="song-image" src="{{ image | relative_url }}" />
+                    </figure>
+                {% endfor %}
+            </div>
+        {% endif %}
         {% if page.images %}
             <div class="song-images">
                 {% for image in page.images %}
