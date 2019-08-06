@@ -109,7 +109,10 @@ a {
 
     &:hover {
         color: $text-color;
-        text-shadow: 0px 0px 10px $text-color;
+        text-shadow: 3px 1px 3px lighten($text-color, 30%);
+    }
+    &:focus {
+        outline: 0;
     }
 }
 
