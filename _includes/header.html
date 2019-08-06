@@ -9,12 +9,15 @@
       <ul class="menu">
       {% for p in site.pages %}
         {% if p.title and p.autogen == nil and p.autopage == nil %}
+          {% if p.hide_navigation %}
+          {% else %}
           <li>
             <a href="{{ p.url | prepend: site.baseurl }}" name="{{ p.title }}">
               <img src="{{ p.menu_link_image | prepend: site.baseurl }}?v=1" class="hover-blur" alt=""/>
               <img src="{{ p.menu_link_image | prepend: site.baseurl }}?v=1" alt="{{ p.title }}" />
             </a>
           </li>
+          {% endif %}
         {% endif %}
       {% endfor %}
       </ul>
