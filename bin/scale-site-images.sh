@@ -127,6 +127,7 @@ convert_xcf_image_to_target_size "$orig_img_dir"/song-eigetum-ish-diebstahl.xcf 
 
 echo "building header"
 convert_xcf_image_to_target_size "$orig_img_dir/guezzleimer-header.xcf" h 920 350 North &
+convert_xcf_image_to_target_size "$orig_img_dir/style-coffee-stain.xcf" h 400 400 &
 
 echo "building navigation"
 

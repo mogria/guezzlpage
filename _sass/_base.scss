@@ -23,6 +23,12 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    background-image: url('../img/style-coffee-stain.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    @include media-query($on-smaller-screen) {
+        background-image: none;
+    }
 }
 
 html {
