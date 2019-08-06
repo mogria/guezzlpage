@@ -4,7 +4,7 @@ layout: song
 title: Freigeist
 album: gruempel-ep
 year: 2018
-images: []
+images: ["/img/song-freigeist.png"]
 length: false
 ---
 
