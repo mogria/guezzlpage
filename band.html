@@ -18,7 +18,9 @@ menu_link_image: /img/nav-band.png
 
 <div itemscope= itemtype="http://schema.org/MusicGroup">
 <div class="band-members" itemscope itemtype="http://schema.org/ItemList">
-<h3 itemprop="name">Aktuelli Mitgliedr</h3>
+    <h3 itemprop="name">
+        <img src="{{ "/img/guesl-gang.png" | prepend: site.baseurl}}" alt="{{ site.title | sample }} Gang"/>
+    </h3>
 {% for member in site.data.bandmembers %}
     {% if member[1].active %}
         <div class="band-member" itemprop="itemListElement" itemscope itemtype="http://schema.org/Person">

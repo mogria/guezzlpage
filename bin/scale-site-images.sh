@@ -112,6 +112,8 @@ for xcf in "$orig_img_dir"/nav-*.xcf; do
     convert_xcf_image_to_target_size "$xcf" h \
         120 120 &
 done
+convert_xcf_image_to_target_size "$orig_img_dir/guesl-gang.xcf" h \
+    320 120 &
 
 wait_for_all_jobs
 
