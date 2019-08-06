@@ -262,3 +262,19 @@ pre {
         }
     }
 }
+
+form {
+    .field {
+        label {
+            display: inline-block;
+            width: 50%;
+        }
+
+        input[type=submit] {
+            margin-left: 50%;
+            @include media-query($on-palm) {
+                margin-left: 0;
+            }
+        }
+    }
+}
