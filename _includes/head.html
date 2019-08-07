@@ -32,15 +32,10 @@
 
   <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
 
-{% comment %}
-jekyll-asset-pipline will compress the SASS here and insert the appropriate tag
-{% css_asset_tag global %}
-- /_sass/main.scss
-{% endcss_asset_tag %}
-{% endcomment %}
-
-  <!-- render css inline for the browser to be able to fetch the images
-      earlier and have one less request -->
+  {% comment %}
+    render css inline for the browser to be able to fetch the images
+    earlier and have one less request
+  {% endcomment %}
   {% capture styles %}
   {% include main.scss %}
   {% endcapture %}
