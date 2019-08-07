@@ -6,14 +6,38 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: [ "Güsel", "Güssl", "Güssel", "Gösu", "güzl", "güzzl", "güsäl" ]
-logo: [ "img/logo-01.png", "img/logo-02.png", "img/logo-03.png", "img/logo-04.png", "img/logo-05.png", "img/logo-06.png", "img/logo-07.png" ]
+title: [ "Güsel", "Güssl", "Güssel", "Güsl", "Gösu", "güzl", "güzzl", "güsäl" ]
+logo:
+  - "img/logo-01.png"
+  - "img/logo-02.png"
+  - "img/logo-03.png"
+  - "img/logo-04.png"
+  - "img/logo-05.png"
+  - "img/logo-06.png"
+  - "img/logo-07.png"
+  - "img/logo-08.png"
+  - "img/logo-09.png"
+  - "img/logo-10.png"
+  - "img/logo-11.png"
+  - "img/logo-12.png"
+  - "img/logo-13.png"
+  - "img/logo-fusl.png"
+  - "img/logo-pfnusel.png"
+  - "img/logo-schuessl.png"
 email: guesl@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
     Güssel/Güsel/Güssl/Gösu-Band-Homepage. Grümpel Punk Band us Zug.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://xn--gssl-0ra.ch" # the base hostname & protocol for your site
 github_username:  mogria
+encoding: utf-8
+pagination:
+  enabled: true
+  debug: true
+  collection: 'posts'
+  title: ' - siite :num'
+  category: 'uftritt'
+  per_page: 5
 
 # Build settings
 markdown: kramdown
@@ -38,6 +62,9 @@ sitemap:
         - "posts"
         - "songs"
 
+sass:
+    style: compressed
+
 # Files which should not be copied over to _site
 exclude: ["bin", "LICENSE", "README.md", "gemset.nix", "default.nix", "Gemfile", "Gemfile.lock", "composer.json", "composer.lock", "vendor"]
 
@@ -46,7 +73,10 @@ language_data: data.lang.%%
 language_includes_dir: _i18n
 
 # Jekyll Plugins
-plugins:
-- jekyll-livereload
+plugins_dir:
 - jekyll-email-protect
 - jekyll-language-plugin
+
+plugins:
+- jekyll-sitemap
+- jekyll-paginate-v2

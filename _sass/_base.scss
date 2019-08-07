@@ -23,6 +23,12 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    background-image: url('../img/style-coffee-stain.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    @include media-query($on-smaller-screen) {
+        background-image: none;
+    }
 }
 
 html {
@@ -101,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
     color: $brand-color;
-    text-decoration: underline;
+    text-decoration: wavy underline;
 
     &:visited {
         color: darken($brand-color, 15%);
@@ -109,7 +115,10 @@ a {
 
     &:hover {
         color: $text-color;
-        text-shadow: 0px 0px 10px $text-color;
+        text-shadow: 3px 1px 3px lighten($text-color, 30%);
+    }
+    &:focus {
+        outline: 0;
     }
 }
 
@@ -216,6 +225,56 @@ pre {
     }
 }
 
+%halfsize {
+    max-width: 48%;
+}
+
+.halfsize {
+    @extend %halfsize;
+}
+
+
+
 .clear {
     clear: both;
+}
+
+%column-right {
+    display: inline-block;
+    @extend %halfsize;
+    margin-top: 0;
+    margin-bottom: $spacing-unit;
+    float: right;
+    margin-left: 4%;
+
+
+    .halfsize {
+        @extend %halfsize;
+        margin-left: 4%;
+    }
+
+    @include media-query($on-laptop) {
+        width: 100%;
+        float: none;
+        .band-member {
+            float: none;
+            width: 100%;
+        }
+    }
+}
+
+form {
+    .field {
+        label {
+            display: inline-block;
+            width: 50%;
+        }
+
+        input[type=submit] {
+            margin-left: 50%;
+            @include media-query($on-palm) {
+                margin-left: 0;
+            }
+        }
+    }
 }

@@ -2,9 +2,8 @@
  * Site header
  */
 .site-header {
-    padding-top: 20px;
-    min-height: 191px;
-    background-image: url('../img/header.png');
+    min-height: 425px;
+    background-image: url('../img/guezzleimer-header.png');
     background-repeat: no-repeat no-repeat; 
     background-position: bottom center;
 
@@ -13,76 +12,109 @@
         padding-right: 0;
     }
 
-    padding-bottom: 60px;
     @include media-query($on-palm) {
-        padding-bottom: 100px;
+        background-size: 120% auto;
+        padding-bottom: 10%;
+        min-height: auto;
     }
 }
 
 .site-title {
-    display: block;
+    position: relative;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 15%;
     margin-bottom: 0;
-    float: left;
+    width: 45%;
+    height: 200px;
+
+    vertical-align: middle;
+    text-align: center;
+
+    img {
+        position: absolute;
+        max-height: 100%;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto auto;
+    }
+
     @include media-query($on-laptop) {
-        width: 50%;
     }
     @include media-query($on-palm) {
+        display: block;
+        max-width: 100%;
+        margin: 0;
         margin-top: 10px;
-        height: 191px;
 
         width: 100%;
         float: none;
-        
+
         img {
-            display: block;
-            width: 350px;
-            margin-left: auto;
-            margin-right: auto;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto auto;
         }
-    }    
+    }
 }
 
 .site-nav {
     display: block;
     float: right;
-    position: relative;
-    width: 360px;
-
-    height: 100%;
-    padding-bottom: 30%;
-    background-image: url(../img/nav2.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-
-
-    @include media-query($on-laptop) {
-        width: 50%;
-        float: right;
-        margin: auto;
-    }
+    width: 40%;
+    margin-top: 50px;
 
     @include media-query($on-palm) {
-        margin: auto;
+        padding-left: 20%;
+        padding-right: 5%;
         float: none;
         width: auto;
-        padding-bottom: 55%;
     }
 
     ul {
         margin: 0;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
+        padding: 0;
         list-style-type: none;
         li {
-            position: absolute;
+            max-width: 40%;
+            margin: 0 2%;
+            padding: 0;
+            display: inline-block;
+
             a {
-                position: absolute;
-                width: 100%;
-                height: 100%;
+                display: block;
+                transform: rotateX(-10deg) rotateY(10deg) rotateZ(-3deg);
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+
+                img.hover-blur {
+                    position: absolute;
+                    display: none;
+                }
+                &:hover img.hover-blur {
+                    display: inline-block;
+                    filter: drop-shadow(5px 3px 2px #999)
+                }
+
             }
-        } 
+        }
+
+        @include media-query($on-palm) {
+            li {
+                max-width: 25%;
+                margin: 0 3%;
+
+                a {
+                   transform: rotateX(-5deg) rotateY(5deg) rotateZ(-1deg);
+                }
+            }
+        }
     }
 }
 
@@ -93,8 +125,10 @@
 .site-footer {
     padding: $spacing-unit * 3 0;
     background-image: url('../img/footer.png')
-                    , url('../img/line-vertical-02.png')
+                    , url('../img/line-vertical-04.png')
                     , url('../img/line-vertical-03.png')
+                    , url('../img/line-vertical-09.png')
+                    , url('../img/line-vertical-10.png')
                     , url('../img/line-horizontal-02.png')
                     , url('../img/line-horizontal-04.png')
                     , url('../img/line-horizontal-03.png')
@@ -108,20 +142,24 @@
                      ;
 
     background-position: top center
-                       , -webkit-calc(50% - 420px) top
-                       , -webkit-calc(50% + 420px) top
-                       , -webkit-calc(50% - 280px) bottom
+                       , -webkit-calc(50% - 400px) (-3 * $spacing-unit)
+                       , -webkit-calc(50% - 400px) (-3 * $spacing-unit + 240)
+                       , -webkit-calc(50% + 400px) (-3 * $spacing-unit)
+                       , -webkit-calc(50% + 400px) (-3 * $spacing-unit + 240)
+                       , -webkit-calc(50% - 270px) bottom
                        , center bottom
-                       , -webkit-calc(50% + 280px) bottom
+                       , -webkit-calc(50% + 270px) bottom
                        ;
 
 
     background-position: top center
-                       , calc(50% - 420px) top
-                       , calc(50% + 420px) top
-                       , calc(50% - 280px) bottom
+                       , calc(50% - 400px) (-3 * $spacing-unit)
+                       , calc(50% - 400px) (-3 * $spacing-unit + 240)
+                       , calc(50% + 400px) (-3 * $spacing-unit)
+                       , calc(50% + 400px) (-3 * $spacing-unit + 240)
+                       , calc(50% - 270px) bottom
                        , center bottom
-                       , calc(50% + 280px) bottom
+                       , calc(50% + 270px) bottom
                        ;
 
     & > .wrapper > .footer-content {
@@ -129,9 +167,6 @@
        background-color: $alpha-bg-color;
        box-shadow: 0px 0px 30px 30px $alpha-bg-color;
     }
-}
-
-.contact-list, {
 }
 
 .footer-col-wrapper {
@@ -160,6 +195,20 @@
     color: $grey-color;
     width: -webkit-calc(60% - (#{$spacing-unit} / 2));
     width:         calc(60% - (#{$spacing-unit} / 2));
+
+    a {
+        color: lighten($brand-color, 15%);
+        text-decoration: wavy underline;
+
+        &:visited {
+            color: $brand-color;
+        }
+
+        &:hover {
+            color: $text-color;
+            text-shadow: 0px 0px 10px $text-color;
+        }
+    }
 }
 
 @include media-query($on-laptop) {
@@ -188,24 +237,25 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit * 3 0;
+    margin-top: $spacing-unit * -1;
+    padding: $spacing-unit * 3 0 0 0;
 
     background-image: url('../img/line-vertical-05.png')
                     , url('../img/line-vertical-11.png')
                     , url('../img/line-vertical-08.png')
                     , url('../img/line-vertical-02.png')
                     , url('../img/line-vertical-12.png')
-                    , url('../img/line-vertical-10.png')
-                    , url('../img/line-vertical-10.png')
-                    , url('../img/line-vertical-09.png')
+                    , url('../img/line-vertical-11.png')
+                    , url('../img/line-vertical-04.png')
+                    , url('../img/line-vertical-07.png')
                     , url('../img/line-vertical-08.png')
                     , url('../img/line-vertical-03.png')
                     , url('../img/line-vertical-07.png')
-                    , url('../img/line-vertical-01.png')
                     , url('../img/line-vertical-04.png')
-                    , url('../img/line-vertical-02.png')
                     , url('../img/line-vertical-06.png')
+                    , url('../img/line-vertical-02.png')
                     , url('../img/line-vertical-01.png')
+                    , url('../img/line-vertical-09.png')
                     , url('../img/line-vertical-07.png')
                     , url('../img/line-vertical-04.png')
                     , url('../img/line-vertical-03.png')
@@ -214,12 +264,11 @@
                     , url('../img/line-vertical-06.png')
                     , url('../img/line-vertical-12.png')
                     , url('../img/line-vertical-11.png')
+                    , url('../img/line-vertical-06.png')
+                    , url('../img/line-vertical-03.png')
                     , url('../img/line-horizontal-03.png')
                     , url('../img/line-horizontal-02.png')
                     , url('../img/line-horizontal-01.png')
-                    , url('../img/line-horizontal-04.png')
-                    , url('../img/line-horizontal-05.png')
-                    , url('../img/line-horizontal-04.png')
                     , url('../img/style-flame.png')
                     ;
     background-repeat: no-repeat no-repeat
@@ -253,75 +302,85 @@
                      , no-repeat no-repeat
                      , no-repeat no-repeat
                      , no-repeat no-repeat
+                     , no-repeat no-repeat
+                     , no-repeat no-repeat
                      ;
-    background-position: -webkit-calc(50% - 420px) top
-                       , -webkit-calc(50% - 420px) 260px
-                       , -webkit-calc(50% - 420px) 520px
-                       , -webkit-calc(50% - 420px) 760px
-                       , -webkit-calc(50% - 420px) 1040px
-                       , -webkit-calc(50% - 420px) 1300px
-                       , -webkit-calc(50% - 420px) 1560px
-                       , -webkit-calc(50% - 420px) 1820px
-                       , -webkit-calc(50% - 420px) 2080px
-                       , -webkit-calc(50% - 420px) 2340px
-                       , -webkit-calc(50% - 420px) 2600px
-                       , -webkit-calc(50% - 420px) 2860px
-                       , -webkit-calc(50% + 420px) top
-                       , -webkit-calc(50% + 420px) 260px
-                       , -webkit-calc(50% + 420px) 520px
-                       , -webkit-calc(50% + 420px) 760px
-                       , -webkit-calc(50% + 420px) 1040px
-                       , -webkit-calc(50% + 420px) 1300px
-                       , -webkit-calc(50% + 420px) 1560px
-                       , -webkit-calc(50% + 420px) 1820px
-                       , -webkit-calc(50% + 420px) 2080px
-                       , -webkit-calc(50% + 420px) 2340px
-                       , -webkit-calc(50% + 420px) 2600px
-                       , -webkit-calc(50% + 420px) 2860px
-                       , -webkit-calc(50% - 280px) top
+    background-position: -webkit-calc(50% - 400px) top
+                       , -webkit-calc(50% - 400px) 260px
+                       , -webkit-calc(50% - 400px) 520px
+                       , -webkit-calc(50% - 400px) 760px
+                       , -webkit-calc(50% - 400px) 1040px
+                       , -webkit-calc(50% - 400px) 1300px
+                       , -webkit-calc(50% - 400px) 1560px
+                       , -webkit-calc(50% - 400px) 1820px
+                       , -webkit-calc(50% - 400px) 2080px
+                       , -webkit-calc(50% - 400px) 2340px
+                       , -webkit-calc(50% - 400px) 2600px
+                       , -webkit-calc(50% - 400px) 2860px
+                       , -webkit-calc(50% - 400px) 3120px
+                       , -webkit-calc(50% + 400px) top
+                       , -webkit-calc(50% + 400px) 260px
+                       , -webkit-calc(50% + 400px) 520px
+                       , -webkit-calc(50% + 400px) 760px
+                       , -webkit-calc(50% + 400px) 1040px
+                       , -webkit-calc(50% + 400px) 1300px
+                       , -webkit-calc(50% + 400px) 1560px
+                       , -webkit-calc(50% + 400px) 1820px
+                       , -webkit-calc(50% + 400px) 2080px
+                       , -webkit-calc(50% + 400px) 2340px
+                       , -webkit-calc(50% + 400px) 2600px
+                       , -webkit-calc(50% + 400px) 2860px
+                       , -webkit-calc(50% + 400px) 3120px
+                       , -webkit-calc(50% - 240px) top
                        , center top
-                       , -webkit-calc(50% + 280px) top
-                       , -webkit-calc(50% - 280px) bottom
+                       , -webkit-calc(50% + 240px) top
+                       , -webkit-calc(50% - 240px) bottom
                        , center bottom
-                       , -webkit-calc(50% + 280px) bottom
+                       , -webkit-calc(50% + 240px) bottom
                        , right top
-                       ;  
-    background-position: calc(50% - 420px) top
-                       , calc(50% - 420px) 260px
-                       , calc(50% - 420px) 520px
-                       , calc(50% - 420px) 760px
-                       , calc(50% - 420px) 1040px
-                       , calc(50% - 420px) 1300px
-                       , calc(50% - 420px) 1560px
-                       , calc(50% - 420px) 1820px
-                       , calc(50% - 420px) 2080px
-                       , calc(50% - 420px) 2340px
-                       , calc(50% - 420px) 2600px
-                       , calc(50% - 420px) 2860px
-                       , calc(50% + 420px) top
-                       , calc(50% + 420px) 260px
-                       , calc(50% + 420px) 520px
-                       , calc(50% + 420px) 760px
-                       , calc(50% + 420px) 1040px
-                       , calc(50% + 420px) 1300px
-                       , calc(50% + 420px) 1560px
-                       , calc(50% + 420px) 1820px
-                       , calc(50% + 420px) 2080px
-                       , calc(50% + 420px) 2340px
-                       , calc(50% + 420px) 2600px
-                       , calc(50% + 420px) 2860px
-                       , calc(50% - 280px) top
+                       ;
+    background-position: calc(50% - 400px) top
+                       , calc(50% - 400px) 260px
+                       , calc(50% - 400px) 520px
+                       , calc(50% - 400px) 760px
+                       , calc(50% - 400px) 1040px
+                       , calc(50% - 400px) 1300px
+                       , calc(50% - 400px) 1560px
+                       , calc(50% - 400px) 1820px
+                       , calc(50% - 400px) 2080px
+                       , calc(50% - 400px) 2340px
+                       , calc(50% - 400px) 2600px
+                       , calc(50% - 400px) 2860px
+                       , calc(50% - 400px) 3120px
+                       , calc(50% + 400px) top
+                       , calc(50% + 400px) 260px
+                       , calc(50% + 400px) 520px
+                       , calc(50% + 400px) 760px
+                       , calc(50% + 400px) 1040px
+                       , calc(50% + 400px) 1300px
+                       , calc(50% + 400px) 1560px
+                       , calc(50% + 400px) 1820px
+                       , calc(50% + 400px) 2080px
+                       , calc(50% + 400px) 2340px
+                       , calc(50% + 400px) 2600px
+                       , calc(50% + 400px) 2860px
+                       , calc(50% + 400px) 3120px
+                       , calc(50% - 240px) top
                        , center top
-                       , calc(50% + 280px) top
-                       , calc(50% - 280px) bottom
+                       , calc(50% + 240px) top
+                       , calc(50% - 240px) bottom
                        , center bottom
-                       , calc(50% + 280px) bottom
+                       , calc(50% + 240px) bottom
                        , right top
-                       ;                   
+                       ;
    & > .wrapper > *:first-child {
        background-color: $alpha-bg-color;
        box-shadow: 0px 0px 30px 30px $alpha-bg-color;
    }
+
+    @include media-query($on-palm) {
+        margin-top: 0;
+    }
 }
 
 .page-heading {
@@ -360,13 +419,13 @@
 }
 
 .post-title {
-    font-weight: bold;
+    font-weight: 900;
     font-size: 42px;
     /* text-transform: uppercase; */
     text-align: center;
     letter-spacing: 3px;
     line-height: 1;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -413,3 +472,4 @@
     height: 100px;
     padding: $spacing-unit;
 }
+

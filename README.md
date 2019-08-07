@@ -1,13 +1,16 @@
 # Guezzl-page
 
-The Homepage for our band called Güssl. It's based on Jekyll. Dependency Management is done with Nix and Direnv.
+The Homepage for our band called Güssl. This is just a statically generated site using Jekyll.
 
+Dependency Management is done with nix, bundix and direnv. Although it should be possible to manage it with bundler and other ruby tools as well, but you'll have to have the same dependencies installed as listed in `default.nix` to run all the shell scripts.
 
-# How to add a Gem:
+# Images
+
+Using the `bin/scale-site-images.sh` script you can regenerate the PNG images from the original XCF files. This is mostly being done for scaling and removing the white background.
+
+# How to add a Gem using nix & bundix:
 
  * Edit the `Gemfile`
- * Execute `bundler lock` to generate Gemfile.lock. You can also do this with nix-shell directly `nix-shell -p bundler --command "bundler lock"`.
- * Execute `bundix`. With nix shell: `nix-shell -p bundix --command bundix`
- * This will regenerate gemset.nix and direnv should now load the new environment with the gems in it.
-
+ * run `bin/nix-bundle-gems.sh` 
+ * This will regenerate `Gemfile.lock`, `gemset.nix` and direnv should now load the new environment with the gems in it.
 

@@ -4,7 +4,9 @@ let
     stdenv = pkgs.stdenv;
     guezzelPageBundlerEnv = pkgs.bundlerEnv rec {
         name = "guezzl-page";
-        gemdir = ./.;
+        gemfile = ./Gemfile;
+        lockfile = ./Gemfile.lock;
+        gemset = ./gemset.nix;
         ruby = pkgs.ruby;
     };
 in rec {
@@ -13,7 +15,7 @@ in rec {
         buildInputs = [
           guezzelPageBundlerEnv
           pkgs.pngcrush
-          pkgs.imagemagick
+          pkgs.imagemagick7
           pkgs.ruby
           pkgs.bundix
         ];

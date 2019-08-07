@@ -1,0 +1,15 @@
+    {% if paginator.total_pages > 1 %}
+    <ul class="pager">
+        {% if paginator.previous_page %}
+        <li class="previous">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">... Nüeri Uftritt</a>
+        </li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="next">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Älteri Uftritt ...</a>
+        </li>
+        {% endif %}
+        <div class="clear"></div>
+    </ul>
+    {% endif %}

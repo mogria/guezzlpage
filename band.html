@@ -3,29 +3,29 @@ layout: page
 title: d'bänd
 permalink: /band/
 has_menu_link: true
-menu_link_height: 37%
-menu_link_width: 50%
-menu_link_top: 0%
-menu_link_left: 0%
+menu_link_image: /img/nav-band.png
 ---
 
 {% assign maikusan = site.data.bandmembers.maikusan.name %}
 {% assign titan = site.data.bandmembers.titan.name %}
 {% assign cmon = site.data.bandmembers.cmon.name %}
-{% assign mogli = site.data.bandmembers.mogli.name %}
+{% assign mogria = site.data.bandmembers.mogria.name %}
 {% assign dandy = site.data.bandmembers.dandy.name %}
 {% assign lenny = site.data.bandmembers.lenny.name %}
 {% assign umpa = site.data.bandmembers.umpa.name %}
-{% assign botti = site.data.bandmembers.botti.name %}
+{% assign bottlee = site.data.bandmembers.bottlee.name %}
+{% assign bazil = site.data.bandmembers.bazil.name %}
 
 <div itemscope= itemtype="http://schema.org/MusicGroup">
 <div class="band-members" itemscope itemtype="http://schema.org/ItemList">
-<h3 itemprop="name">Aktuelli Mitgliedr</h3>
+    <h3 itemprop="name">
+        <img src="{{ "/img/guesl-gang.png" | prepend: site.baseurl}}" alt="{{ site.title | sample }} Gang"/>
+    </h3>
 {% for member in site.data.bandmembers %}
     {% if member[1].active %}
         <div class="band-member" itemprop="itemListElement" itemscope itemtype="http://schema.org/Person">
             <div class="image-box">
-                <img class="band-member-portrait" itemprop="image" src="{{site.baseurl}}/img/bandmember-{{member[0]}}.png" />
+                <img class="band-member-portrait" itemprop="image" src="{{site.baseurl}}/img/bandmember-{{member[0]}}.png?v=1" />
             </div>
             <div class="band-member-meta">
                 <strong class="band-member-name" itemprop="name">{{member[1].name}}</strong>
@@ -41,7 +41,7 @@ menu_link_left: 0%
 isch Programm. Mr wüssid immr nu nid we mr en richtig schriibt, mr hend
 keis schwiizerdütsch Wörterbuech gfunde.</p>
 
-<img src="{{site.baseurl}}/img/style-fallen-guessel.png" />
+<img src="{{site.baseurl}}/img/style-fallen-guessel.png" class="halfsize" />
 
 <h2>Gründigsgschicht</h2> 
 
@@ -56,7 +56,7 @@ sich denn im Bandruum im Kanton Zug igrichtet und afe umeprobiere. Vili
 lüt hend de {{dandy}} nie gse und mr munkled inzwüsche das es ihn gar
 nid gid, doch de {{dandy}} isch em {{maikusan}} sii fründ.</p>
 
-<p>Später irgendwenn sind de {{cmon}} als Gitarrist und de {{mogli}}
+<p>Später irgendwenn sind de {{cmon}} als Gitarrist und de {{mogria}}
 als Bassist au nu dezue gstosse und en gnueg grossi d'band zämecho. Es
 sind die erste Lieder gschribe worde we &quot;Kaptalisteschrott&quot;,
 &quot;Eigetum ish Diebstahl&quot; &amp; natürlich &quot;Immer Wenn
@@ -72,7 +72,7 @@ am Punker Picknick in Chur gha.</p>
 umegüssle.</p>
 
 <p>De {{titan}} hed ufgrund vo andere Projekt den d'band verlah und
-de {{umpa}} isch als nüe Drummer dezue cho. Au hed nü de {{botti}}
+de {{umpa}} isch als nüe Drummer dezue cho. Au hed nü de {{bottlee}}
 die 2. Gitarre übernu anstatt de {{lenny}}</p>
 
 </div>

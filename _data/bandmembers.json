@@ -1,6 +1,6 @@
 {
     "maikusan": {
-        "name": "xMaikusanx",
+        "name": "xMaikux",
         "role": "Sänger, Bassist",
         "description": "De puri Hass in Person.",
         "active": true
@@ -19,12 +19,12 @@
     },
     "cmon": {
         "name": "Cmon",
-        "role": "1. Gitarrist",
+        "role": "Gitarrist",
         "description": "Gids eis?!",
         "active": true
     },
-    "mogli": {
-        "name": "Mogli",
+    "mogria": {
+        "name": "Mogria",
         "role": "Bassist, Sänger",
         "description": "Stahd immer nachem mittag uf.",
         "active": true
@@ -41,10 +41,16 @@
         "description": "Schaffed, falls er nid arbeitslos isch.",
         "active": true
     },
-    "botti": {
-        "name": "Botti",
-        "role": "2. Gitarrist",
-        "description": "Alles isch de Botti.",
+    "bottlee": {
+        "name": "Bottlee",
+        "role": "Gitarrist",
+        "description": "Alles isch de bottlee.",
+        "active": true
+    },
+    "bazil": {
+        "name": "Bazil",
+        "role": "Gitarrist",
+        "description": "Lost gern rock musig.",
         "active": true
     }
 }

@@ -1,13 +1,21 @@
-.song {
-    .song-images > img {
-        margin-top: $spacing-unit;
-        margin-bottom: $spacing-unit;
-        display: block;
-        float: right;
-        clear: right;
+/* single song article, with lyrics */
+article.song {
+    .song-images {
+        @extend %column-right;
+
+        figure {
+            display: block;
+            margin-top: 2 * $spacing-unit;
+
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
     }
 }
 
+/* album listing on musig page */
 .albums {
     .album {
         margin-top: $spacing-unit * 2;
@@ -18,12 +26,23 @@
                 font-size: 32px;
             }
 
+            .album-cover {
+                padding: 20px 20px;
+                background-image: url(../img/box-drawn-02.png);
+                background-position: 2px center;
+                background-repeat: no-repeat;
+            }
+
             .album-year {
+                display: block;
+                font-weight: bold;
                 font-size: 24px;
+                font-style: italic;
             }
         }
         .songlist {
             margin-top: $spacing-unit;
+            margin-left: 42px;
             width: 100%;
             max-width: 500px;
 
@@ -35,6 +54,15 @@
                     float: right;
                     display: inline-block;
                 }
+
+                a {
+                    text-decoration: none;
+                }
+            }
+            @include media-query($on-palm) {
+                max-width: 100%;
+                font-size: 4vw;
+
             }
         }
     }

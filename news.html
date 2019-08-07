@@ -1,0 +1,31 @@
+---
+layout: page
+title: "News"
+permalink: /news/
+has_menu_link: true
+menu_link_image: /img/nav-news.png
+pagination:
+  enabled: true
+  category: news
+  per_page: 5
+  sort_reverse: true
+---
+
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+
+<div class="home">
+
+  <section class="news">
+    <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
+      {% for post in site.posts %}
+        {% if post.categories contains "uftritt" %}
+        {% else %}
+          {% include news-post.html %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+
+
+  {% include rss.html %}
+</div>

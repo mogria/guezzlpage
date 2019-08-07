@@ -1,18 +1,5 @@
-.band-members {
-    margin: $spacing-unit;
-    margin-top: 0;
-    float: right;
-    width: 305px;
-
-    @include media-query($on-laptop) {
-        width: 100%;
-        float: none;
-        .band-member {
-            float: left;
-            width: 300px;
-        }
-    }
-    @extend %clearfix;
+.post-content .band-members {
+    @extend %column-right;
 
     .band-member {
          @extend %clearfix;
@@ -22,6 +9,7 @@
             img {
                 display: block;
                 margin: auto;
+                max-height: 100%;
             }
         }
 
@@ -35,14 +23,43 @@
                 display: block;
             }
             .band-member-description {
-                margin-top: $spacing-unit / 2;
+                margin-top: $spacing-unit / 4;
                 display: block;
                 font-size: $small-font-size;
             }
         }
     }
 
+    @include media-query($on-laptop) {
+        width: 95%;
+        max-width: 95%;
+
+        .band-member {
+            display: block;
+            float: left;
+            width: 50%;
+            min-width: 300px;
+        }
+    }
+
+    @include media-query($on-palm) {
+        width: 100%;
+        max-width: 100%;
+
+        .band-member {
+            width: 100%;
+            float: none;
+        }
+    }
+
     .band-member:last-child {
         border-bottom: 0;
     }
+}
+
+/* make sure the space before the  title for "Gruendigsgschicht" isn't
+   cleared, and the band members are on the left on the desktop */
+.page-content .post-content h2:before {
+    display: block;
+    clear: none;
 }

@@ -1,0 +1,10 @@
+---
+author: michi
+layout: song
+title: Intro
+album: gruempel-ep
+year: 2018
+length: false
+---
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!

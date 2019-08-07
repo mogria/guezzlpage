@@ -1,0 +1,12 @@
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem http://schema.org/BlogPosting">
+  <div class="post-meta" itemprop="datePublished">
+      <span class="post-date-month">{{ post.show_date | date: "%b" }}</span>
+      <span class="post-date-day">{{ post.show_date | date: "%-d" }}</span>
+      <span class="post-date-year">{{ post.show_date | date: "%Y" }}</span>
+  </div>
+  <h2 class="show-title">
+    <a class="post-link" itemprop="url name" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </h2>
+  <p>{{ post.excerpt }} <a class="post-read-more-link" itemprop="url name" href="{{ post.url | prepend: site.baseurl }}">Gnauers...</a></p>
+
+</li>
