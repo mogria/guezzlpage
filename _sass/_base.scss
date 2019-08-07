@@ -23,7 +23,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-    background-image: url('../img/style-coffee-stain.png');
+    background-image: url(#{$asset-path}/style-coffee-stain.png);
     background-repeat: no-repeat;
     background-position: top right;
     @include media-query($on-smaller-screen) {
@@ -33,7 +33,7 @@ body {
 
 html {
     background-color: $background-color;
-    background-image: url('../img/paper-background.png');
+    background-image: url(#{$asset-path}/paper-background.png);
     background-repeat: xy-repeat;
     background-position: bottom center;
 

@@ -10,7 +10,7 @@
         display: block;
         .post-meta {
             display: block;
-            background-image: url(../img/box-drawn.png);
+            background-image: url(#{$asset-path}/box-drawn.png);
             background-position: center center;
             background-repeat: no-repeat;
             float: left;

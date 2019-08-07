@@ -39,7 +39,15 @@ jekyll-asset-pipline will compress the SASS here and insert the appropriate tag
 {% endcss_asset_tag %}
 {% endcomment %}
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <!-- render css inline for the browser to be able to fetch the images
+      earlier and have one less request -->
+  {% capture styles %}
+  {% include main.scss %}
+  {% endcapture %}
+
+  <style>
+  {{ styles | scssify }}
+  </style>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | sample }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
