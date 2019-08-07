@@ -3,7 +3,7 @@
   font-family: 'Gloria Hallelujah';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: url(#{$font-path}/gloria-hallelujah-v9-latin-regular.eot); /* IE9 Compat Modes */
   src: local('Gloria Hallelujah'), local('GloriaHallelujah'),
        url(#{$font-path}/gloria-hallelujah-v9-latin-regular.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
