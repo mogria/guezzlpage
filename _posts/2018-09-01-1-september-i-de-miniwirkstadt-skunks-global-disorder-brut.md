@@ -7,7 +7,7 @@ show_date:   2018-09-01
 categories: uftritt
 ---
 
-Hey leuts mr spilid hüt abig nu i de miniwirkstadt in Lichtensteig. Letsch mal isch en richtig schöni sause gsi und dasmal chemid au nu Skunks, Global Disorder & Brut gu räble. Aso mr gsed sich oder ebe nid ;)
+Hey leuts mr spilid hüt abig nu i de miniwirkstadt in Lichtensteig. Letsch mal isch en richtig schöni sause gsi und dasmal chemid au nu Skunks, Global Disorder & Brut gu räble. Aso mr gsed sich oder ebe nid ;-)
 
 Hie nu de facebook link:  
 
