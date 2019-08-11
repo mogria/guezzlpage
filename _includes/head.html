@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- z'letscht nügeneriert am: {{ "now" | date: "%Y-%m-%d %H:%M" }} -->
 
   <!-- hä was luegsch? log das isch eifach en statischi websiite wo generiert wird mit jekyll (https://jekyllrb.com),
@@ -32,14 +32,17 @@
 
   <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
 
-{% comment %}
-jekyll-asset-pipline will compress the SASS here and insert the appropriate tag
-{% css_asset_tag global %}
-- /_sass/main.scss
-{% endcss_asset_tag %}
-{% endcomment %}
+  {% comment %}
+    render css inline for the browser to be able to fetch the images
+    earlier and have one less request
+  {% endcomment %}
+  {% capture styles %}
+  {% include main.scss %}
+  {% endcapture %}
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <style>
+  {{ styles | scssify }}
+  </style>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | sample }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">

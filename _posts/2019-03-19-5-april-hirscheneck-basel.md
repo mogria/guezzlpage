@@ -4,7 +4,7 @@ layout: post
 title:  5. April, Hirscheneck, Basel
 date:   2019-03-19 08:22:35+01:00
 categories: uftritt
-show_date: 05-04-2019
+show_date: 2019-04-05
 ---
 
 Nächschtens spiler mal z'Basel und denn au nu im hirscheneck. Es isch es Solikonzi für e Hambacher Forst.

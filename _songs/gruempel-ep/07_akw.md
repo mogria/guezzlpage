@@ -27,7 +27,7 @@ chamer sich's schöner usmale?
 
 **2. Strophe**  
 Fukushima het üs viels glernt  
-wemer mit emene supergau umgend
+wemer mit emene supergau umgend  
 Verstrallig ish gar ned so hert  
 wemer d'gfahre-skala änderet
 

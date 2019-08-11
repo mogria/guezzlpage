@@ -3,7 +3,7 @@
  */
 .site-header {
     min-height: 425px;
-    background-image: url('../img/guezzleimer-header.png');
+    background-image: url(#{$asset-path}/guezzleimer-header.png);
     background-repeat: no-repeat no-repeat; 
     background-position: bottom center;
 
@@ -124,14 +124,14 @@
  */
 .site-footer {
     padding: $spacing-unit * 3 0;
-    background-image: url('../img/footer.png')
-                    , url('../img/line-vertical-04.png')
-                    , url('../img/line-vertical-03.png')
-                    , url('../img/line-vertical-09.png')
-                    , url('../img/line-vertical-10.png')
-                    , url('../img/line-horizontal-02.png')
-                    , url('../img/line-horizontal-04.png')
-                    , url('../img/line-horizontal-03.png')
+    background-image: url(#{$asset-path}/footer.png)
+                    , url(#{$asset-path}/line-vertical-04.png)
+                    , url(#{$asset-path}/line-vertical-03.png)
+                    , url(#{$asset-path}/line-vertical-09.png)
+                    , url(#{$asset-path}/line-vertical-10.png)
+                    , url(#{$asset-path}/line-horizontal-02.png)
+                    , url(#{$asset-path}/line-horizontal-04.png)
+                    , url(#{$asset-path}/line-horizontal-03.png)
                     ;
     background-repeat: no-repeat no-repeat 
                      , no-repeat no-repeat 
@@ -240,36 +240,36 @@
     margin-top: $spacing-unit * -1;
     padding: $spacing-unit * 3 0 0 0;
 
-    background-image: url('../img/line-vertical-05.png')
-                    , url('../img/line-vertical-11.png')
-                    , url('../img/line-vertical-08.png')
-                    , url('../img/line-vertical-02.png')
-                    , url('../img/line-vertical-12.png')
-                    , url('../img/line-vertical-11.png')
-                    , url('../img/line-vertical-04.png')
-                    , url('../img/line-vertical-07.png')
-                    , url('../img/line-vertical-08.png')
-                    , url('../img/line-vertical-03.png')
-                    , url('../img/line-vertical-07.png')
-                    , url('../img/line-vertical-04.png')
-                    , url('../img/line-vertical-06.png')
-                    , url('../img/line-vertical-02.png')
-                    , url('../img/line-vertical-01.png')
-                    , url('../img/line-vertical-09.png')
-                    , url('../img/line-vertical-07.png')
-                    , url('../img/line-vertical-04.png')
-                    , url('../img/line-vertical-03.png')
-                    , url('../img/line-vertical-05.png')
-                    , url('../img/line-vertical-09.png')
-                    , url('../img/line-vertical-06.png')
-                    , url('../img/line-vertical-12.png')
-                    , url('../img/line-vertical-11.png')
-                    , url('../img/line-vertical-06.png')
-                    , url('../img/line-vertical-03.png')
-                    , url('../img/line-horizontal-03.png')
-                    , url('../img/line-horizontal-02.png')
-                    , url('../img/line-horizontal-01.png')
-                    , url('../img/style-flame.png')
+    background-image: url(#{$asset-path}/line-vertical-05.png)
+                    , url(#{$asset-path}/line-vertical-11.png)
+                    , url(#{$asset-path}/line-vertical-08.png)
+                    , url(#{$asset-path}/line-vertical-02.png)
+                    , url(#{$asset-path}/line-vertical-12.png)
+                    , url(#{$asset-path}/line-vertical-11.png)
+                    , url(#{$asset-path}/line-vertical-04.png)
+                    , url(#{$asset-path}/line-vertical-07.png)
+                    , url(#{$asset-path}/line-vertical-08.png)
+                    , url(#{$asset-path}/line-vertical-03.png)
+                    , url(#{$asset-path}/line-vertical-07.png)
+                    , url(#{$asset-path}/line-vertical-04.png)
+                    , url(#{$asset-path}/line-vertical-06.png)
+                    , url(#{$asset-path}/line-vertical-02.png)
+                    , url(#{$asset-path}/line-vertical-01.png)
+                    , url(#{$asset-path}/line-vertical-09.png)
+                    , url(#{$asset-path}/line-vertical-07.png)
+                    , url(#{$asset-path}/line-vertical-04.png)
+                    , url(#{$asset-path}/line-vertical-03.png)
+                    , url(#{$asset-path}/line-vertical-05.png)
+                    , url(#{$asset-path}/line-vertical-09.png)
+                    , url(#{$asset-path}/line-vertical-06.png)
+                    , url(#{$asset-path}/line-vertical-12.png)
+                    , url(#{$asset-path}/line-vertical-11.png)
+                    , url(#{$asset-path}/line-vertical-06.png)
+                    , url(#{$asset-path}/line-vertical-03.png)
+                    , url(#{$asset-path}/line-horizontal-03.png)
+                    , url(#{$asset-path}/line-horizontal-02.png)
+                    , url(#{$asset-path}/line-horizontal-01.png)
+                    , url(#{$asset-path}/style-flame.png)
                     ;
     background-repeat: no-repeat no-repeat
                      , no-repeat no-repeat
@@ -430,7 +430,7 @@
     @include media-query($on-laptop) {
         font-size: 36px;
     }
-    background-image: url(../img/line-horizontal-04.png);
+    background-image: url(#{$asset-path}/line-horizontal-04.png);
     background-repeat: no-repeat;
     background-position: center bottom;
     
@@ -467,7 +467,7 @@
 }
 
 .image-box {
-    background-image: url(../img/box-drawn.png);
+    background-image: url(#{$asset-path}/box-drawn.png);
     width: 100px;
     height: 100px;
     padding: $spacing-unit;

@@ -1,9 +1,4 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
 @charset "utf-8";
-
-
 
 // Our variables
 $base-font-family: "Gloria Hallelujah", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -29,6 +24,9 @@ $content-width:    760px;
 $on-palm:          540px;
 $on-laptop:        760px;
 $on-smaller-screen: 1440px;
+
+$asset-path:      /img;
+$font-path:       /fonts;
 
 
 

@@ -7,6 +7,9 @@ cd "$d"
 
 if [ "$#" -lt 2 ]; then
     echo "Usage: make-show.sh show-title show-date"
+    echo ""
+    echo "  show-date must have the format 2019-01-01"
+    echo ""
     exit 1
 fi
 

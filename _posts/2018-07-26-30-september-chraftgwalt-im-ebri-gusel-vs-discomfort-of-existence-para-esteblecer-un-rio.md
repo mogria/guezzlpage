@@ -7,7 +7,7 @@ show_date:   2018-09-30
 categories: uftritt
 ---
 
-Ich ha zwar scho länger nümme hie öppis innetöggeled am PC, aber de Früelig isches scho nu recht hert eskaliert, mr hend nu öppe so 10 mal gspilt. Geili sach ;))
+Ich ha zwar scho länger nümme hie öppis innetöggeled am PC, aber de Früelig isches scho nu recht hert eskaliert, mr hend nu öppe so 10 mal gspilt. Geili sach ;-)
 
 Uf jedefall isch sicher dasr nächsch September widr emal im Ebri innegräbled wird mit Discomfort of Existence. (Heds ja nu nie geh xD)
 

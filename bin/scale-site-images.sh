@@ -51,7 +51,7 @@ convert_xcf_image_to_target_size() {
     tmpfile="$(mktemp).png"
     { 
         convert -define png:exclude-chunks=date -gravity "$gravity" "$xcffile"[1] $resize  -size "100%x100%" canvas:none -composite "$tmpfile" &&
-        pngcrush -brute -reduce -rem tIME -rem bKGD -rem hIST "$tmpfile" "$outfile" 2> /dev/null > /dev/null &&
+        pngcrush -brute -blacken -reduce -rem tIME -rem bKGD -rem hIST "$tmpfile" "$outfile" 2> /dev/null > /dev/null &&
         echo "successfully converted '$xcffile'"
     } || echo "failed to convert '$xcffile'"
 }
