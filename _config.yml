@@ -33,7 +33,6 @@ github_username:  mogria
 encoding: utf-8
 pagination:
   enabled: true
-  debug: true
   collection: 'posts'
   title: ' - siite :num'
   category: 'uftritt'
