@@ -13,7 +13,7 @@ Es isch au schön das mr mal mit Rectal Depravity zämespile chend. Si machid au
 
 Aso luegid das er üches arsch in cheller vom ebri innedrücke mögid. Mr cha sich au Tickets reserviere, denn isch bizzli billiger.
 
-Mr freuid üs ;)
+Mr freuid üs ;-)
 
 Hie de Event uf facebook:  
 [facebook.com/events/1633956773361482](https://www.facebook.com/events/1633956773361482/)
