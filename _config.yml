@@ -66,7 +66,18 @@ sass:
     style: compressed
 
 # Files which should not be copied over to _site
-exclude: ["bin", "LICENSE", "README.md", "gemset.nix", "default.nix", "Gemfile", "Gemfile.lock", "composer.json", "composer.lock", "vendor"]
+exclude:
+- "bin"
+- "LICENSE"
+- "README.md"
+- "gemset.nix"
+- "guezzlpage.nix"
+- "default.nix"
+- "Gemfile"
+- "Gemfile.lock"
+- "composer.json"
+- "composer.lock"
+- "vendor"
 
 # Jekyll Plugins
 plugins_dir:
