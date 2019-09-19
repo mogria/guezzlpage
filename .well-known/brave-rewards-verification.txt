@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: xn--gssl-0ra.ch
+Token: 3edb176d0ad70a5c60100ae8acdca8b4eecec13cfc23d433e320a8456b419313

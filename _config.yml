@@ -78,6 +78,9 @@ exclude:
 - "composer.lock"
 - "vendor"
 
+include:
+- ".well-known"
+
 # Jekyll Plugins
 plugins_dir:
 - jekyll-email-protect
