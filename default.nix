@@ -8,9 +8,11 @@ in rec {
         name = "guezzl-page-env";
         buildInputs = [
           guezzelPageBundlerEnv
+          # This should go into shell.nix
+          # https://nixos.wiki/wiki/Packaging/Ruby
           pkgs.pngcrush
           pkgs.imagemagick7
-          pkgs.ruby
+          pkgs.ruby.devEnv
           pkgs.bundix
         ];
     };
