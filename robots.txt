@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin
+
+Sitemap: https://xn--gssl-0ra.ch/sitemap.xml
