@@ -81,9 +81,14 @@ exclude:
 include:
 - ".well-known"
 
+# condifiguration for jekyll language plugin
+language_data: data.lang.%%
+language_includes_dir: _i18n
+
 # Jekyll Plugins
 plugins_dir:
 - jekyll-email-protect
+- jekyll-language-plugin
 
 plugins:
 - jekyll-sitemap
