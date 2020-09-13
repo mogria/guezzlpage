@@ -11,9 +11,12 @@ Mr sind widr zrug & am start, eifach mindestens 5x schlechter.
 
 Mr spilid endlich wider mal & zwar im bruch brothers in Luzern mit [White Dog Suicide](https://whitedogsuicide.bandcamp.com).
 
-[Flyer Güssl / White Dog Suicide / Bruch Brothers Luzern]({{ site.baseurl}}/img/posts/flyer-bruch-brothers-18-september.jpg)
+![Flyer Güssl / White Dog Suicide / Bruch Brothers Luzern]({{ site.baseurl}}/img/posts/flyer-bruch-brothers-18-september.jpg)
 
-Itriitt: Kollekte
+Itriitt: Kollekte  
+Türöffnig: 17:00  
+Happy Hour: 17:00-19:00  
+Konzerte: abem 21:00  
 
 Und hie nu de facebook event:  
 [www.facebook.com/events/2179040645532896](https://www.facebook.com/events/2179040645532896/)
