@@ -13,13 +13,15 @@ Mr spilid endlich wider mal & zwar im Bruch Brothers in Luzern mit [White Dog Su
 
 ![Flyer Güssl / White Dog Suicide / Bruch Brothers Luzern]({{ site.baseurl}}/img/posts/flyer-bruch-brothers-18-september.jpg)
 
-Itriitt: Kollekte  
-Türöffnig: 17:00  
-Happy Hour: 17:00-19:00  
-Konzerte: abem 21:00  
+
+**Itriitt**: Kollekte  
+**Türöffnig**: 17:00  
+**Happy Hour**: 17:00-19:00  
+**Konzerte**: abem 21:00  
 
 Und hie nu de facebook event:  
 [www.facebook.com/events/2179040645532896](https://www.facebook.com/events/2179040645532896/)
+
 D' websiite vom Bruch Brothers:  
 [www.bruch-brothers.ch](https://www.bruch-brothers.ch/)
 
