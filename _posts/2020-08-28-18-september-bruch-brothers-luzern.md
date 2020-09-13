@@ -1,8 +1,8 @@
 ---
-author: weissnid
+author: mogria
 layout: post
-title:  18. September, White Dog Suicide & Güsel im Bruch Brothers
-date:   2020-08-28 20:08:06+02:00
+title:  "18. September, White Dog Suicide & Güsel im Bruch Brothers"
+date:   2020-08-28 20:08:06 +0200
 categories: uftritt
 show_date: 2020-09-18
 ---
