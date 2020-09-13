@@ -60,6 +60,12 @@ sitemap:
     collections:
         - "posts"
         - "songs"
+defaults:
+  -
+    scope:
+      path:            "img/orig/*"
+    values:
+      sitemap:         false
 
 sass:
     style: compressed
