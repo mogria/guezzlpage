@@ -14,6 +14,7 @@ pagination:
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 
 <div class="home">
+  {% if paginator.page <= 1 %}
   <section class="upcoming-shows">
     <h1 class="post-title">Nechsti Uftritt</h1>
     <ul class="post-list" itemscope itemtype="http://schema.org/ItemList">
@@ -37,6 +38,7 @@ pagination:
       {% endif %}
     </ul>
   </section>
+  {% endif %}
 
   <section class="past-shows">
     <h1 class="post-title">Vergangeni Uftritt</h1>
