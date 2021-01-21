@@ -6,7 +6,8 @@ d="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$d"
 
 if [ "$#" -lt 1 ]; then
-    echo "Usage: make-show.sh post-title"
+    echo "Usage: make-post.sh post-title"
+    exit 1
 fi
 
 date="$(date --rfc-3339=seconds)"
