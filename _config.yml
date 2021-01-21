@@ -66,6 +66,11 @@ defaults:
       path:            "img/orig/*"
     values:
       sitemap:         false
+  -
+    scope:
+      path:            "admin/*"
+    values:
+      sitemap:         false
 
 sass:
     style: compressed
