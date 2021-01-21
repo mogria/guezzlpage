@@ -88,6 +88,7 @@ exclude:
 - "composer.json"
 - "composer.lock"
 - "vendor"
+- "img/orig/*.xcf"
 
 include:
 - ".well-known"
