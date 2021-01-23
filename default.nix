@@ -2,7 +2,10 @@
 let
     inherit pkgs;
     stdenv = pkgs.stdenv;
-    guezzelPageBundlerEnv = pkgs.callPackage ./guezzlpage.nix { };
+    ruby = pkgs.ruby_2_7;
+    guezzelPageBundlerEnv = pkgs.callPackage ./guezzlpage.nix {
+      inherit ruby;
+    };
 in rec {
     guezzelPageEnv = stdenv.mkDerivation rec {
         name = "guezzl-page-env";
@@ -12,7 +15,7 @@ in rec {
           # https://nixos.wiki/wiki/Packaging/Ruby
           pkgs.pngcrush
           pkgs.imagemagick7
-          pkgs.ruby.devEnv
+          ruby.devEnv
           pkgs.bundix
         ];
     };
