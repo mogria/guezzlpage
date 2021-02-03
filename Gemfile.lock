@@ -65,7 +65,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 4.2.0)
+  jekyll
   jekyll-email-protect
   jekyll-paginate
   jekyll-sitemap
