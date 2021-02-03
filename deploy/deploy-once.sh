@@ -31,7 +31,7 @@ mkdir "$folder"
 
 # now we have an empty folder, lets run a full jekyll build into it
 umask 027
-nix-shell --run "jekyll build --no-watch -d $folder" default.nix
+nix-shell --run "jekyll build --no-watch -d $folder" shell.nix
 
 # atomically change the symlink to the built folder,
 # for no interruption when serving
