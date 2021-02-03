@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="zine">
+    <header class="zine-header">
+        <h1 class="post-title zine-title">{{ page.title }}</h1>
+        <p class="post-meta zine-meta">
+          <span class="meta-attr">Author: {{ site.data.bandmembers[page.author].name | default: page.author }}</span>
+          <span class="meta-attr">Siite: {{ pages | length }}</span>
+          <span class="meta-attr">Datum: {{ date }}</span>
+        </p>
+    </header>
+    <div class="zine-description">
+        {% if page.cover_image %}
+            <figure class="zine-image">
+                <img class="zine-image" src="{{ image | relative_url }}" />
+            </figure>
+        {% endif %}
+
+        {% if page.backcover_image %}
+            <figure class="zine-image">
+                <img class="zine-image" src="{{ image | relative_url }}" />
+            </figure>
+        {% endif %}
+
+        <span>Beschriibig</span>
+
+        {{ content }}
+        <div class="clear" />
+    </div>
+</article>
