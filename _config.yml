@@ -99,10 +99,6 @@ language_data: data.lang.%%
 language_includes_dir: _i18n
 
 # Jekyll Plugins
-plugins_dir:
-- jekyll-email-protect
-- jekyll-language-plugin
-
 plugins:
 - jekyll-sitemap
-- jekyll-paginate-v2
+- jekyll-paginate
