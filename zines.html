@@ -12,3 +12,17 @@ permalink: /zines/
 <a href="mailto:zine@xn--gssl-0ra.ch?subject=%5BZINE%5D%20">zine@güssl.ch</a> wür mi mega freue :)
 </p>
 
+{% for zine in site.zines %}
+<div class="zine-item">
+  <a href="{{ zine.url }}">
+    <div class="image-box">
+      <img src="{{ zine.cover_image | relative_url }}" />
+    </div>
+    <h4>{{ zine.title }}</h1>
+  </a>
+
+  <p class="zine-description">
+    {{ zine.description }}
+  </p>
+</div>
+{% endfor %}
