@@ -1,0 +1,17 @@
+[Unit]
+Description=GueZL DeployR
+RequiresMountsFor=/home
+ConditionPathIsReadWrite=/home/guezzl-deployer/guezzlpage
+
+[Service]
+EnvironmentFile=/home/guezzl-deployer/environment
+ExecStart=/home/guezzl-deployer/deploy.sh
+WorkingDirectory=/home/guezzl-deployer
+User=guezzl-deployer
+Group=www-data
+KillMode=process
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target
