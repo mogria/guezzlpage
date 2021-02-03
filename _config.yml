@@ -43,24 +43,34 @@ markdown: kramdown
 
 # Data Collections:
 collections:
-    songs:
-        output: true
-        permalink: /:collection/:path:output_ext
+  songs:
+    output: true
+    permalink: "/:collection/:path:output_ext"
+  zines:
+    output: true
+    permalink: "/:collection/:path:output_ext"
 
 
 # sitemap plugin configuration
 sitemap:
-    filename: "/sitemap.xml"
-    exclude:
-        - "/feed.xml"
-        - "/css/main.scss"
-        - "/js/main.js"
-    include_posts:
-        - "/index.html"
-    collections:
-        - "posts"
-        - "songs"
+  filename: "/sitemap.xml"
+  exclude:
+    - "/feed.xml"
+    - "/css/main.scss"
+    - "/js/main.js"
+  include_posts:
+    - "/index.html"
+  collections:
+    - "posts"
+    - "songs"
+    - "zines"
+
 defaults:
+  # -
+  #   scope:
+  #     path:            "zines/*/orig/*"
+  #   values:
+  #     sitemap:         false
   -
     scope:
       path:            "img/orig/*"
@@ -90,6 +100,9 @@ exclude:
 - "composer.lock"
 - "vendor"
 - "img/orig/*.xcf"
+- "img/orig/*.pdf"
+# - "_zines/das_buch_der_ofen_barsung/orig/*.xcf"
+# - "_zines/das_buch_der_ofen_barsung/orig/*.pdf"
 
 include:
 - ".well-known"
