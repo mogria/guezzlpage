@@ -27,9 +27,7 @@
 }
 
 .zine {
-    .zine-meta {
-        .meta-attr {
-            display: block;
-        }
+    ul.zine-meta {
+        list-style-type: circle;
     }
 }

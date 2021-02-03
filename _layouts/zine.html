@@ -5,12 +5,16 @@ layout: default
 <article class="zine">
     <header class="zine-header">
         <h1 class="post-title zine-title">{{ page.title }}</h1>
-        <p class="post-meta zine-meta">
-          <span class="meta-attr">Author: {{ site.data.bandmembers[page.author].name | default: page.author }}</span>
-          <span class="meta-attr">Siite: {{ pages | length }}</span>
-          <span class="meta-attr">Datum: {{ date }}</span>
-        </p>
+
+        <h4>Infos</h4>
+        <ul class="zine-meta">
+          <li class="meta-attr"><strong>Author</strong>: {{ site.data.bandmstrongbers[page.author].name | default: page.author }}</li>
+          <li class="meta-attr"><strong>Siite</strong>: {{ page.num_pages }}</li>
+          <li class="meta-attr"><strong>Datum</strong>: {{ page.date | date: "%b %-d, %Y"}}</li>
+        </ul>
     </header>
+
+    <h2>Beschriibig</h2>
     <div class="zine-description">
         {% if page.cover_image %}
             <figure class="zine-image">
