@@ -1,0 +1,23 @@
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name xn--gssl-0ra.ch xn--gsl-hoa.ch www.xn--gssl-0ra.ch www.xn--gsl-hoa.ch;
+
+    # This is a symlink updated by the deploy-once script
+    root /home/guezzl-deployer/guezzlpage/_site;
+    index index.html;
+
+    add_header X-Frame-Options SAMEORIGIN;
+    add_header X-Content-Type nosniff;
+    add_header X-XSS-Protection "1; mode=block";
+    add_header Content-Security-Policy "default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; report-uri /CSP_REPORT;";
+
+    location / {
+         try_files $uri $uri/ =404;
+    }
+
+
+    ssl on;
+    ssl_certificate /etc/letsencrypt/live/xn--gssl-0ra.ch-0001/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/xn--gssl-0ra.ch-0001/privkey.pem; # managed by Certbot
+}
