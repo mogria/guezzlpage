@@ -2,7 +2,7 @@
 
 pkgs.callPackage ./guezzlpage.nix {
   inherit ruby;
-  dependencies = [
+  dependencies = with pkgs; [
     pngcrush
     imagemagick7
   ];
