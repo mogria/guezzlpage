@@ -16,19 +16,27 @@ layout: default
 
     <h2>Beschriibig</h2>
     <div class="zine-description">
-        {% if page.cover_image %}
-            <figure class="zine-image">
-                <img class="zine-image" src="{{ image | relative_url }}" />
+        {% if page.cover_image != blank %}
+            <figure class="front-cover zine-image">
+                <img class="zine-image" src="{{ page.cover_image | relative_url }}" />
             </figure>
         {% endif %}
 
-        {% if page.backcover_image %}
-            <figure class="zine-image">
-                <img class="zine-image" src="{{ image | relative_url }}" />
+        {% if page.backcover_image != blank %}
+            <figure class="back-cover zine-image">
+                <img class="zine-image" src="{{ page.backcover_image | relative_url }}" />
             </figure>
         {% endif %}
 
-        <span>Beschriibig</span>
+        <div class="clear" />
+
+        {% if page.fullcover_image != blank %}
+            <figure class="back-cover zine-image">
+                <img class="zine-image" src="{{ page.fullcover_image | relative_url }}" />
+            </figure>
+        {% endif %}
+
+        <div class="clear" />
 
         {{ content }}
         <div class="clear" />

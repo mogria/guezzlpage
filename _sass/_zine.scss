@@ -30,4 +30,17 @@
     ul.zine-meta {
         list-style-type: circle;
     }
+
+    .zine-description {
+        width: 100%;
+
+        figure.front-cover, figure.back-cover {
+            display: block;
+            float: left;
+            margin-right: $spacing-unit;
+        }
+
+        figure.full-cover {}
+    }
+
 }
