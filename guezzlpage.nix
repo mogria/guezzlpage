@@ -1,8 +1,10 @@
-{ bundlerEnv, ruby }:
-bundlerEnv rec {
-    name = "guezzl-page";
-    gemfile = ./Gemfile;
-    lockfile = ./Gemfile.lock;
-    gemset = ./gemset.nix;
+{ bundlerEnv, ruby, dependencies ? [] }:
+
+bundlerEnv {
+    name = "guezzlpage-bundler-env";
     inherit ruby;
+    builtInputs = dependencies;
+    gemfile  = ./Gemfile;
+    lockfile = ./Gemfile.lock;
+    gemset   = ./gemset.nix;
 }
