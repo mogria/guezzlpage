@@ -2,7 +2,7 @@
 let
     inherit pkgs;
     stdenv = pkgs.stdenv;
-    ruby = pkgs.ruby_2_7;
+    ruby = pkgs.ruby;
     guezzelPageBundlerEnv = pkgs.callPackage ./guezzlpage.nix {
       inherit ruby;
     };
