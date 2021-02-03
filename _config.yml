@@ -66,11 +66,11 @@ sitemap:
     - "zines"
 
 defaults:
-  # -
-  #   scope:
-  #     path:            "zines/*/orig/*"
-  #   values:
-  #     sitemap:         false
+  -
+    scope:
+      path:            "zines/*/orig/*"
+    values:
+      sitemap:         false
   -
     scope:
       path:            "img/orig/*"
@@ -101,8 +101,8 @@ exclude:
 - "vendor"
 - "img/orig/*.xcf"
 - "img/orig/*.pdf"
-# - "_zines/das_buch_der_ofen_barsung/orig/*.xcf"
-# - "_zines/das_buch_der_ofen_barsung/orig/*.pdf"
+- "_zines/das_buch_der_ofen_barsung/orig/*.xcf"
+- "_zines/das_buch_der_ofen_barsung/orig/*.pdf"
 
 include:
 - ".well-known"
