@@ -1,6 +1,7 @@
 with (import <nixpkgs> {});
 let
-  guezzlPage = pkgs.callPackage ./guezzlpage.nix { };
+  ruby = ruby_2_7;
+  guezzlPage = pkgs.callPackage ./guezzlpage.nix { inherit ruby; };
 in stdenv.mkDerivation {
   name = "guezzlpage-shell";
 
