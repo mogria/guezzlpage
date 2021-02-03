@@ -1,0 +1,35 @@
+.zine-item {
+
+    .image-box {
+        float: left;
+    }
+    .zine-name {
+        font-weight: bold;
+        padding-top: $spacing-unit;
+    }
+
+    .zine-description, .zine-name {
+        margin-left: $spacing-unit * 6;
+    }
+
+    @include media-query($on-palm) {
+        .image-box {
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .zine-description, .zine-name {
+            margin-left: 0px;
+            text-align: center;
+        }
+    }
+}
+
+.zine {
+    .zine-meta {
+        .meta-attr {
+            display: block;
+        }
+    }
+}
