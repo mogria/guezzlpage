@@ -11,6 +11,9 @@ Using the `bin/scale-site-images.sh` script you can regenerate the PNG images fr
 # How to add a Gem using nix & bundix:
 
  * Edit the `Gemfile`
- * run `bin/nix-bundle-gems.sh` 
- * This will regenerate `Gemfile.lock`, `gemset.nix` and direnv should now load the new environment with the gems in it.
+ * If necessary delete the `Gemfile.lock`
+ * Run `bundix -l` to regenerate `Gemfile.lock`,
+ * Run `bundix -m` to regenerate the `gemset.nix` and
+ * You may want to `touch default.nix` for direnv to reload the new environment with the gems in it.
+
 
