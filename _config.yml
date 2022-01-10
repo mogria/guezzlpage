@@ -115,3 +115,4 @@ language_includes_dir: _i18n
 plugins:
 - jekyll-sitemap
 - jekyll-paginate
+- jekyll-email-protect
