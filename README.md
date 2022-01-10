@@ -12,10 +12,10 @@ Using the `bin/scale-site-images.sh` script you can regenerate the PNG images fr
 
 To run the development site and have changes in posts automatically reflected using LiveReload and Jekyll's incremental build support.
 
-Use the following command to launch jekyll from the using a nix-shell environment containing all the required dependencies:
+Use the following command to launch Jekyll from the using a `nix-shell` environment containing all the required dependencies:
 
     $ nix-shell
-    [nix-shell:~/Code/guezzlpage]$ bundle exec jekyll serve --livereload
+    [nix-shell:~/Code/guezzlpage]$ jekyll serve --livereload
     Configuration file: /home/mogria/Code/guezzlpage/_config.yml
                  Source: /home/mogria/Code/guezzlpage
             Destination: /home/mogria/Code/guezzlpage/_site
@@ -28,7 +28,9 @@ Use the following command to launch jekyll from the using a nix-shell environmen
       Server running... press ctrl-c to stop.
 
 
-Now use a webbrowser to navigate to http://127.0.0.4000/ to see the your local development site.
+Now use a webbrowser to navigate to http://127.0.0.4000/ to see your local development site.
+
+The LiveReload server will run on port 35729 by default.
 
 ### How to add a Gem using nix & bundix:
 
