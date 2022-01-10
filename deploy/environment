@@ -1,0 +1,4 @@
+PATH=/nix/var/nix/profiles/default/bin:/usr/bin:/bin
+HOME=/home/guezzl-deployer
+USER=guezzl-deployer
+NIX_PATH=nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixpkgs:/nix/var/nix/profiles/per-user/root/channels
